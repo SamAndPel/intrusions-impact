@@ -1,0 +1,76 @@
+{
+    "id": 1,
+    "name": "Firewall",
+    "image": "/relative/image/path",
+    "cost": 50,
+    "short-desc": "A network firewall wazzoo and hooray for it is here!",
+    "long-desc": "Now this is a much longer description of what a firewall does and how it works, not even sure if this is necessary but here we are huzzah and hooray once again for it is here, and your packets can sleep well under it's noble protection.",
+    "outlink": "hhtp:wikipedia.com/firewall",
+    "prerequisites": -1,
+    "consequences": [
+        {
+            "installed": {
+                "text": "Oh look you mitigated this because you installed this on the first day!",
+                "scoredelta": 500,
+                "type": "Nationstate",
+                "image": "/relative/image/path",
+                "causes-end": false
+            },
+            "notinstalled": {
+                "text": "Oh no a very bad thing has happened because you didn't install this on the first day!",
+                "scoredelta": -500,
+                "type": "Nationstate",
+                "image": "/relative/image/path",
+                "causes-end": false
+            }
+        },
+        {
+            "installed": {
+                "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
+                "scoredelta": 500,
+                "type": "Nationstate",
+                "image": "/relative/image/path",
+                "causes-end": false
+            },
+            "notinstalled": {
+                "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
+                "scoredelta": -500,
+                "type": "Nationstate",
+                "image": "/relative/image/path",
+                "causes-end": false
+            }
+        },
+        {
+            "installed": {
+                "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
+                "scoredelta": 500,
+                "type": "Nationstate",
+                "image": "/relative/image/path",
+                "causes-end": false
+            },
+            "notinstalled": {
+                "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
+                "scoredelta": -500,
+                "type": "Nationstate",
+                "image": "/relative/image/path",
+                "causes-end": true
+            }
+        },
+        {
+            "installed": {
+                "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
+                "scoredelta": 500,
+                "type": "Nationstate",
+                "image": "/relative/image/path",
+                "causes-end": true
+            },
+            "notinstalled": {
+                "text": "Oh no a very bad thing has happened because you didn't install this at all!",
+                "scoredelta": -500,
+                "type": "Nationstate",
+                "image": "/relative/image/path",
+                "causes-end": true
+            }
+        }
+    ]
+}
