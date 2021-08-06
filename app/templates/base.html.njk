@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intrusions and Impact</title>
+        <link rel="stylesheet" href="base_styles.css" type="text/css">
+        <link rel="icon" href="images/favicon.ico" type="image/ico">
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <!-- HEADER BAR -->
+            <header>
+            </header>
+
+            <!-- MAIN CONTENT -->
+            <main>
+                {% block content %}
+                {% endblock %}
+            </main>
+
+            <!-- PADDING (to push the footer down if necessary) -->
+            <div id="pad">
+            </div>
+
+            <!-- FOOTER -->
+            <footer>
+            </footer>
+
+        </div>
+
+        <script src="scripts/cardmanager.js"></script>
+
+        {% block scripts %}
+        {% endblock %}
+        
+    </body>
+</html>
