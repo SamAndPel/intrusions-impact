@@ -1,6 +1,5 @@
 // INITIAL PROGRAM SETUP ------------------------------------------------------
 // Import and configure required libraries
-
 const express = require("express");
 const app = express();
 const nunjucks = require("nunjucks");
