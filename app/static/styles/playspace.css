@@ -6,8 +6,7 @@
   flex: 1;
   flex-direction: row;
   width: 100%;
-  min-height: 0;
-  max-height: 100vh;
+  height: 83vh;
   padding: 0;
 }
 
