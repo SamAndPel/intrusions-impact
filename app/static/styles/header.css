@@ -25,7 +25,7 @@ header {
   font-weight: bold;
   font-size: 2rem;
   margin: 0;
-  padding: 15px 20px;
+  padding: 10px;
   text-decoration: none;
   color: var(--text-colour);
   -webkit-transition-duration: 0.3s;
@@ -39,9 +39,8 @@ header {
 }
 
 .headerlink {
-  margin: 0 20px;
-  padding: 15px 20px;
-  width: 6em;
+  margin: 0 10px;
+  padding: 20px 20px;
   border: 0;
   border-radius: 5px;
   -webkit-transition-duration: 0.3s;
@@ -49,10 +48,10 @@ header {
   transition-duration: 0.3s;
   text-align: center;
   text-decoration: none;
-  background-color: var(--bg-header-colour);
+  background-color: var(--bg-page-colour);
   color: var(--text-colour);
 }
 
 .headerlink:hover {
-  background-color: var(--bg-page-colour);
+  background-color: var(--emph-b-colour);
 }
