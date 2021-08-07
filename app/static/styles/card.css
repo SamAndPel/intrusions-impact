@@ -28,13 +28,13 @@
   margin: 1rem;
   height: 10.5rem;
   width: 7.5rem;
-  background-color: var(--bg-dark-colour);
+  background-color: var(--bg-header-colour);
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .card:hover {
-  border: 2px solid var(--emph-y-colour);
+  border: 2px solid var(--emph-a-colour);
 }
 
 .card-title {

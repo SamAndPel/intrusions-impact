@@ -1,5 +1,12 @@
 {% extends "base.html.njk" %}
 
+{% block meta%}
+<link rel="stylesheet" href="styles/playspace.css" type="text/css">
+<link rel="stylesheet" href="styles/card.css" type="text/css">
+<link rel="stylesheet" href="styles/modal.css" type="text/css">
+<link rel="stylesheet" href="styles/dragdrop.css" type="text/css">
+{% endblock %}
+
 {% block content %}
     <div id="playspace">
         <div id="leftcol" class="column">
@@ -106,4 +113,6 @@
 {% endblock %}
 
 {% block scripts %}
+<script src="/scripts/modalcontrol.js"></script>
+<script src="/scripts/dragcontrol.js"></script>
 {% endblock %}
