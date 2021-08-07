@@ -2,7 +2,6 @@
 /* Defines styles for the page footer */
 
 footer {
-    background-color: var(--dark-color);
+    background-color: var(--bg-header-colour);
     text-align: center;
-    font-size: 0.7em;
 }
