@@ -4,8 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Intrusions and Impact</title>
-        <link rel="stylesheet" href="base_styles.css" type="text/css">
         <link rel="icon" href="images/favicon.ico" type="image/ico">
+        <link rel="stylesheet" href="styles/root.css" type="text/css">
+        <link rel="stylesheet" href="styles/header.css" type="text/css">
+        <link rel="stylesheet" href="styles/footer.css" type="text/css">
+        {% block meta %}
+        {% endblock %}
     </head>
 
     <body>
@@ -13,6 +17,8 @@
 
             <!-- HEADER BAR -->
             <header>
+                <a id="headertitle" href="/">🔥 Intrusions and Impact</a>
+                <a class="headerlink" href="/about">Why should you care?</a>
             </header>
 
             <!-- MAIN CONTENT -->
@@ -27,6 +33,7 @@
 
             <!-- FOOTER -->
             <footer>
+                <p>Built by Sam, Shevani, Adam and Hannah - Copyright August 2021</p>
             </footer>
 
         </div>

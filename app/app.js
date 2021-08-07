@@ -16,8 +16,15 @@ const PORT = process.env.PORT || 3000;
 
 // ROUTES ---------------------------------------------------------------------
 app.get("/", (req, res) => {
-    console.log("returned game instance");
+    return res.render("home.html.njk");
+});
+
+app.get("/game", (req, res) => {
     return res.render("game.html.njk");
+});
+
+app.get("/about", (req, res) => {
+    return res.render("about.html.njk");
 });
 
 // HOST HTTP SERVER -----------------------------------------------------------
