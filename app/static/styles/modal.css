@@ -1,2 +1,127 @@
 /* Modal CSS document */
 /* Defines styles for modal elements (intro, card, consequence, conclusion) */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.85); /* Black w/ opacity */
+}
+
+@keyframes modalin {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Modal Content/Box */
+#cardmodalcontent {
+  background-color: var(--bg-dark-colour);
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid var(--text-colour);
+  width: 30rem; /* Could be more or less, depending on screen size */
+  height: 36rem;
+  border-radius: 50px;
+  animation-name: modalin;
+  animation-duration: 0.4s;
+  text-align: center;
+}
+
+/* Modal Content/Box */
+#consequencemodalcontent {
+  background-color: var(--bg-dark-colour);
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 0;
+  border: 1px solid var(--text-colour);
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 80%;
+  overflow-y: scroll;
+  animation-name: modalin;
+  animation-duration: 0.4s;
+}
+
+.modalheader {
+  background-color: var(--red-colour);
+  padding: 20px;
+}
+
+.modalbody {
+  padding: 20px;
+}
+
+@keyframes modalin {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.closemodal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closemodal:hover,
+.closemodal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.big-card-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2rem 10px auto;
+  padding: 0;
+}
+
+.big-card-image {
+  font-size: 8rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.big-card-cost {
+  color: var(--green-colour);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.big-card-details {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.consequence-header {
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.consequence-body {
+  font-size: 1.2rem;
+  font-style: italic;
+}

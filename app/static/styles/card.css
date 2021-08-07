@@ -1,0 +1,60 @@
+/* Card CSS document */
+/* Defines styling for card previews on game page */
+
+.carddeck {
+  display: flex;
+  flex: 1 auto;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.scroll-y {
+  overflow-y: scroll;
+}
+
+.scroll-x {
+  overflow-x: scroll;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  text-align: center;
+  border: 2px solid var(--emph-b-colour);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  height: 10.5rem;
+  width: 7.5rem;
+  background-color: var(--bg-dark-colour);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  border: 2px solid var(--emph-y-colour);
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.card-image {
+  font-size: 4rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.card-cost {
+  color: var(--green-colour);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  padding: 0;
+}

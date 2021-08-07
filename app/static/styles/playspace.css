@@ -1,0 +1,61 @@
+/* Playspace CSS document */
+/* Defines complex playspace layout */
+
+#playspace {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  width: 100%;
+  min-height: 0;
+  padding: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: inherit;
+}
+
+#leftcol {
+  width: 25%;
+  position: relative;
+}
+
+#midcol {
+  width: 50%;
+}
+
+#rightcol {
+  width: 25%;
+}
+
+.colhead {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0 0 0 1rem;
+}
+
+#unityspace {
+  margin: 0 1rem 1rem;
+  padding: 0;
+  background-color: black;
+  border: 5px solid var(--emph-b-colour);
+  border-radius: 5px;
+  font-size: 3rem;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#staging {
+  margin: 0 1rem;
+  display: flex;
+  flex: 1;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
