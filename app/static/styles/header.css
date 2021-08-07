@@ -55,6 +55,7 @@ header {
   margin: 0 10px;
   padding: 20px 20px;
   border: 0;
+  width: 12rem;
   border-radius: 5px;
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
