@@ -4,17 +4,18 @@
 .carddeck {
   display: flex;
   flex: 1 auto;
-  flex-flow: row wrap;
   justify-content: flex-start;
   align-content: flex-start;
 }
 
 .scroll-y {
   overflow-y: scroll;
+  flex-flow: row wrap;
 }
 
 .scroll-x {
   overflow-x: scroll;
+  flex-flow: row nowrap;
 }
 
 .card {
