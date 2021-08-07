@@ -23,6 +23,10 @@ app.get("/game", (req, res) => {
     return res.render("game.html.njk");
 });
 
+app.get("/howtoplay", (req, res) => {
+    return res.render("howtoplay.html.njk");
+});
+
 app.get("/about", (req, res) => {
     return res.render("about.html.njk");
 });
