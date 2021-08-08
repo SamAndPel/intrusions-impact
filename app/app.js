@@ -10,9 +10,16 @@ const gamedata = require(__dirname + "/defenses.json");
 
 // Configure Express and Nunjucks
 app.use(express.static(__dirname + "/static/"));
-nunjucks.configure(__dirname + "/templates/", {
+let nunconf = nunjucks.configure(__dirname + "/templates/", {
     autoescape: true,
     express: app
+});
+
+// Add custom filter to the Nunjucks environment
+// to enable displaying ints with a comma every 3 values
+// Regex help from https://stackoverflow.com/a/2901298
+nunconf.addFilter("moneycomma", (input) => {
+    return input.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 });
 
 // Set port to .env variable value if found, else set port to 3000

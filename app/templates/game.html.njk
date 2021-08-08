@@ -13,13 +13,12 @@
         <div id="leftcol" class="column">
             <p class="colhead">Defenses available:</p>
             <div class="carddeck scroll-y">
-                <div id="card1" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
-                    <p class="card-title">Antivirus</p>
-                    <p class="card-image">🛡️</p>
-                    <p class="card-cost">£30,000</p>
-                </div>
                 {% for card in defenses %}
-                    <p>{{ card.name }}</p>
+                <div id="{{ 'card' + card.id}}" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
+                    <p class="card-title">{{ card.name }}</p>
+                    <p class="card-image">{{ card.image }}</p>
+                    <p class="card-cost">{{ '£' + card.cost | moneycomma }}</p>
+                </div>
                 {% endfor %}
             </div>
             <div id="leftdrag" class="dragspace droppable" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -33,11 +32,6 @@
             <p class="colhead">Defenses to play:</p>
             <div id="staging">
                 <div class="carddeck scroll-x">
-                    <div id="card11" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
-                        <p class="card-title">CCTV (Office)</p>
-                        <p class="card-image">📸</p>
-                        <p class="card-cost">£50,000</p>
-                    </div>
                 </div>
                 <div id="stagedrag" class="dragspace droppable" ondrop="drop(event)" ondragover="allowDrop(event)">
                     <span class="dragspacetext">Drag cards here</span>
@@ -51,21 +45,6 @@
         <div id="rightcol" class="column">
             <p class="colhead">Denfenses Played:</p>
             <div class="carddeck scroll-y">
-                <div id="card12" class="card">
-                    <p class="card-title">Network Monitoring (Plant)</p>
-                    <p class="card-image">🖧</p>
-                    <p class="card-cost">£30,000</p>
-                </div>
-                <div id="card13" class="card">
-                    <p class="card-title">Network Monitoring (Office)</p>
-                    <p class="card-image">🖧</p>
-                    <p class="card-cost">£20,000</p>
-                </div>
-                <div id="card14" class="card">
-                    <p class="card-title">Firewall (Plant)</p>
-                    <p class="card-image">🔥</p>
-                    <p class="card-cost">£30,000</p>
-                </div>
             </div>
         </div>
     </div>
