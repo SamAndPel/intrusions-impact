@@ -18,51 +18,9 @@
                     <p class="card-image">🛡️</p>
                     <p class="card-cost">£30,000</p>
                 </div>
-                <div id="card2" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
-                    <p class="card-title">Firewall (Office)</p>
-                    <p class="card-image">🔥</p>
-                    <p class="card-cost">£30,000</p>
-                </div>
-                <div id="card3" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
-                    <p class="card-title">Server Upgrade</p>
-                    <p class="card-image">🖥</p>
-                    <p class="card-cost">£20,000</p>
-                </div>
-                <div id="card4" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
-                    <p class="card-title">Database Encryption</p>
-                    <p class="card-image">🔐</p>
-                    <p class="card-cost">£40,000</p>
-                </div>
-                <div id="card5" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
-                    <p class="card-title">Workstation Upgrade</p>
-                    <p class="card-image">🖥️</p>
-                    <p class="card-cost">£20,000</p>
-                </div>
-                <div id="card6" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
-                    <p class="card-title">Network Segmentation</p>
-                    <p class="card-image">🔌</p>
-                    <p class="card-cost">£30,000</p>
-                </div>
-                <div id="card7" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
-                    <p class="card-title">Security Training</p>
-                    <p class="card-image">📓</p>
-                    <p class="card-cost">£25,000</p>
-                </div>
-                <div id="card8" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
-                    <p class="card-title">CCTV (Plant)</p>
-                    <p class="card-image">📷</p>
-                    <p class="card-cost">£50,000</p>
-                </div>
-                <div id="card9" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
-                    <p class="card-title">Threat Assessment</p>
-                    <p class="card-image">🕵</p>
-                    <p class="card-cost">£20,000</p>
-                </div>
-                <div id="card10" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
-                    <p class="card-title">Asset Audit</p>
-                    <p class="card-image">🔍</p>
-                    <p class="card-cost">£30,000</p>
-                </div>
+                {% for card in defenses %}
+                    <p>{{ card.name }}</p>
+                {% endfor %}
             </div>
             <div id="leftdrag" class="dragspace droppable" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <span class="dragspacetext">Drag cards here</span>

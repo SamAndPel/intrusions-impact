@@ -1,10 +1,14 @@
 // INITIAL PROGRAM SETUP ------------------------------------------------------
-// Import and configure required libraries
+// Import required libraries
 const express = require("express");
 const app = express();
 const nunjucks = require("nunjucks");
 const dotenv = require("dotenv");
 
+// Load game data from JSON
+const gamedata = require(__dirname + "/defenses.json");
+
+// Configure Express and Nunjucks
 app.use(express.static(__dirname + "/static/"));
 nunjucks.configure(__dirname + "/templates/", {
     autoescape: true,
@@ -20,7 +24,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/game", (req, res) => {
-    return res.render("game.html.njk");
+    return res.render("game.html.njk", {
+        defenses: gamedata
+    });
 });
 
 app.get("/howtoplay", (req, res) => {
