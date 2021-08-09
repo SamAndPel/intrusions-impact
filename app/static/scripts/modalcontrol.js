@@ -1,17 +1,28 @@
 // Modal controller
 // Attaches modal triggers to correct buttons etc
 
+function closeallmodals() {
+    const cardmodals = document.getElementsByClassName("cardmodal");
+    const consequencemodal = document.getElementById("consequencemodal");
+    
+    for (let i = 0; i < cardmodals.length; i++) {
+        cardmodals[i].style.display = "none";
+    }
+    consequencemodal.style.display = "none";
+}
+
 window.onload = function () {
     const cards = document.getElementsByClassName("card");
+    const cardmodals = document.getElementsByClassName("cardmodal");
+
     const playbutton = document.getElementById("playbutton");
 
     const closers = document.getElementsByClassName("closemodal");
-    const cardmodal = document.getElementById("cardmodal");
     const consequencemodal = document.getElementById("consequencemodal");
 
     for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", () => {
-            cardmodal.style.display = "block";
+            cardmodals[i].style.display = "block";
         });
     }
 
@@ -20,19 +31,17 @@ window.onload = function () {
     });
 
 
+    // Close modals if an 'x' is clicked
     for (let i = 0; i < closers.length; i++) {
         closers[i].addEventListener("click", () => {
-            cardmodal.style.display = "none";
-            consequencemodal.style.display = "none";
+            closeallmodals();
         });
     }
-
-
 }
 
+// Close modals if they're clicked off
 window.onclick = function (event) {
-    if (event.target == cardmodal || event.target == consequencemodal) {
-        cardmodal.style.display = "none";
-        consequencemodal.style.display = "none";
+    if (event.target.classList.contains("cardmodal") || event.target.id == "consequencemodal") {
+        closeallmodals();
     }
 }

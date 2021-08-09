@@ -14,7 +14,7 @@
             <p class="colhead">Defenses available:</p>
             <div class="carddeck scroll-y">
                 {% for card in defenses %}
-                <div id="{{ 'card' + card.id}}" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
+                <div id="{{ 'card' + card.id }}" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
                     <p class="card-title">{{ card.name }}</p>
                     <p class="card-image">{{ card.image }}</p>
                     <p class="card-cost">{{ '£' + card.cost | moneycomma }}</p>
@@ -48,6 +48,22 @@
             </div>
         </div>
     </div>
+    {% for card in defenses %}
+    <div id="{{ 'card' + card.id + 'modal' }}" class="modal cardmodal">
+        <div class="cardmodalcontent">
+            <span class="closemodal">&times;</span>
+            <p class="big-card-title">{{ card.name }}</p>
+            <p class="big-card-image">{{ card.image }}</p>
+            <p class="big-card-cost">{{ '£' + card.cost | moneycomma }}</p>
+            <p class="big-card-shortdesc">{{ card.shortdesc }}</p>
+            <p class="big-card-longdesc">{{ card.longdesc }}</p>
+            <div class="big-card-buttons">
+                <a href="{{ card.outlink }}" class="modallink">More info</p>
+                <a class="modallink">Play card</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
 {% endblock %}
 
 {% block scripts %}

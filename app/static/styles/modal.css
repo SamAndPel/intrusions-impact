@@ -15,20 +15,9 @@
   background-color: rgba(0, 0, 0, 0.85); /* Black w/ opacity */
 }
 
-@keyframes modalin {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
 /* Modal Content/Box */
-#cardmodalcontent {
-  background-color: var(--bg-dark-colour);
+.cardmodalcontent {
+  background-color: var(--bg-header-colour);
   margin: 5% auto;
   padding: 20px;
   border: 1px solid var(--text-colour);
@@ -41,7 +30,7 @@
 }
 
 /* Modal Content/Box */
-#consequencemodalcontent {
+.infomodalcontent {
   background-color: var(--bg-dark-colour);
   margin: 5% auto; /* 15% from the top and centered */
   padding: 0;
@@ -110,18 +99,22 @@
   padding: 0;
 }
 
-.big-card-details {
+.big-card-shortdesc {
   font-size: 1.2rem;
+}
+
+.big-card-longdesc {
+  font-size: 1rem;
   font-style: italic;
 }
 
-.consequence-header {
+.info-header {
   font-weight: bold;
   font-size: 3rem;
   margin: 0;
 }
 
-.consequence-body {
+.info-body {
   font-size: 1.2rem;
   font-style: italic;
 }
