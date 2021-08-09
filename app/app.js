@@ -6,7 +6,7 @@ const nunjucks = require("nunjucks");
 const dotenv = require("dotenv");
 
 // Load game data from JSON
-const gamedata = require(__dirname + "/static/defenses.json");
+const gamedata = require(__dirname + "/static/defences.json");
 
 // Configure Express and Nunjucks
 app.use(express.static(__dirname + "/static/"));
@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 
 app.get("/game", (req, res) => {
     return res.render("game.html.njk", {
-        defenses: gamedata
+        defences: gamedata
     });
 });
 
