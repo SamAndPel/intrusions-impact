@@ -2,16 +2,18 @@
 // Triggers dropzone popups and calls passthrough functions on drop
 
 function dragStart(ev) {
-    console.log("[+] Began dragging element " + ev.target.id);
-    ev.dataTransfer.setData("text", ev.target.id);
+    let idno = ev.target.id.charAt(ev.target.id.length - 1);
+    ev.dataTransfer.setData("text", idno);
     document.getElementById("leftdrag").style.visibility = "visible";
     document.getElementById("stagedrag").style.visibility = "visible";
+    console.log("[+] Began dragging card " + idno);
 }
 
 function dragStop(ev) {
-    console.log("[-] Finished dragging element " + ev.target.id);
+    let idno = ev.target.id.charAt(ev.target.id.length - 1);
     document.getElementById("leftdrag").style.visibility = "hidden";
     document.getElementById("stagedrag").style.visibility = "hidden";
+    console.log("[+] Finished dragging card " + idno);
 }
 
 function allowDrop(ev) {
@@ -26,8 +28,13 @@ function drop(ev) {
         for (var i = 0; i < siblings.length; i++) {
             let child = siblings.item(i);
             if (child.classList.contains("carddeck")) {
-              child.appendChild(document.getElementById(origin));
-              break;
+              if (child.id == "stageddeck") {
+                  stagecard(origin);
+              } else if (child.id == "unstageddeck") {
+                  unstagecard(origin);
+              } else {
+                  console.log("[*] Card dropped into invalid space");
+              }
             }        
         }
     }

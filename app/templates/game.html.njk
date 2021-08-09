@@ -11,9 +11,9 @@
 {% block content %}
     <div id="playspace">
         <div id="leftcol" class="column">
-            <p class="colhead">Defenses available:</p>
-            <div class="carddeck scroll-y">
-                {% for card in defenses %}
+            <p class="colhead">Defences available:</p>
+            <div id="unstageddeck" class="carddeck scroll-y">
+                {% for card in defences %}
                 <div id="{{ 'card' + card.id }}" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
                     <p class="card-title">{{ card.name }}</p>
                     <p class="card-image">{{ card.image }}</p>
@@ -29,9 +29,9 @@
             <div id="unityspace">
                 <p>Unity</p>
             </div>
-            <p class="colhead">Defenses to play:</p>
+            <p class="colhead">Defences to play:</p>
             <div id="staging">
-                <div class="carddeck scroll-x">
+                <div id="stageddeck" class="carddeck scroll-x">
                 </div>
                 <div id="stagedrag" class="dragspace droppable" ondrop="drop(event)" ondragover="allowDrop(event)">
                     <span class="dragspacetext">Drag cards here</span>
@@ -43,12 +43,12 @@
             </div>
         </div>
         <div id="rightcol" class="column">
-            <p class="colhead">Denfenses Played:</p>
-            <div class="carddeck scroll-y">
+            <p class="colhead">Defences Played:</p>
+            <div id="playeddeck" class="carddeck scroll-y">
             </div>
         </div>
     </div>
-    {% for card in defenses %}
+    {% for card in defences %}
     <div id="{{ 'card' + card.id + 'modal' }}" class="modal cardmodal">
         <div class="cardmodalcontent">
             <span class="closemodal">&times;</span>
@@ -59,7 +59,7 @@
             <p class="big-card-longdesc">{{ card.longdesc }}</p>
             <div class="big-card-links">
                 <a href="{{ card.outlink }}" class="modallink" target="_blank">More info</a>
-                <p class="modallink">Play card</p>
+                <p class="modallink togglestage" onclick="togglestage({{ card.id }})">Play card</p>
             </div>
         </div>
     </div>
@@ -67,6 +67,9 @@
 {% endblock %}
 
 {% block scripts %}
+<script src="/scripts/onload.js"></script>
 <script src="/scripts/modalcontrol.js"></script>
 <script src="/scripts/dragcontrol.js"></script>
+<script src="/scripts/cardmover.js"></script>
+<script src="/scripts/gamemanager.js"></script>
 {% endblock %}

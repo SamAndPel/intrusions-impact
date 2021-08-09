@@ -1,11 +1,15 @@
 // Master game management script
 
 let rawdata = [];
-let cardpositionmaster = [];
+let cardpositionmaster = {};
 
 function initialise() {
-    rawdata = getJSON("defenses.json");
-    
+    rawdata = getJSON("defences.json");
+    rawdata.forEach(element => {
+        let id = element.id;
+        let location = "unstaged";
+        cardpositionmaster[id] = location;
+    });
 }
 
 function getJSON(path) {
@@ -13,8 +17,4 @@ function getJSON(path) {
     request.open("GET", path, false);
     request.send(null)
     return JSON.parse(request.responseText);
-}
-
-window.onload = function () {
-    initialise();
 }
