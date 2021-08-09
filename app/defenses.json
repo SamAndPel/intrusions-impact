@@ -4,8 +4,8 @@
     "location": "Office",
     "image": "🔥",
     "cost": 30000,
-    "short-desc": "A network firewall wazzoo and hooray for it is here!",
-    "long-desc": "Now this is a much longer description of what a firewall does and how it works, not even sure if this is necessary but here we are huzzah and hooray once again for it is here, and your packets can sleep well under it's noble protection.",
+    "shortdesc": "A network firewall wazzoo and hooray for it is here!",
+    "longdesc": "Now this is a much longer description of what a firewall does and how it works, not even sure if this is necessary but here we are huzzah and hooray once again for it is here, and your packets can sleep well under it's noble protection.",
     "outlink": "https://www.ncsc.gov.uk/cyberessentials/advice#section_1",
     "prerequisites": [],
     "consequences": [
