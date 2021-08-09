@@ -3,11 +3,11 @@
 
 // If card is currently unstaged, stage it
 // If card is currently staged, unstage it
-function togglestage(cardid) {
-    if (cardpositionmaster[cardid] == "unstaged") {
-        stagecard(cardid);
-    } else if (cardpositionmaster[cardid] == "staged") {
-        unstagecard(cardid);
+function togglestage(idno) {
+    if (cardpositionmaster[idno] == "unstaged") {
+        stagecard(idno);
+    } else if (cardpositionmaster[idno] == "staged") {
+        unstagecard(idno);
     } else {
         console.log("[*] Card neither staged nor unstaged - taking no action.");
     }
@@ -18,23 +18,23 @@ function togglestage(cardid) {
 // Move card element
 // Modify root data structure
 // Modify innerhtml on card popup modal move button
-function stagecard(cardid) {
-    console.log("[+] Staging " + cardid);
-    cardpositionmaster[cardid] = "staged";
-    let modalid = "card" + cardid + "modal";
+function stagecard(idno) {
+    console.log("[+] Staging card " + idno);
+    cardpositionmaster[idno] = "staged";
+    let modalid = "card" + idno + "modal";
     let modal = document.getElementById(modalid);
     modal.getElementsByClassName("togglestage")[0].innerHTML = "Remove card";
-    let source = document.getElementById("card" + cardid);
+    let source = document.getElementById("card" + idno);
     document.getElementById("stageddeck").appendChild(source);
 }
 
 //
-function unstagecard(cardid) {
-    console.log("[-] Unstaging " + cardid);
-    cardpositionmaster[cardid] = "unstaged";
-    let modalid = "card" + cardid + "modal";
+function unstagecard(idno) {
+    console.log("[-] Unstaging card " + idno);
+    cardpositionmaster[idno] = "unstaged";
+    let modalid = "card" + idno + "modal";
     let modal = document.getElementById(modalid);
     modal.getElementsByClassName("togglestage")[0].innerHTML = "Play card";
-    let source = document.getElementById("card" + cardid);
+    let source = document.getElementById("card" + idno);
     document.getElementById("unstageddeck").appendChild(source);
 }
