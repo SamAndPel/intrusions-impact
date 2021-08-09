@@ -6,7 +6,7 @@ const nunjucks = require("nunjucks");
 const dotenv = require("dotenv");
 
 // Load game data from JSON
-const gamedata = require(__dirname + "/defenses.json");
+const gamedata = require(__dirname + "/static/defenses.json");
 
 // Configure Express and Nunjucks
 app.use(express.static(__dirname + "/static/"));
