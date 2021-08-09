@@ -24,7 +24,9 @@
   width: 30rem; /* Could be more or less, depending on screen size */
   height: 36rem;
   border-radius: 50px;
+  -webkit-animation-name: modalin;
   animation-name: modalin;
+  -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
   text-align: center;
 }
@@ -38,7 +40,9 @@
   width: 80%; /* Could be more or less, depending on screen size */
   height: 80%;
   overflow-y: scroll;
+  -webkit-animation-name: modalin;
   animation-name: modalin;
+  -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
 }
 
@@ -49,6 +53,17 @@
 
 .modalbody {
   padding: 20px;
+}
+
+@-webkit-keyframes modalin {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes modalin {
@@ -76,7 +91,6 @@
   text-decoration: none;
   cursor: pointer;
 }
-
 
 /* Big card elements */
 .big-card-title {
@@ -111,16 +125,26 @@
 }
 
 .big-card-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  align-items: baseline;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .modallink {
   font-weight: bold;
+  font-size: 1rem;
   margin: 10px;
-  padding: 20px;
+  padding: 12px 12px 0 12px;
   border: 0;
   border-radius: 5px;
   width: 6rem;
