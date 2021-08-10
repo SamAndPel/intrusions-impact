@@ -1,5 +1,5 @@
-[
-    {
+{
+    "0": {
         "id": 0,
         "name": "Firewall (Plant)",
         "location": "Plant",
@@ -76,9 +76,9 @@
             }
         ]
     },
-    {
+    "1": {
         "id": 1,
-        "name": "Antivirus",
+        "name": "Antivirus (Office)",
         "location": "Office",
         "image": "🛡️",
         "cost": 40000,
@@ -152,5 +152,82 @@
                 }
             }
         ]
+    },
+    "2": {
+        "id": 2,
+        "name": "Cyber Training",
+        "location": "Both",
+        "image": "📓",
+        "cost": 40000,
+        "shortdesc": "The big boys at Atkins came and taught your technicians how to not be silly.",
+        "longdesc": "Now this is a much longer description of what cyber training is and why it's a good idea to have it, not even sure if this is necessary but here we are huzzah and hooray once again for it is here, and your employees can sleep well under it's noble protection.",
+        "outlink": "https://www.cybsafe.com/community/blog/7-reasons-why-security-awareness-training-is-important/",
+        "prerequisites": [],
+        "consequences": [
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this on the first day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this on the first day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": true
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": true
+                }
+            }
+        ]
     }
-]
+}

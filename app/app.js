@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 
 app.get("/game", (req, res) => {
     return res.render("game.html.njk", {
-        defences: gamedata
+        defences: Object.values(gamedata)
     });
 });
 
