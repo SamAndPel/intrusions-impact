@@ -1,77 +1,156 @@
-[{
-    "id": 1,
-    "name": "Firewall (Office)",
-    "location": "Office",
-    "image": "🔥",
-    "cost": 30000,
-    "shortdesc": "A network firewall wazzoo and hooray for it is here!",
-    "longdesc": "Now this is a much longer description of what a firewall does and how it works, not even sure if this is necessary but here we are huzzah and hooray once again for it is here, and your packets can sleep well under it's noble protection.",
-    "outlink": "https://www.ncsc.gov.uk/cyberessentials/advice#section_1",
-    "prerequisites": [],
-    "consequences": [
-        {
-            "installed": {
-                "text": "Oh look you mitigated this because you installed this on the first day!",
-                "scoredelta": 500,
-                "type": "Nationstate",
-                "image": "/relative/image/path",
-                "causes-end": false
+[
+    {
+        "id": 0,
+        "name": "Firewall (Plant)",
+        "location": "Plant",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A network firewall wazzoo and hooray for it is here!",
+        "longdesc": "Now this is a much longer description of what a firewall does and how it works, not even sure if this is necessary but here we are huzzah and hooray once again for it is here, and your packets can sleep well under it's noble protection.",
+        "outlink": "https://www.ncsc.gov.uk/cyberessentials/advice#section_1",
+        "prerequisites": [],
+        "consequences": [
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this on the first day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this on the first day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                }
             },
-            "notinstalled": {
-                "text": "Oh no a very bad thing has happened because you didn't install this on the first day!",
-                "scoredelta": -500,
-                "type": "Nationstate",
-                "image": "/relative/image/path",
-                "causes-end": false
-            }
-        },
-        {
-            "installed": {
-                "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
-                "scoredelta": 500,
-                "type": "Nationstate",
-                "image": "/relative/image/path",
-                "causes-end": false
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                }
             },
-            "notinstalled": {
-                "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
-                "scoredelta": -500,
-                "type": "Nationstate",
-                "image": "/relative/image/path",
-                "causes-end": false
-            }
-        },
-        {
-            "installed": {
-                "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
-                "scoredelta": 500,
-                "type": "Nationstate",
-                "image": "/relative/image/path",
-                "causes-end": false
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": true
+                }
             },
-            "notinstalled": {
-                "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
-                "scoredelta": -500,
-                "type": "Nationstate",
-                "image": "/relative/image/path",
-                "causes-end": true
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": true
+                }
             }
-        },
-        {
-            "installed": {
-                "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
-                "scoredelta": 500,
-                "type": "Nationstate",
-                "image": "/relative/image/path",
-                "causes-end": true
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Antivirus",
+        "location": "Office",
+        "image": "🛡️",
+        "cost": 40000,
+        "shortdesc": "An antivirus? Who'd have thought it! It defends machines against viruses.",
+        "longdesc": "Now this is a much longer description of what an antivirus does and how it works, not even sure if this is necessary but here we are huzzah and hooray once again for it is here, and your devices can sleep well under it's noble protection.",
+        "outlink": "https://www.ncsc.gov.uk/guidance/what-is-an-antivirus-product",
+        "prerequisites": [],
+        "consequences": [
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this on the first day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this on the first day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                }
             },
-            "notinstalled": {
-                "text": "Oh no a very bad thing has happened because you didn't install this at all!",
-                "scoredelta": -500,
-                "type": "Nationstate",
-                "image": "/relative/image/path",
-                "causes-end": true
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": true
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "causes-end": true
+                }
             }
-        }
-    ]
-}]
+        ]
+    }
+]
