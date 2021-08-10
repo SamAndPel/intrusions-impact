@@ -260,9 +260,9 @@
         "location": "Plant",
         "image": "🔥",
         "cost": 30000,
-        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
-        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
-        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
+        "shortdesc": "This big, shiny piece of bleeding-edge technology is quite expensive but also very effective.",
+        "longdesc": "Network monitoring is exactly what it says – monitoring the network. Software or hardware can be installed to keep track of activity on a network, including response time, uptime and availability. The monitoring allows organisations to see how the network behaves regularly, so if there is an unusual change in activity, they can quickly identify any failures or issues, such as cyberattacks. Hence, they can resolve the issue with minimal disruption. Network monitoring offers further benefits such as reducing manual work for IT staff, and highlighting parts of the network infrastructure that may need changing or upgrading.",
+        "outlink": "https://www.cisco.com/c/en/us/solutions/automation/what-is-network-monitoring.html#~benefits",
         "prerequisite": -1,
         "consequences": [
             {
@@ -285,9 +285,179 @@
             },
             {
                 "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "With the control system being so vital to your company, it was clearly a good decision to monitor it more closely. Ignoring these vulnerabilities would have been very costly.",
+                    "scoredelta": 60,
+                    "type": "Malicious Insider",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Over the last year your turbines have been behaving erratically, almost as if somebody else is in control… This results in a loss of £60,000.",
+                    "scoredelta": -60,
+                    "type": "Malicious Insider",
+                    "image": "/relative/image/path",
+                    "Stat": "More than 40% of initial attack vectors in 2019 were via remote access. (SANS 2019)",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "With the control system being so vital to your company, it was clearly a good decision to monitor it more closely. This decision prevents a rogue member of staff from carrying out a serious attack, which would’ve damaged a turbine. That would’ve caused an environmental and safety incident, costing you £275,000. The board are very pleased that this has been prevented, as the rogue member of staff is now serving a prison term, rather than them.",
+                    "scoredelta": 275,
+                    "type": "Malicious Insider",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Halfway through the year, an explosion damages one of your turbines, stopping production. Nobody is hurt, however this constitutes a near miss, which must be reported to the HSE (Health and Safety Executive). In addition, a large volume of oil is discharged into the river, causing environmental and reputational damage. This is worsened by national reporting on the Environment Authority’s investigation. It is discovered that someone has been conducting reconnaissance on your SCADA network for some time, and has worked out how to disrupt operations and then lock you out from the SCADA system and the controller. You pay the ransom that is demanded, but nothing happens. You are forced to replace the turbine and the control system. The combined loss from repairs, fines, paying the ransom, lost sales and new software equates to £275,000. If you had installed monitoring sooner, you would have detected the intrusion whilst it was still in the reconnaissance stage.",
+                    "scoredelta": -275,
+                    "type": "Malicious Insider",
+                    "image": "/relative/image/path",
+                    "Stat": "On average only 65% of encrypted data was restored after the ransom was paid. (Sophos Ransomware 2021)",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "CCTV (Plant)",
+        "location": "Plant",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "Surveillance camera and alarms that will automatically warn security guards of an intrusion.",
+        "longdesc": "CCTV offers excellent physical security to a business. Simply having CCTV installed is a deterrent to criminals. Having a camera watching equipment and employees at all times would certainly be useful were something bad to happen. For example, if someone plugged a malware-infested USB into a computer (maliciously or not), CCTV would be a simple way to identify said person, and at what time the incident occurred. Or, if the system for a piece of machinery was under a cyberattack and began malfunctioning, the CCTV would catch this, in case an employee was not present.",
+        "outlink": "",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "It's lucky that you've got defence in depth. Your security guard hands you a report, that says he stopped someone trying to break into the plant overnight. This person also had a key logger on them. It turns out that he had links to an organised crime group. <br> Who knows what could've happened!",
+                    "scoredelta": 15,
+                    "type": "Organised APT",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "After running a minimum staffing level across the bank holiday, a break-in is discovered at the plant. It seems that nothing has been taken, but graffiti has been sprayed everywhere and all the computers have been damaged. Luckily it appears that the SCADA controller wasn't targeted. It costs you £15,000 for a thorough clean and to replace all the damage. Everything has been replaced to the same specification as before. How must they have gotten away with that?",
+                    "scoredelta": -15,
+                    "type": "Organised APT",
+                    "image": "/relative/image/path",
+                    "Stat": "42% of security professionals do not trust their organisation's ability to secure physical access to their systems. (2018 Megatrends)",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "You receive a report from your plant security guard. Overnight, they stopped someone who was trying to retrieve a key logger from the SCADA controller. It turns out that this was placed there the last time your plant was physically attacked. The damage and graffiti were just a diversion from something far more sinister. Had the data on the key logger been retrieved, it would’ve been enough to close you down for good. <br> Phew!",
+                    "scoredelta": 1000,
+                    "type": "Organised APT",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "It has now been discovered that the first time you had a break in, the graffiti was a “smoke screen” for something more sinister. A key logger had been placed on your SCADA controller. As you haven't invested in CCTV, the criminals were able to recover this key logger undetected. They've used the details to remotely access the controller and cause the turbines to spin uncontrollably, until they explode. This seriously injures workers at the plant. Your business collapses, leaving your professional reputation in tatters.",
+                    "scoredelta": -1000,
+                    "type": "Organised APT",
+                    "image": "/relative/image/path",
+                    "Stat": "56% of initial atttack vectors on industrial organisations are via physical access to the network. (SANS 2019)",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Firewall (Plant)",
+        "location": "Plant",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A software and hardware solution that monitors and filters unauthorised traffic coming from the Internet to the plant network.",
+        "longdesc": "A firewall is either hardware (device between network and gateway), or software (program installed on a device), though it is obviously more effective to implement both. It monitors all incoming/outgoing traffic on a network, when it goes through the ports. It will then allow through, or discard these packets, depending on the rules specified. These rules will vary depending on the organisation, household, etc. There are various types of firewalls: packet-filtering, next generation, proxy, NAT, and stateful multilayer inspection.",
+        "outlink": "https://www.forcepoint.com/cyber-edu/firewall",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "The plant’s firewall intercepts a number of scanning attempts from all over the world. Apparently, there are people out there very interested in knowing more about your plant.",
+                    "scoredelta": 20,
+                    "type": "Researcher",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "A university student studying Information Security decides to practice on a live company, and starts by looking at open ports on Shodan.io. They find that your network is easy to get into, and can’t believe how a company like yours doesn’t have basic cyber security at your plant! As they're a future white hat, they decide to report you to the news instead of stealing from you. The news story loses you £20,000 in sales over the year. The ICO (Information Commissioner’s Office) also conduct an investigation and decide not to fine you, but they do remind you of your responsibilities of securing your service by following the NIS regulations.",
+                    "scoredelta": -20,
+                    "type": "Researcher",
+                    "image": "",
+                    "Stat": "More than 110,000 Industrial control systems are viewable on Shodan.io. (Shodan)",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
                     "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
                     "scoredelta": 500,
-                    "type": "Nationstate",
+                    "type": "Researcher",
                     "image": "/relative/image/path",
                     "Stat": "",
                     "causes-end": false
@@ -295,7 +465,7 @@
                 "notinstalled": {
                     "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
                     "scoredelta": -500,
-                    "type": "Nationstate",
+                    "type": "Researcher",
                     "image": "/relative/image/path",
                     "Stat": "",
                     "causes-end": false
@@ -305,7 +475,7 @@
                 "installed": {
                     "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
                     "scoredelta": 500,
-                    "type": "Nationstate",
+                    "type": "Hacker",
                     "image": "/relative/image/path",
                     "Stat": "",
                     "causes-end": false
@@ -313,7 +483,7 @@
                 "notinstalled": {
                     "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
                     "scoredelta": -500,
-                    "type": "Nationstate",
+                    "type": "Hacker",
                     "image": "/relative/image/path",
                     "Stat": "",
                     "causes-end": true
@@ -321,20 +491,20 @@
             },
             {
                 "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
                     "Stat": "",
-                    "causes-end": true
+                    "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
                     "Stat": "",
-                    "causes-end": true
+                    "causes-end": false
                 }
             }
         ]
@@ -678,175 +848,5 @@
                 }
             }
         ]
-    },
-    {
-        "id": 1,
-        "name": "Security Training",
-        "location": "Both",
-        "image": "🔥",
-        "cost": 30000,
-        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
-        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
-        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
-        "prerequisite": -1,
-        "consequences": [
-            {
-                "installed": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                }
-            },
-            {
-                "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": false
-                }
-            },
-            {
-                "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": true
-                }
-            },
-            {
-                "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": true
-                },
-                "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": true
-                }
-            }
-        ]
-    },
-    {
-        "id": 1,
-        "name": "Security Training",
-        "location": "Both",
-        "image": "🔥",
-        "cost": 30000,
-        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
-        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
-        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
-        "prerequisite": -1,
-        "consequences": [
-            {
-                "installed": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                }
-            },
-            {
-                "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": false
-                }
-            },
-            {
-                "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": true
-                }
-            },
-            {
-                "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": true
-                },
-                "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": true
-                }
-            }
-        ]
-    },
+    }
 ]
