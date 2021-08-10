@@ -1,23 +1,10 @@
 // Modal controller
-// Attaches modal triggers to correct buttons etc
+// Handles modal showing/hiding
 
 function bindmodals() {
-    const cards = document.getElementsByClassName("card");
-    const cardmodals = document.getElementsByClassName("cardmodal");
     const consequencemodal = document.getElementById("consequencemodal");
     const playbutton = document.getElementById("playbutton");
     const closers = document.getElementsByClassName("closemodal");
-
-    // Add handlers for each card
-    for (let i = 0; i < cards.length; i++) {
-        cards[i].addEventListener("click", () => {
-            let cardid = cards[i].id;
-            let idno = cardid.charAt(cardid.length - 1);
-            let modal = document.getElementById(cardid + "modal");
-            modal.style.display = "block";
-            console.log("[+] Showing modal for card " + idno);
-        });
-    }
 
     playbutton.addEventListener("click", () => {
         consequencemodal.style.display = "block";
@@ -29,6 +16,12 @@ function bindmodals() {
             closeallmodals();
         });
     }
+}
+
+function showmodal(idno) {
+    let modal = document.getElementById("card" + idno + "modal");
+    modal.style.display = "block";
+    console.log("[+] Showing modal for card " + idno);
 }
 
 function closeallmodals() {

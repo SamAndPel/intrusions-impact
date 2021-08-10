@@ -14,7 +14,7 @@
             <p class="colhead">Defences available:</p>
             <div id="unstageddeck" class="carddeck scroll-y">
                 {% for card in defences %}
-                <div id="{{ 'card' + card.id }}" class="card" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
+                <div id="{{ 'card' + card.id }}" class="card" onclick="showmodal({{ card.id }})" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
                     <p class="card-title">{{ card.name }}</p>
                     <p class="card-image">{{ card.image }}</p>
                     <p class="card-cost">{{ '£' + card.cost | moneycomma }}</p>

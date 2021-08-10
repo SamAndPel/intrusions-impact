@@ -7,6 +7,6 @@ window.onload = function () {
     initialise();
 
     // Bind onclick events to modals where necessary
-    console.log("[*] Binding modals to respective elements");
+    console.log("[*] Binding modal button to respective elements");
     bindmodals();
 }
