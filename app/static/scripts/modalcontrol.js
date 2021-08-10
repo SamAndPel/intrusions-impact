@@ -1,23 +1,6 @@
 // Modal controller
 // Handles modal showing/hiding
 
-function bindmodals() {
-    const consequencemodal = document.getElementById("consequencemodal");
-    const playbutton = document.getElementById("playbutton");
-    const closers = document.getElementsByClassName("closemodal");
-
-    playbutton.addEventListener("click", () => {
-        consequencemodal.style.display = "block";
-    });
-
-    // Close modals if an 'x' is clicked
-    for (let i = 0; i < closers.length; i++) {
-        closers[i].addEventListener("click", () => {
-            closeallmodals();
-        });
-    }
-}
-
 function showmodal(idno) {
     let modal = document.getElementById("card" + idno + "modal");
     modal.style.display = "block";

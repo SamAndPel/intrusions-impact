@@ -18,17 +18,20 @@
 /* Modal Content/Box */
 .cardmodalcontent {
   background-color: var(--bg-header-colour);
-  margin: 5% auto;
-  padding: 20px;
+  margin: 2rem auto;
+  padding: 25px;
   border: 1px solid var(--text-colour);
   width: 30rem; /* Could be more or less, depending on screen size */
-  height: 36rem;
   border-radius: 50px;
   -webkit-animation-name: modalin;
   animation-name: modalin;
   -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* Modal Content/Box */
@@ -75,21 +78,6 @@
     top: 0;
     opacity: 1;
   }
-}
-
-/* The Close Button */
-.closemodal {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.closemodal:hover,
-.closemodal:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 /* Big card elements */
