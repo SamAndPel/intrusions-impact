@@ -1,8 +1,14 @@
 {% extends "base.html.njk" %}
 
+{% block meta %}
+<link rel="stylesheet" href="styles/infopage.css" type="text/css">
+{% endblock %}
+
 {% block content %}
-<p>HOMEPAGE CONTENT</p>
-<a href="/game">PLAY</a>
+<div id="infopagecontent">
+    <p>HOMEPAGE CONTENT</p>
+    <a href="/game">PLAY</a>
+</div>
 {% endblock %}
 
 

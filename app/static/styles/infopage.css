@@ -1,0 +1,13 @@
+/* Infopage CSS document */
+/* Defines styles for elements used on info pages*/
+
+#infopagecontent {
+    width: 70%;
+    background-color: var(--emph-a-colour);
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    min-height: 25rem;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, .2);
+}
