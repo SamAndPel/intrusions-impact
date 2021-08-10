@@ -1,0 +1,852 @@
+[
+    {
+        "id": 0,
+        "name": "Security Training",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
+        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
+        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Due to your awareness training event, a staff member identifies a spearphishing email. They realise that all the personal information within said email is easily available via a basic Google search. Hence, they don't click on the attached malicious link. Had they fallen victim to this scam, the company would've lost contracts worth £20,000.",
+                    "scoredelta": 20,
+                    "type": "Organised APT",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "One day, a staff member receives a spearphishing email, containing information about the university they attended. Not knowing about social engineering or being aware of their data footprint, they click on the attached link. It tells them that there is a problem with their company account, and requests their login details to rectify the issue. The staff member provides these, allowing the hackers to access the company systems remotely. They interfere, cancelling contracts, which leads to a loss of £20,000.",
+                    "scoredelta": -20,
+                    "type": "Organised APT",
+                    "image": "/relative/image/path",
+                    "Stat": "Spearphishing is used by 2/3 of advanced persistant threat groups. (Dragos 2020 Review)",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "One day, the finance department receives an urgent email from someone claiming to be the CEO. He wants £150,000 transferred into a new business account ASAP. He sends instructions not to contact him, as he is holding a very important meeting at the golf course. However, a staff member remembers the training they received, so they call the CEO to check. Well done, you've just saved £150,000. It's a good job that you installed a positive behaviour change within your company.",
+                    "scoredelta": 150,
+                    "type": "Organised APT",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "One day, the finance department receives an urgent email from someone claiming to be the CEO. He wants £150,000 transferred into a new business account ASAP. He sends instructions not to contact him, as he is holding a very important meeting at the golf course. Not being aware of phishing, the finance department transfers the £150,000. The staff are soon told that this was fraud, and that they'll never see the money again. If only your staff had known what to look out for...",
+                    "scoredelta": -150,
+                    "type": "Organised APT",
+                    "image": "/relative/image/path",
+                    "Stat": "Phishing is a contributing factor in 90% of data breaches. (Cisco)",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "You're made aware of the fact that an organised crime group have been targeting you, trying to crack your staff’s passwords. Luckily, they all have strong passwords made of 3 random words... as they were advised at their training day. Business continues as usual. Without the appropriate training, it could've been disastrous.",
+                    "scoredelta": 1000,
+                    "type": "Organised APT",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Like many people, a number of employees use the same password for their VPN as they use for other websites. After a data dump on one of these websites, someone is able to use the employee's password to log in via the VPN. You discover that all your accounts have been emptied, and all contracts cancelled. Your business is no more. Frankly, it's a wonder how it survived this long.",
+                    "scoredelta": -1000,
+                    "type": "Organised APT",
+                    "image": "/relative/image/path",
+                    "Stat": "More than 11 Billion online accounts have been compromised, including passwords. (haveibeenpwned.com)",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Asset Audit",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "The entire infrastructure is thoroughly assessed for unknown assets and associated vulnerabilities.",
+        "longdesc": "A cybersecurity asset audit acts as a checklist, thoroughly assessing the infrastructure of an organisation, checking for vulnerabilities. This will also ensure they are adhering to regulations and policies regarding their cybersecurity, and so it is important these audits are carried out regularly. The audits are usually carried out by a third party, in order to ensure there is no bias, or conflict of interest. The assets audited include: control systems, networking equipment, storage hardware, data acquisition systems, and any other assets that may be deemed vulnerable. It’s recommended that an audit is carried out at least annually, however, this will vary hugely depending on an organisation’s size, budget, risk appetite (willingness to take risk), etc.",
+        "outlink": "https://www.versify.com/how-do-i-define-a-cyber-security-asset/",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 18,
+                    "type": "Hacker",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Somehow, some of your sensitive files have ended up for sale on the dark web. The resulting ICO investigation discovers that access to these files was gained via your servers. They decide to fine you £17,500, due to breaching Principle 6 of the General Data Protection Regulations.",
+                    "scoredelta": -18,
+                    "type": "Hacker",
+                    "image": "/relative/image/path",
+                    "Stat": "Between July 2018 and August 2021 more than 1 Billion Euros have been paid in fines for violating GDPR.",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Your company decides to explore Industrial Internet of Things (IIoT), so they invest in sensors to help ensure that the generator runs smoothly. The engineers install these sensors, without informing the security department, and they also do not realise that these sensors are still configured to connect to the Internet. Fortunately, the security department performs an asset audit – they find the sensors and configure them correctly. The sensors are disconnected from the Internet, and no one outside of the company can modify them.",
+                    "scoredelta": 50,
+                    "type": "Hacker",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Your company decides to explore Industrial Internet of Things (IIoT), so they invest in sensors to help ensure that the generator runs smoothly. The engineers install these sensors, without informing the security department, and they also do not realise that these sensors are still configured to connect to the Internet. A cyber enthusiast, using Shodan.io, is able to easily connect to these new sensors, and mess around with the readings. The plant shuts down for 10 hours, whilst the teams figure out what was wrong, and resolve the issue. Consequently, the company suffers a loss in revenue of £50,000.",
+                    "scoredelta": -50,
+                    "type": "Hacker",
+                    "image": "/relative/image/path",
+                    "Stat": "Devices being added to an ICS network is the biggest concern for ICS organisations. (SANS 2019)",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
+                    "scoredelta": 1000,
+                    "type": "Hacker",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "After spending the last 3 years randomly guessing what security you've needed, you finally realise that you should’ve assessed your vulnerabilities! Unfortunately, this epiphany comes far too late. Multiple weaknesses have been exploited – all your data has been extracted, your computers locked and your SCADA controller jammed, causing your turbines to permanently stop. You've not only let your company and all your staff down, you've let yourself down.",
+                    "scoredelta": -1000,
+                    "type": "Hacker",
+                    "image": "/relative/image/path",
+                    "Stat": "90% of ICS organisations have limited to no visability into their ICS networks and so do not have a good understanding of their assets. (Dragos 2020 Review)",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Antivirus",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A recent, decent professional antivirus from a reputable provider is installed on the hosts.",
+        "longdesc": "Antivirus software is a basic cybersecurity tool. It runs in the background, detecting and dealing with viruses, worms, trojans, adware, ransomware, etc. These programs will have multiple layers of security – this is necessary considering the power of some malware nowadays. This software may be installed on computers, servers, etc. Antivirus will use numerous techniques: Virus definitions – matching a threat to a database of known virus signatures, to identify it; Heuristic detection – detecting virus families even if there is no existing signature; Behavioural blocking – identifying suspicious behaviour through key strokes, modifying files, etc; Sandbox detection – testing programs in a separate virtual environment, before running on the actual system.",
+        "outlink": "https://www.malwarefox.com/how-antivirus-works/",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "It's a good job that you've got one of the basic forms of protection in early. Although you don't realise it, your antivirus stops a ransomware from infecting your systems. You've just saved the company a lot of work and money.",
+                    "scoredelta": 5,
+                    "type": "Script Kiddie",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "A ransomware has somehow made its way onto your networks. All computers at your plant and office have been locked. You decide to pay the ransom, a total of £5,000. Luckily, this unlocks all the computers and you get all your data back. However, this has lost the company £5,000.",
+                    "scoredelta": -5,
+                    "type": "Script Kiddie",
+                    "image": "",
+                    "Stat": "Between January 2018 and October 2020, the number of Ransomware incidents in industrial companies have increased over 500%. (Dragos Ransomware)",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "After a lot of negative publicity from when you were the victim of a ransomware, your new antivirus software has been working extra hard. You seem to have become a target for a lot of attacks. Your decision to install antivirus was clearly a wise choice.",
+                    "scoredelta": 50,
+                    "type": "Script Kiddie",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "With word spreading on the dark web that you were the victim of a ransomware virus, you are again victim to ransomware. A 13-year-old decides to test his skills, and successfully launches an attack on your systems. Although the suspect is arrested and found guilty, the negative news story results in your company’s share price falling by 50%. This also loses you £50,000 in yearly revenue.",
+                    "scoredelta": -50,
+                    "type": "Script Kiddie",
+                    "image": "/relative/image/path",
+                    "Stat": "36% of Ransomware attacks were performed on manufacturing organisations and 10% were on utility companies. (Dragos Ransomware)",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "After a lot of negative publicity from the last two years of ransomware attacks, your new antivirus has been working extra hard. You seem to have become the target of many attacks. Your decision to install an antivirus was clearly a wise choice. If only you had done this earlier!",
+                    "scoredelta": 1000,
+                    "type": "Script Kiddie",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "With your lack of security being common knowledge on the dark web, you become a target for people wanting to test their hacking skills. Your systems are attacked almost daily – your computers and SCADA controller are locked by hackers. Your business can't continue, and you are forced to shut down for good.",
+                    "scoredelta": -1000,
+                    "type": "Script Kiddie",
+                    "image": "/relative/image/path",
+                    "Stat": "Only 53% of OT networks either use antivirus or log analysis. (SANS 2019)",
+                    "causes-end": true
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Networking Monitoring (Plant)",
+        "location": "Plant",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
+        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
+        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Security Training",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
+        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
+        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Security Training",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
+        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
+        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Security Training",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
+        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
+        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Security Training",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
+        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
+        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Security Training",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
+        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
+        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Security Training",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
+        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
+        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            },
+            {
+                "installed": {
+                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
+                    "scoredelta": 500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
+                    "scoredelta": -500,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+]
