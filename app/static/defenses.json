@@ -455,69 +455,749 @@
             },
             {
                 "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
-                    "scoredelta": 500,
+                    "text": "The plant firewall intercepts a number of scanning attempts from all over the world. Apparently, there are people out there very interested in knowing more about your plant. A failure to install a plant firewall would have cost you £150,000.",
+                    "scoredelta": 150,
                     "type": "Researcher",
                     "image": "/relative/image/path",
                     "Stat": "",
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
-                    "scoredelta": -500,
+                    "text": "The white hat Information Security student is bored one day, and decides to see if you now have basic cyber security at your plant. They're astounded to see that you still don't have a firewall installed. They report you directly to Ofgem. Ofgem inform you that they consider your previous breach as an aggravating factor. They decide to issue you a fine of £150,000 under Section 18 in the NIS regulations. They warn you that any further breaches that may cause disruption to the service, will not be tolerated.",
+                    "scoredelta": -150,
                     "type": "Researcher",
                     "image": "/relative/image/path",
-                    "Stat": "",
+                    "Stat": "100% of attackers accessed the ICS network from the internet. (Dragos 2020)",
                     "causes-end": false
                 }
             },
             {
                 "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
-                    "scoredelta": 500,
+                    "text": "The plant firewall intercepts a number of scanning attempts from all over the world. Apparently, there are people out there very interested in knowing more about your plant. You don't realise it, but your decision to finally install a firewall has just saved your company.",
+                    "scoredelta": 1000,
                     "type": "Hacker",
                     "image": "/relative/image/path",
                     "Stat": "",
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
-                    "scoredelta": -500,
+                    "text": "Overnight, your SCADA controller makes your turbines spin faster and faster until eventually they explode, killing people close by. Not only does your business close for good, but you are held responsible and are found guilty of corporate manslaughter. It is discovered during the investigation that over three years, you have failed to install a plant firewall, despite numerous previous warnings.",
+                    "scoredelta": -1000,
+                    "type": "Hacker",
+                    "image": "/relative/image/path",
+                    "Stat": "43% of industrial organisations use firewalls inside their network OT network as well as at the boundary. (SANS 2019)",
+                    "causes-end": true
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "CCTV (Office)",
+        "location": "Office",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "Surveillance camera and alarms that will automatically warn security guards of an intrusion.",
+        "longdesc": "CCTV (closed circuit television) offers excellent physical security to a business. Simply having CCTV installed is a deterrent to (cyber)criminals. Having a camera watching equipment and employees at all times would certainly be useful were something bad to happen. For example, if someone plugged a malware-infested USB into a computer (maliciously or not), CCTV would be a simple way to identify said person, and at what time the incident occurred. Or, if the system for a piece of machinery was under a cyberattack and began malfunctioning, the CCTV would catch this, in case an employee was not present.",
+        "outlink": "",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Firewall (Office)",
+        "location": "Office",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A software and hardware solution that monitors and filters unauthorised traffic coming from the Internet to the office network.",
+        "longdesc": "A firewall is either hardware (device between network and gateway), or software (program installed on a device), though it is obviously more effective to implement both. It monitors all incoming/outgoing traffic on a network, when it goes through the ports. It will then allow through, or discard these packets, depending on the rules specified. These rules will vary depending on the organisation, household, etc. There are various types of firewalls: packet-filtering, next generation, proxy, NAT, and stateful multilayer inspection.",
+        "outlink": "https://www.forcepoint.com/cyber-edu/firewall",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "A sudden surge of traffic is detected, as a number of machines from all around the world are trying to flood your office network with requests. Fortunately, your network administrator can quickly update the filtering rules of the office firewall, and the DDoS attack does not cause much disruption.",
+                    "scoredelta": 15,
+                    "type": "Script Kiddie",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "A bored script kiddie decided to practice hacking by trying to hack into your company. She can’t believe how easy it is, and that a company like yours doesn’t have an office firewall! Unfortunately, she's a future black hat and decides to intercept payment request emails to your providers using a Remote Access Trojan. She ends up committing a mandate fraud of £15,000. She prevents you from seeing this by launching a DDOS attack as a “smoke screen”. Without a firewall in place, there is nothing you can do about it.",
+                    "scoredelta": -15,
+                    "type": "Script Kiddie",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "A sudden surge of traffic is detected, as a number of machines from all around the world are trying to flood your office network with requests. Fortunately, your network administrator can quickly update the filtering rules of the office firewall, and the DDoS attack does not cause much disruption. You have just prevented the script kiddie from taking your biggest contract of the year.",
+                    "scoredelta": 100,
+                    "type": "Script Kiddie",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "The same script kiddie can't believe her luck. She's still able to hack into your system. This time she waits for a big contract before committing mandate fraud. Unfortunately for you, it is one of your biggest contracts for the year, of £100,000.",
+                    "scoredelta": -100,
+                    "type": "Script Kiddie",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "A sudden surge of traffic is detected, as a number of machines from all around the world are trying to flood your office network with requests. Fortunately, your network administrator can quickly update the filtering rules of the office firewall, and the attack does not cause much disruption. It would’ve been disastrous had you not had a firewall in place.",
+                    "scoredelta": 1000,
+                    "type": "Script Kiddie",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "You have successfully made someone a millionaire. The script kiddie has been living off your terrible decision making for the last year. She has managed to commit mandate fraud on over 20 different contracts this year, costing you millions of pounds. Unsurprisingly, you can't afford to lose this kind of business, and your company goes bankrupt. Your professional reputation is in tatters.",
+                    "scoredelta": -1000,
+                    "type": "Script Kiddie",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Network Monitoring (Office)",
+        "location": "Office",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "This big, shiny piece of bleeding-edge technology is quite expensive but also very effective.",
+        "longdesc": "Network monitoring is exactly what it says – monitoring the network. Software or hardware can be installed to keep track of activity on a network, including response time, uptime and availability. The monitoring allows organisations to see how the network behaves regularly, so if there is an unusual change in activity, they can quickly identify any failures or issues, such as cyberattacks. Hence, they can resolve the issue with minimal disruption. Network monitoring offers further benefits such as reducing manual work for IT staff, and highlighting parts of the network infrastructure that may need changing or upgrading.",
+        "outlink": "https://www.cisco.com/c/en/us/solutions/automation/what-is-network-monitoring.html#~benefits",
+        "prerequisite": -1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Having been fired from your company, an ex-employee has accessed your system remotely.  They intend to wipe everything from your systems and bring your company crashing down around you.  Fortunately, your network monitor identified this unusual activity and you prevented this from happening.  You identify how they gained access and close the weakness. Nothing of any value is lost.",
+                    "scoredelta": 40,
+                    "type": "Ex-Employee",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Having been fired from your company, an ex-employee realises there is a vulnerability in an update for a network management software that your company uses, and exploits it. They wipe as much data as they can, trying to bring your company crashing down around you. Fortunately, they're only partly successful. They wipe significant amounts of data but miss the chance to wipe out business critical data. This results in a combination of business and operational consequences, and costs you £40,000.",
+                    "scoredelta": -40,
+                    "type": "Ex-Employee",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Database Encryption",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "Military-grade, proven encryption mechanism for all databases.",
+        "longdesc": "Encrypting the 'data at-rest' in a database adds a layer of security – a decryption key is needed to access the data. This key is stored elsewhere, not on the same server. Furthermore, data protection is becoming increasingly important these days. Although organisations are not explicitly required to encrypt their data, GDPR states they should have “security measures and safeguards” in order to protect personal data. A database’s job is to store data. Hence, it should be adequately secure, should a cyberattacker attempt to gain access to it. If the attacker does gain access to the data, they may use it for ransom, sell the data, etc.",
+        "outlink": "https://severalnines.com/database-blog/database-encryption-why-and-where-you-need-have-data-encryption",
+        "prerequisite": 1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "You discover that someone has managed to gain access to your databases. They’ve stolen customers’ personal data. You correctly record the breach in your data breach log. Fortunately, all your data was encrypted so the breach doesn't pose a high risk of adversely affecting individuals’ rights and freedom. This means that you don't have to inform the ICO or the data subjects. You have just prevented massive reputational damage to your company.",
+                    "scoredelta": 70,
+                    "type": "Competitor",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Throughout the year, your main competitor has been winning every contract that they've bid for, by undercutting you by minimal amounts. It's as if they know what some of your sensitive data says… You have lost £70,000 in sales over the year.",
+                    "scoredelta": -70,
+                    "type": "Competitor",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "You discover that someone has managed to gain access to your databases. They have stolen customers’ personal data. You correctly record the breach in your data breach log. Fortunately, all your data was encrypted so the breach doesn't pose a high risk of adversely affecting individuals’ rights and freedom. This means that you don't have to inform the ICO or the data subjects. You have just prevented massive reputational damage to your company.",
+                    "scoredelta": 1000,
+                    "type": "Nationstate",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "A staff member decided that he can make more money by stealing from you than working for you. One day, they install a pen drive in one of your databases, stealing all your unencrypted data. This makes headline news, and the resulting reputational damage is catastrophic. To add salt to the wound, the ICO fine you £2 million for a breaching Principle 6 of the GDPR. With a loss like this, your company goes bust.",
+                    "scoredelta": -1000,
+                    "type": "Malicious Insider",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "PC Encryption",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "Military grade, proven encryption mechanism for the hard drives of all PCs.",
+        "longdesc": "Encrypting the data on PCs adds a layer of security – a decryption key is needed to access the data. Many PCs will come with encryption built-in, however paying for encryption may offer further, enhanced security. PC encryption encompasses file encryption, as well as 'data in-transit'. When data is travelling within and to other devices, it must be protected, to avoid cyberattackers stealing or altering the data. This could be through a man-in-the-middle attack, for example, where an attacker intrudes on communication between two parties, either to listen or alter the data. To protect data in-transit, the data will be encrypted, transferred, and then decrypted at its destination.",
+        "outlink": "https://www.lepide.com/blog/5-benefits-of-using-encryption-technology-for-data-protection/",
+        "prerequisite": 1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "PC Upgrade",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A brand new, up-to-date OS and software suite for all Computers.",
+        "longdesc": "Upgrading PCs will provide benefits in numerous areas, especially security. PCs nowadays are designed with security as a priority, due to the increasing prevalence of cyberattacks. They come with built-in security features. New PCs will also be more compatible with current cybersecurity products, and support for this upgraded hardware will be more available. With older systems being more vulnerable, unstable and unreliable, the cost of fixing these issues as they arise (instead of upgrading), may rack up hugely.",
+        "outlink": "",
+        "prerequisite": 1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "You upgrade all your PCs, which also includes updates on all security patches. This prevents a member of staff from elevating their access privileges and causing havoc with the management's email system. Your decision to patch has just saved you £50,000.",
+                    "scoredelta": 50,
+                    "type": "Malicious Insider",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "An employee with a particular dislike for the management has used one of the known vulnerabilities in your PCs’ operating system to elevate their access privileges. They get access to the management's email systems and send out abusive emails to all your customers. This costs you £50,000 in sales.",
+                    "scoredelta": -50,
+                    "type": "Malicious Insider",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Controller Upgrade",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "Software patches and an update to the firmware of the SCADA controller.",
+        "longdesc": "Upgrading the SCADA controller’s firmware may offer benefits to an organisation in many areas, including their cybersecurity. As the SCADA system is what controls all PLCs, it’s vital that this system functions well and is secure. These types of systems are closely observed and researched, as they form a part of critical national infrastructure. It has been shown that, over time, the controllers degrade, and vulnerabilities are found. In newer controllers, these vulnerabilities have been secured, there is more support available for issues and the overall cybersecurity is generally more effective.",
+        "outlink": "",
+        "prerequisite": 1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Server Upgrade",
+        "location": "Both",
+        "image": "🔥",
+        "cost": 30000,
+        "shortdesc": "A brand new, up-to-date OS, web server and database management system.",
+        "longdesc": "Upgrading servers will improve both efficiency and security. Technology is constantly evolving –upgrading servers will provide more storage, less downtime, etc. Cyberattacks are also becoming more prevalent and powerful. Nowadays, new server technology takes this into account, by building in features that will help to prevent/minimise the risk of cyberattacks. Increasing the cybersecurity of a system is known as system hardening. This may include: encryption for communication, removal of unnecessary software, updating operating systems, strong password complexity, intrusion detection systems and data back-ups.",
+        "outlink": "https://www.nerdstogo.com/benefits-of-upgrading-servers-and-hardware/",
+        "prerequisite": 1,
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Unbeknownst to you, a group known to protest for green power attacks your server. Apparently, they believe that your turbines create a lot of pollution. Thanks to your upgraded server, they are unable to deface your website as planned. They give up trying to get through your strong security and decide to attack an easier target, which turns out to be your main competitor! What a good result!",
+                    "scoredelta": 65,
+                    "type": "Hacktivist",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "A group known to protest for green power attack your server. Apparently, they believe that your turbines create a lot of pollution. They have defaced your website by posting some very unpleasant things. The resulting loss of reputation and sales amounts to £65,000.",
+                    "scoredelta": -65,
+                    "type": "Hacktivist",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "As servers are the usual way for hackers to target your system, it's a good job that you've finally upgraded them. The consequences of not doing this could've been disastrous.",
+                    "scoredelta": 1000,
+                    "type": "Hacker",
+                    "image": "/relative/image/path",
+                    "Stat": "",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "Due to the weaknesses in your server, someone can remotely log in. They steal all your files and the key to unencrypt your data. You fail to notify the data subjects without undue delay and the regulators, within the 72 hour time limit, as specified in the Data Protection Act. The resulting investigation uncovers that you have previously had weaknesses identified with you server, which you failed to act upon. The ICO decide to make an example of you and fine you £5 million. This fine, in combination with the lost files and negative publicity, causes you to permanently shut down. It's unlikely that you'll ever work in a senior role again.",
+                    "scoredelta": -1000,
                     "type": "Hacker",
                     "image": "/relative/image/path",
                     "Stat": "",
                     "causes-end": true
                 }
-            },
-            {
-                "installed": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                }
             }
         ]
     },
     {
-        "id": 1,
-        "name": "Security Training",
+        "id": 14,
+        "name": "Threat Assessment",
         "location": "Both",
         "image": "🔥",
         "cost": 30000,
-        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
-        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
-        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
+        "shortdesc": "Reveals existing threats to the company, the attack vectors they use, and the possible effects of their attacks.",
+        "longdesc": "A threat assessment provides details of any existing threats to an organisation. After this, a risk management plan may be created, taking into account the vulnerabilities discovered. High-value data is identified, such as customer/staff information, patented/secret data, information that may damage reputation, etc. Assets analysed include: software/hardware, IT policies, network architecture, data storage, environmental/physical security controls, etc. The organisation must also realise that, although external threats can be menacing, often there are internal threats, intentional or unintentional, that can cause them a great deal of damage. Hence, the risk management plan resulting from the threat assessment may suggest: data handling policies, security training, disaster recovery procedures, etc.",
+        "outlink": "https://cybersecuritykings.com/2020/03/23/10-tips-for-a-cyber-threat-and-risk-assessment/",
         "prerequisite": -1,
         "consequences": [
             {
@@ -540,54 +1220,54 @@
             },
             {
                 "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
                     "Stat": "",
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
                     "Stat": "",
                     "causes-end": false
                 }
             },
             {
                 "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
                     "Stat": "",
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
                     "Stat": "",
-                    "causes-end": true
+                    "causes-end": false
                 }
             },
             {
                 "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
                     "Stat": "",
                     "causes-end": true
                 },
                 "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
                     "Stat": "",
                     "causes-end": true
                 }
@@ -595,14 +1275,14 @@
         ]
     },
     {
-        "id": 1,
-        "name": "Security Training",
+        "id": 9,
+        "name": "Network Segmentation",
         "location": "Both",
         "image": "🔥",
         "cost": 30000,
-        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
-        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
-        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
+        "shortdesc": "Restricts or even stops traffic flow between the Office, Plant and Safety System to make it harder for attackers to move around the network.",
+        "longdesc": "In ICS environments, network and device segmentation is important for security. It’s a security measure that prevents a hacker from easily travelling through a network. Without system segmentation, if a hacker gains access to the system, they have the potential to “hack their way” through. However, by separating the systems, physically or logically, the hacker can no longer travel between sections of the network. At the very minimum, the OT network of a hydroplant should be separated from the corporate IT network. But this separation should ideally go further. The network that runs the business-as-usual processes may be separated from their back-up systems – so should the hacker gain access and interfere with the main systems, the back-up systems can protect these processes. This could save the organisation from a lot of damage.",
+        "outlink": "https://www.missionsecure.com/blog/industrial-control-system-ics-security-and-segmentation",
         "prerequisite": -1,
         "consequences": [
             {
@@ -625,17 +1305,35 @@
             },
             {
                 "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "Stat": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Implementing network segmentation greatly reduces the number of ways someone can gain access to an ICS network. This stops a curious employee from being able to do damage in the plant network.",
+                    "scoredelta": 70,
+                    "type": "Malicious Insider",
                     "image": "/relative/image/path",
                     "Stat": "",
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
+                    "text": "A mischievous employee starts messing around on the enterprise network and works his way onto the ICS network. They find a HMI, and play with some of the variables. Luckily, an operator notices and stops this before too much damage is caused. The loss of revenues costs the company £27,000. Segmenting the ICS network and enterprise network helps prevent giving people easy access to the ICS network.",
+                    "scoredelta": -27,
+                    "type": "Malicious Insider",
                     "image": "/relative/image/path",
                     "Stat": "",
                     "causes-end": false
@@ -643,34 +1341,16 @@
             },
             {
                 "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": true
-                }
-            },
-            {
-                "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
-                    "scoredelta": 500,
+                    "text": "After noticing how easy it is to gain to the ICS network from the enterprise network, you decide to segregate it. Whilst doing this, you segregate the ICS and SIS networks to ensure that your safety backup remains protected as well. This is a good idea – a nation state gains access to the ICS and performs an attack, disrupting the plant. However, as the SIS is protected, an overflow pipe opens up, preventing a lot of damage. It would have been much worse if you hadn't segmented your network.",
+                    "scoredelta": 185,
                     "type": "Nationstate",
                     "image": "/relative/image/path",
                     "Stat": "",
                     "causes-end": true
                 },
                 "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
-                    "scoredelta": -500,
+                    "text": "Having previously accessed your office network and moved into the plant network, the nation state knows that the safety system will automatically stop the water flowing into the plant too quickly. They can easily shut down this system, as it is not segmented from the ICS network. A few weeks later, after a storm, the water flows too quickly for the turbine, leading to a turbine malfunction. This damage and the loss of revenue costs the company is £185,000.",
+                    "scoredelta": -185,
                     "type": "Nationstate",
                     "image": "/relative/image/path",
                     "Stat": "",
@@ -680,14 +1360,14 @@
         ]
     },
     {
-        "id": 1,
-        "name": "Security Training",
-        "location": "Both",
-        "image": "🔥",
-        "cost": 30000,
-        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
-        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
-        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
+        "id": 16,
+        "name": "",
+        "location": "",
+        "image": "",
+        "cost": 0,
+        "shortdesc": "",
+        "longdesc": "",
+        "outlink": "",
         "prerequisite": -1,
         "consequences": [
             {
@@ -710,71 +1390,22 @@
             },
             {
                 "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
+                    "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018.",
+                    "scoredelta": 0,
+                    "type": "3rd Party",
+                    "image": "",
                     "Stat": "",
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
+                    "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018.",
+                    "scoredelta": 0,
+                    "type": "3rd Party",
+                    "image": "",
                     "Stat": "",
                     "causes-end": false
                 }
             },
-            {
-                "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": true
-                }
-            },
-            {
-                "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": true
-                },
-                "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": true
-                }
-            }
-        ]
-    },
-    {
-        "id": 1,
-        "name": "Security Training",
-        "location": "Both",
-        "image": "🔥",
-        "cost": 30000,
-        "shortdesc": "A quick yet thorough one-day introduction on security essentials for all employees.",
-        "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
-        "outlink": "https://www.efrontlearning.com/blog/2019/03/cyber-security-training-for-employees-101.html",
-        "prerequisite": -1,
-        "consequences": [
             {
                 "installed": {
                     "text": "",
@@ -795,54 +1426,18 @@
             },
             {
                 "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 2nd day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 2nd day!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": false
-                }
-            },
-            {
-                "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 3rd day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this by the 3rd day!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": true
-                }
-            },
-            {
-                "installed": {
-                    "text": "Oh look you mitigated this because you installed this before/on the 4th day!",
-                    "scoredelta": 500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
                     "Stat": "",
                     "causes-end": true
                 },
                 "notinstalled": {
-                    "text": "Oh no a very bad thing has happened because you didn't install this at all!",
-                    "scoredelta": -500,
-                    "type": "Nationstate",
-                    "image": "/relative/image/path",
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
                     "Stat": "",
                     "causes-end": true
                 }
