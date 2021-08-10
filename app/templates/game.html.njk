@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="styles/card.css" type="text/css">
 <link rel="stylesheet" href="styles/modal.css" type="text/css">
 <link rel="stylesheet" href="styles/dragdrop.css" type="text/css">
-<link rel="stylesheet" href="styles/playbutton.css" type="text/css">
+<link rel="stylesheet" href="styles/infoarea.css" type="text/css">
 {% endblock %}
 
 {% block content %}
@@ -36,10 +36,13 @@
                 <div id="stagedrag" class="dragspace droppable" ondrop="drop(event)" ondragover="allowDrop(event)">
                     <span class="dragspacetext">Drag cards here</span>
                 </div>
-                <button id="playbutton">
-                    <p id="playbuttontext">Play</p>
-                    <p id="playbuttoncost">£100,000</p>
-                </button>
+                <div id="infoarea">
+                    <p class="infotext">Funds remaining:</p>
+                    <p id="budget" class="infotext">£100,000</p>
+                    <button id="playbutton">
+                        <p id="playbuttontext">Play</p>
+                    </button>
+                </div>
             </div>
         </div>
         <div id="rightcol" class="column">
@@ -51,7 +54,6 @@
     {% for card in defences %}
     <div id="{{ 'card' + card.id + 'modal' }}" class="modal cardmodal">
         <div class="cardmodalcontent">
-            <span class="closemodal">&times;</span>
             <p class="big-card-title">{{ card.name }}</p>
             <p class="big-card-image">{{ card.image }}</p>
             <p class="big-card-cost">{{ '£' + card.cost | moneycomma }}</p>

@@ -26,9 +26,9 @@ function stagecard(idno) {
     modal.getElementsByClassName("togglestage")[0].innerHTML = "Remove card";
     let source = document.getElementById("card" + idno);
     document.getElementById("stageddeck").appendChild(source);
+    recalculatecost();
 }
 
-//
 function unstagecard(idno) {
     console.log("[-] Unstaging card " + idno);
     cardpositionmaster[idno] = "unstaged";
@@ -37,4 +37,5 @@ function unstagecard(idno) {
     modal.getElementsByClassName("togglestage")[0].innerHTML = "Play card";
     let source = document.getElementById("card" + idno);
     document.getElementById("unstageddeck").appendChild(source);
+    recalculatecost();
 }
