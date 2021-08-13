@@ -12,7 +12,7 @@
   height: 100%; /* Full height */
   overflow: hidden;
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.85); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -32,30 +32,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-}
-
-/* Modal Content/Box */
-.infomodalcontent {
-  background-color: var(--bg-dark-colour);
-  margin: 5% auto; /* 15% from the top and centered */
-  padding: 0;
-  border: 1px solid var(--text-colour);
-  width: 80%; /* Could be more or less, depending on screen size */
-  height: 80%;
-  overflow-y: scroll;
-  -webkit-animation-name: modalin;
-  animation-name: modalin;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
-}
-
-.modalheader {
-  background-color: var(--red-colour);
-  padding: 20px;
-}
-
-.modalbody {
-  padding: 20px;
 }
 
 @-webkit-keyframes modalin {
@@ -80,39 +56,7 @@
   }
 }
 
-/* Big card elements */
-.big-card-title {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 2rem 10px auto;
-  padding: 0;
-}
-
-.big-card-image {
-  font-size: 8rem;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.big-card-cost {
-  color: var(--green-colour);
-  font-style: italic;
-  font-weight: bold;
-  font-size: 2rem;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.big-card-shortdesc {
-  font-size: 1.2rem;
-}
-
-.big-card-longdesc {
-  font-size: 1rem;
-  font-style: italic;
-}
-
-.big-card-links {
+.modallinkspace {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,14 +93,73 @@
 .modallink:hover {
   background-color: var(--emph-b-colour);
 }
+
+/* Big card elements */
+.big-card-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2rem 10px auto;
+  padding: 0;
+}
+
+.big-card-image {
+  font-size: 8rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.big-card-cost {
+  color: var(--green-colour);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.big-card-shortdesc {
+  font-size: 1.2rem;
+}
+
+.big-card-longdesc {
+  font-size: 1rem;
+  font-style: italic;
+}
+
 /* Info elements */
-.info-header {
+.infomodalcontent {
+  background-color: var(--bg-header-colour);
+  margin: 5rem auto;
+  padding: 0;
+  border: 0;
+  width: 70%; /* Could be more or less, depending on screen size */
+  -webkit-animation-name: modalin;
+  animation-name: modalin;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  text-align: center;
+}
+
+.modalheader {
+  background-color: var(--red-colour);
+  padding: 20px;
+}
+
+.modalbody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-header-text {
   font-weight: bold;
   font-size: 3rem;
   margin: 0;
 }
 
-.info-body {
+.info-body-text {
   font-size: 1.2rem;
   font-style: italic;
 }

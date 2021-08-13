@@ -59,5 +59,5 @@ function endgame() {
     // Modals etc
 
     // Placeholder
-    alert("Game over");
+    document.getElementById("endgamemodal").style.display = "block";    
 }

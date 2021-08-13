@@ -8,19 +8,19 @@ function showmodal(idno) {
 }
 
 function closeallmodals() {
-    const cardmodals = document.getElementsByClassName("cardmodal");
-    const consequencemodal = document.getElementById("consequencemodal");
+    const modals = document.getElementsByClassName("modal");
 
-    for (let i = 0; i < cardmodals.length; i++) {
-        cardmodals[i].style.display = "none";
+    for (let i = 0; i < modals.length; i++) {
+        modals[i].style.display = "none";
     }
-    //consequencemodal.style.display = "none";
     console.log("[-] All modals hidden.");
 }
 
 // Close modals if they're clicked off
+// This only closes cardmodals - forces buttonclick to advance from
+// consequences as I kept accidentally skipping them
 window.onclick = function (event) {
-    if (event.target.classList.contains("cardmodal") || event.target.id == "consequencemodal") {
+    if (event.target.classList.contains("cardmodal")) {
         closeallmodals();
     }
 }
