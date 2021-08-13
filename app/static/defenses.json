@@ -1,5 +1,5 @@
-[
-    {
+{
+    "0" :{
         "id": 0,
         "name": "Security Training",
         "location": "Both",
@@ -17,6 +17,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -25,6 +28,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -35,6 +41,9 @@
                     "type": "Organised APT",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -42,7 +51,10 @@
                     "scoredelta": -20,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "Spearphishing is used by 2/3 of advanced persistant threat groups. (Dragos 2020 Review)",
+                    "Stat": "Spearphishing is used by 2/3 of advanced persistant threat groups.",
+                    "Stat-Source": "https://hub.dragos.com/2020-year-in-review-report",
+                    "Example": "Energy sector in Azerbaijan (2019,2020) - An APT used Spearphishing to get victims to download a malicious Word document, these then lead to the group being able to spy on the government.",
+                    "Example-Source": "https://cyware.com/news/method-in-madness-targeted-cyberattacks-hit-azerbaijan-dc48d301/",
                     "causes-end": false
                 }
             },
@@ -53,6 +65,9 @@
                     "type": "Organised APT",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -60,7 +75,10 @@
                     "scoredelta": -150,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "Phishing is a contributing factor in 90% of data breaches. (Cisco)",
+                    "Stat": "Phishing is a contributing factor in 90% of data breaches.",
+                    "Stat-Source": "https://learn-umbrella.cisco.com/ebook-library/2021-cyber-security-threat-trends-phishing-crypto-top-the-list",
+                    "Example": "UK energy firm (2019) - Criminals used DeepFake  software to fake their CEOs voice to demand €220,000 be sent to a fraudulent account. ",
+                    "Example-Source": "https://www.wsj.com/articles/fraudsters-use-ai-to-mimic-ceos-voice-in-unusual-cybercrime-case-11567157402",
                     "causes-end": false
                 }
             },
@@ -71,6 +89,9 @@
                     "type": "Organised APT",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -78,13 +99,16 @@
                     "scoredelta": -1000,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "More than 11 Billion online accounts have been compromised, including passwords. (haveibeenpwned.com)",
+                    "Stat": "More than 11 Billion online accounts have been compromised, including passwords.",
+                    "Stat-Source": "https://haveibeenpwned.com/",
+                    "Example": "French TV network (2015) - A group (Suspected to be Russian) took control over a french TV network for a few hours. The suspected method of intrusion is that they braodcast some of their passwords during an interview.",
+                    "Example-Source": "https://arstechnica.com/information-technology/2015/04/hacked-french-network-exposed-its-own-passwords-during-tv-interview/",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "1": {
         "id": 1,
         "name": "Asset Audit",
         "location": "Both",
@@ -102,6 +126,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -110,6 +137,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -120,6 +150,9 @@
                     "type": "Hacker",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -128,6 +161,9 @@
                     "type": "Hacker",
                     "image": "/relative/image/path",
                     "Stat": "Between July 2018 and August 2021 more than 1 Billion Euros have been paid in fines for violating GDPR.",
+                    "Stat-Source": "https://www.enforcementtracker.com/?insights",
+                    "Example": "British Dental Association (2020) - More than 5,000 staff records were leaked on the dark web, including information about employee beneficiaries and payroll documents.",
+                    "Example-Source": "https://www.teiss.co.uk/british-dental-association-hack/",
                     "causes-end": false
                 }
             },
@@ -138,6 +174,9 @@
                     "type": "Hacker",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -145,7 +184,10 @@
                     "scoredelta": -50,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "Devices being added to an ICS network is the biggest concern for ICS organisations. (SANS 2019)",
+                    "Stat": "Devices being added to an ICS network is the biggest concern for ICS organisations.",
+                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
+                    "Example": "US windfarm (2017) - researchers were able to a Raspberry Pi to stop several wind farms using a single command. Fortunately this was a proof of concept and was not done maliciously.",
+                    "Example-Source": "https://www.wired.com/story/wind-turbine-hack/",
                     "causes-end": false
                 }
             },
@@ -156,6 +198,9 @@
                     "type": "Hacker",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -163,13 +208,16 @@
                     "scoredelta": -1000,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "90% of ICS organisations have limited to no visability into their ICS networks and so do not have a good understanding of their assets. (Dragos 2020 Review)",
+                    "Stat": "90% of ICS organisations have limited to no visability into their ICS networks and so do not have a good understanding of their assets.",
+                    "Stat-Source": "https://hub.dragos.com/2020-year-in-review-report",
+                    "Example": "TalkTalk (2015) - After a vulnerability in their system was posted, TalkTalk found that several groups of hackers raided their network, leading to at least £77 million in damages.",
+                    "Example-Source": "https://www.bbc.co.uk/news/uk-england-stoke-staffordshire-46264327",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "2": {
         "id": 2,
         "name": "Antivirus",
         "location": "Both",
@@ -187,6 +235,9 @@
                     "type": "Script Kiddie",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -194,7 +245,10 @@
                     "scoredelta": -5,
                     "type": "Script Kiddie",
                     "image": "",
-                    "Stat": "Between January 2018 and October 2020, the number of Ransomware incidents in industrial companies have increased over 500%. (Dragos Ransomware)",
+                    "Stat": "Between January 2018 and October 2020, the number of Ransomware incidents in industrial companies have increased over 500%.",
+                    "Stat-Source": "https://www.dragos.com/resource/ransomware-in-ics-environments/",
+                    "Example": "Chemical Distribution Company (2021) - Brenntag was infected with ransomware that encrypted and exfiltrated data from their network. They paid a $4.4 million ransom to stop the data from being leaked.",
+                    "Example-Source": "https://www.bleepingcomputer.com/news/security/chemical-distributor-pays-44-million-to-darkside-ransomware/",
                     "causes-end": false
                 }
             },
@@ -205,6 +259,9 @@
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -212,7 +269,10 @@
                     "scoredelta": -50,
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
-                    "Stat": "36% of Ransomware attacks were performed on manufacturing organisations and 10% were on utility companies. (Dragos Ransomware)",
+                    "Stat": "36% of Ransomware attacks were performed on manufacturing organisations and 10% were on utility companies.",
+                    "Stat-Source": "https://www.dragos.com/resource/ransomware-in-ics-environments/",
+                    "Example": "WannaCry (2017) - A Ransomware worm spread across the internet infecting a large number of networks ranging from banks to public transport systems. Thankfully, it was stopped after a few days but in this time it became one of the most damaging cyber attacks ever.",
+                    "Example-Source": "https://www.techrepublic.com/article/wannacry-the-smart-persons-guide/",
                     "causes-end": false
                 }
             },
@@ -223,6 +283,9 @@
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -230,7 +293,10 @@
                     "scoredelta": -1000,
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
-                    "Stat": "Only 53% of OT networks either use antivirus or log analysis. (SANS 2019)",
+                    "Stat": "Only 53% of OT networks either use antivirus or log analysis.",
+                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
+                    "Example": "Colonial Pipeline (2021) - The gasoline distribution company was attacked by ransomware, shutting down their enterprise network. However, in order to protect their buiness and possible damage to the plant network, they shut their whole network down. This mean that many Americans were affected by a gasoline shortage.",
+                    "Example-Source": "https://www.zdnet.com/article/colonial-pipeline-ransomware-attack-everything-you-need-to-know/",
                     "causes-end": true
                 }
             },
@@ -241,6 +307,9 @@
                     "type": "",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -249,12 +318,15 @@
                     "type": "",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "3": {
         "id": 3,
         "name": "Networking Monitoring (Plant)",
         "location": "Plant",
@@ -272,6 +344,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -280,6 +355,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -290,6 +368,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -298,6 +379,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -308,6 +392,9 @@
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -315,7 +402,10 @@
                     "scoredelta": -60,
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
-                    "Stat": "More than 40% of initial attack vectors in 2019 were via remote access. (SANS 2019)",
+                    "Stat": "More than 40% of initial attack vectors in 2019 were via remote access.",
+                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
+                    "Example": "Ukrainian Power Grid (2016) - During the winter of 2016, a Ukrainian substation was attacked by malware that manipulated circuit breakers in order to send commands and control the controllers to shut down the station. Leaving 200,000 people without power.",
+                    "Example-Source": "https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/",
                     "causes-end": false
                 }
             },
@@ -326,6 +416,9 @@
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -334,12 +427,15 @@
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
                     "Stat": "On average only 65% of encrypted data was restored after the ransom was paid. (Sophos Ransomware 2021)",
+                    "Stat-Source": "https://www.sophos.com/en-us/medialibrary/pdfs/whitepaper/sophos-state-of-ransomware-2021-wp.pdf?cmp=120469",
+                    "Example": "NotPetya (2017) - A ransomware that spread through password harvesting and the same vulnerability as WannaCry, what stands out about this ransomware is that even if you paid the ransom, the files were not encrypted. This has lead people to believe that it was Russia trying to cause as much damage possible to Ukrainian networks.",
+                    "Example-Source": "https://www.itpro.co.uk/malware/34381/what-is-notpetya",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "4": {
         "id": 4,
         "name": "CCTV (Plant)",
         "location": "Plant",
@@ -357,6 +453,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -365,6 +464,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -375,6 +477,9 @@
                     "type": "Organised APT",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -382,7 +487,10 @@
                     "scoredelta": -15,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "42% of security professionals do not trust their organisation's ability to secure physical access to their systems. (2018 Megatrends)",
+                    "Stat": "42% of security professionals do not trust their organisation's ability to secure physical access to their systems.",
+                    "Stat-Source": "https://edge.spiceworksstatic.com/service.client-interactive/2018/hpi/toolkit%20lp/Security-toolkit-assets/2018_Global_Cyber_Megatrends.pdf",
+                    "Example": "Ferranti Factory in Oldham (2021) - Vandals occupied the factory grounds and spray painted the factory in protest of a new military contract with the Israeli military.",
+                    "Example-Source": "https://themeteor.org/2021/02/05/israeli-company-elbit-owner-of-recently-occupied-arms-factory-in-oldham-receives-multi-million-uk-contract/",
                     "causes-end": false
                 }
             },
@@ -393,6 +501,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -401,6 +512,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -411,6 +525,9 @@
                     "type": "Organised APT",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -418,13 +535,16 @@
                     "scoredelta": -1000,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "56% of initial atttack vectors on industrial organisations are via physical access to the network. (SANS 2019)",
+                    "Stat": "Nationstate and state-sponsered parties are involved in 27% of all cyber attacks on industrial companies.",
+                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
+                    "Example": "Stuxnet (2007) - Stuxnet was the first malware to explicitly target ICS network, with the aim of a specific Iranian nuclear facility. It was successful in being able to copy the expected readings, display them back to the operators while tampering with the process.",
+                    "Example-Source": "https://www.csoonline.com/article/3218104/what-is-stuxnet-who-created-it-and-how-does-it-work.html",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "5": {
         "id": 5,
         "name": "Firewall (Plant)",
         "location": "Plant",
@@ -442,6 +562,9 @@
                     "type": "Researcher",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -449,7 +572,10 @@
                     "scoredelta": -20,
                     "type": "Researcher",
                     "image": "",
-                    "Stat": "More than 110,000 Industrial control systems are viewable on Shodan.io. (Shodan)",
+                    "Stat": "More than 110,000 Industrial control systems are viewable on Shodan.io.",
+                    "Stat-Source": "https://blog.shodan.io/trends-in-internet-exposure/",
+                    "Example": "Xzeres Wind (2015) - Researchers discovered that Xzeres wind turbines had basic vulnerabilities and were also easily accessible via Shodan.io.",
+                    "Example-Source": "https://www.vice.com/en/article/ezv8dj/some-wind-turbines-can-be-hacked-by-anyone-with-an-internet-connection",
                     "causes-end": false
                 }
             },
@@ -460,6 +586,9 @@
                     "type": "Researcher",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -467,7 +596,10 @@
                     "scoredelta": -150,
                     "type": "Researcher",
                     "image": "/relative/image/path",
-                    "Stat": "100% of attackers accessed the ICS network from the internet. (Dragos 2020)",
+                    "Stat": "100% of attackers accessed the ICS network from the internet.",
+                    "Stat-Source": "https://hub.dragos.com/2020-year-in-review-report",
+                    "Example": "Nexus Healthcare (2021) - Researchers at Armis security research were able to find a vulnerability using insecure permission settings. This vulnerability is considered one fo the most dangerous, highlighting the importance of cyber security research and vulnerability disclosure.",
+                    "Example-Source": "https://www.swisslog-healthcare.com/-/media/swisslog-healthcare/documents/customer-service/armis-documents/cve-2021-37167-bulletin---privilege-escalation.pdf?rev=20c909e5f00048838620b52471f266fc&hash=F43731C7A882EEBB5CE28DFBC75933D3",
                     "causes-end": false
                 }
             },
@@ -478,6 +610,9 @@
                     "type": "Hacker",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -485,7 +620,10 @@
                     "scoredelta": -1000,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "43% of industrial organisations use firewalls inside their network OT network as well as at the boundary. (SANS 2019)",
+                    "Stat": "43% of industrial organisations use firewalls inside their network OT network as well as at the boundary.",
+                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
+                    "Example": "Saudi Aramco (2012) - The attack stared during Ramadan, when most employees were on holiday, when malware called Shamoon that collected sensitive data and then deleted everything. This meant that the company had to use type writers, send oil without payment and bought the world's supply of hard drives.",
+                    "Example-Source": "https://money.cnn.com/2015/08/05/technology/aramco-hack/index.html",
                     "causes-end": true
                 }
             },
@@ -496,6 +634,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -504,12 +645,15 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "6": {
         "id": 6,
         "name": "CCTV (Office)",
         "location": "Office",
@@ -527,6 +671,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -535,6 +682,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -545,6 +695,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -553,6 +706,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -563,6 +719,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -571,6 +730,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -581,6 +743,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -589,12 +754,15 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "7": {
         "id": 7,
         "name": "Firewall (Office)",
         "location": "Office",
@@ -612,6 +780,9 @@
                     "type": "Script Kiddie",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -619,7 +790,10 @@
                     "scoredelta": -15,
                     "type": "Script Kiddie",
                     "image": "",
-                    "Stat": "",
+                    "Stat": "The number of DDoS attacks increased 340% between 2019 and 2020.",
+                    "Stat-Source": "https://blog.nexusguard.com/threat-report/annual-threat-report-2020",
+                    "Example": "Ukrainian Power Grid (2015) - Russian malware infected the Ukrainian power grid, leading to 230,000 people being without electricity for between 1 and 6 hours. AS part of this attack, the attackers DDoSed the call centre so that it was impossible to get information to customers.",
+                    "Example-Source": "https://www.itproportal.com/features/the-world-changing-2015-cyberattack-on-ukraines-power-grid/",
                     "causes-end": false
                 }
             },
@@ -630,6 +804,9 @@
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -637,7 +814,10 @@
                     "scoredelta": -100,
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
-                    "Stat": "",
+                    "Stat": "56% of organisations spend between 10 and 49% of their security budget on firewalls.",
+                    "Stat-Source": "https://www.firemon.com/2019-state-of-the-firewall-report/?utm_source=BusinessWire&utm_medium=PR-Organic&utm_campaign=SoFR19&utm_term=Press-Release&utm_content=7011Q000001ROhp&Salesforce_Campaign_ID=7011Q000001ROhp",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -648,6 +828,9 @@
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -655,7 +838,10 @@
                     "scoredelta": -1000,
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
-                    "Stat": "",
+                    "Stat": "95% of organisations believe that a firewall is going to be more important in the near future. (firemon 2019 firewall)",
+                    "Stat-Source": "https://www.firemon.com/2019-state-of-the-firewall-report/?utm_source=BusinessWire&utm_medium=PR-Organic&utm_campaign=SoFR19&utm_term=Press-Release&utm_content=7011Q000001ROhp&Salesforce_Campaign_ID=7011Q000001ROhp",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             },
@@ -666,6 +852,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -674,12 +863,15 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "8": {
         "id": 8,
         "name": "Network Monitoring (Office)",
         "location": "Office",
@@ -697,6 +889,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -705,6 +900,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -715,6 +913,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -723,6 +924,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -733,6 +937,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -741,6 +948,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -751,6 +961,9 @@
                     "type": "Ex-Employee",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -758,13 +971,16 @@
                     "scoredelta": -40,
                     "type": "Ex-Employee",
                     "image": "/relative/image/path",
-                    "Stat": "",
+                    "Stat": "10% of OT cyber incidents were caused by a former employee in 2019.",
+                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "9": {
         "id": 9,
         "name": "Database Encryption",
         "location": "Both",
@@ -782,6 +998,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -790,6 +1009,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -800,6 +1022,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -808,6 +1033,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -818,6 +1046,9 @@
                     "type": "Competitor",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -825,7 +1056,10 @@
                     "scoredelta": -70,
                     "type": "Competitor",
                     "image": "/relative/image/path",
-                    "Stat": "",
+                    "Stat": "10% of OT cyber incidents were caused by a competitor in 2019.",
+                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -836,6 +1070,9 @@
                     "type": "Nationstate",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -843,13 +1080,16 @@
                     "scoredelta": -1000,
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
-                    "Stat": "",
+                    "Stat": "Current employees caused 35% of all icidents in OT organisations.",
+                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "10": {
         "id": 10,
         "name": "PC Encryption",
         "location": "Both",
@@ -867,6 +1107,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -875,6 +1118,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -885,6 +1131,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -893,6 +1142,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -903,6 +1155,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -911,6 +1166,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -921,6 +1179,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -929,12 +1190,15 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "11": {
         "id": 11,
         "name": "PC Upgrade",
         "location": "Both",
@@ -952,6 +1216,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -960,6 +1227,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -970,6 +1240,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -978,6 +1251,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -988,6 +1264,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -996,6 +1275,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -1006,6 +1288,9 @@
                     "type": "Malicious Insider",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -1013,13 +1298,16 @@
                     "scoredelta": -50,
                     "type": "Malicious Insider",
                     "image": "",
-                    "Stat": "",
+                    "Stat": "More than 75% of industrial organisations have obsolete Windows systems. (CyberX 2017)",
+                    "Stat-Source": "https://cyberx-labs.com/en/risk-report-2017/",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "12": {
         "id": 12,
         "name": "Controller Upgrade",
         "location": "Both",
@@ -1037,6 +1325,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1045,6 +1336,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -1055,6 +1349,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1063,6 +1360,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -1073,6 +1373,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1081,6 +1384,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -1091,6 +1397,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -1099,12 +1408,15 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "13": {
         "id": 13,
         "name": "Server Upgrade",
         "location": "Both",
@@ -1122,6 +1434,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1130,6 +1445,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -1140,6 +1458,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1148,6 +1469,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -1158,6 +1482,9 @@
                     "type": "Hacktivist",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1165,7 +1492,10 @@
                     "scoredelta": -65,
                     "type": "Hacktivist",
                     "image": "/relative/image/path",
-                    "Stat": "",
+                    "Stat": "Of all OT incidents are caused by 17% by activists.",
+                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -1176,6 +1506,9 @@
                     "type": "Hacker",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -1183,13 +1516,16 @@
                     "scoredelta": -1000,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "",
+                    "Stat": "Failing to notify data subjects in due time has contributed to more than €18 million in fines under GDPR.",
+                    "Stat-Source": "https://gdprhub.eu/index.php?title=Welcome_to_GDPRhub",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "14": {
         "id": 14,
         "name": "Threat Assessment",
         "location": "Both",
@@ -1207,6 +1543,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1215,6 +1554,33 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018.",
+                    "scoredelta": 0,
+                    "type": "3rd Party",
+                    "image": "",
+                    "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018.",
+                    "scoredelta": 0,
+                    "type": "3rd Party",
+                    "image": "",
+                    "Stat": "Suppliers and partners are the 3rd biggest security concern in industrial organisations.",
+                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -1225,6 +1591,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1233,6 +1602,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -1243,24 +1615,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                }
-            },
-            {
-                "installed": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -1269,12 +1626,15 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             }
         ]
     },
-    {
+    "15": {
         "id": 9,
         "name": "Network Segmentation",
         "location": "Both",
@@ -1292,6 +1652,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1300,6 +1663,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -1310,6 +1676,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1318,6 +1687,9 @@
                     "type": "",
                     "image": "",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -1328,6 +1700,9 @@
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1335,7 +1710,10 @@
                     "scoredelta": -27,
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
-                    "Stat": "",
+                    "Stat": "88% of OT organisations have inadequate network segmentation.",
+                    "Stat-Source": "https://hub.dragos.com/2020-year-in-review-report",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": false
                 }
             },
@@ -1346,6 +1724,9 @@
                     "type": "Nationstate",
                     "image": "/relative/image/path",
                     "Stat": "",
+                    "Stat-Source": "",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -1353,95 +1734,13 @@
                     "scoredelta": -185,
                     "type": "Nationstate",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "causes-end": true
-                }
-            }
-        ]
-    },
-    {
-        "id": 16,
-        "name": "",
-        "location": "",
-        "image": "",
-        "cost": 0,
-        "shortdesc": "",
-        "longdesc": "",
-        "outlink": "",
-        "prerequisite": -1,
-        "consequences": [
-            {
-                "installed": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                }
-            },
-            {
-                "installed": {
-                    "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018.",
-                    "scoredelta": 0,
-                    "type": "3rd Party",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018.",
-                    "scoredelta": 0,
-                    "type": "3rd Party",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                }
-            },
-            {
-                "installed": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": false
-                }
-            },
-            {
-                "installed": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
-                    "causes-end": true
-                },
-                "notinstalled": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "Stat": "",
+                    "Stat": "Only 22% of industrial organisations physically air gap their main plant network from their safety syatems.",
+                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
+                    "Example": "",
+                    "Example-Source": "",
                     "causes-end": true
                 }
             }
         ]
     }
-]
+}
