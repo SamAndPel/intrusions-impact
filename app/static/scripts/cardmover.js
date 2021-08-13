@@ -39,3 +39,14 @@ function unstagecard(idno) {
     document.getElementById("unstageddeck").appendChild(source);
     recalculatecost();
 }
+
+function playcard(idno) {
+    console.log("[*] Playing card " + idno);
+    cardpositionmaster[idno] = "played";
+    let modalid = "card" + idno + "modal";
+    let modal = document.getElementById(modalid);
+    modal.getElementsByClassName("togglestage")[0].remove();
+    let source = document.getElementById("card" + idno);
+    document.getElementById("playeddeck").appendChild(source);
+    source.setAttribute('draggable', false);
+}

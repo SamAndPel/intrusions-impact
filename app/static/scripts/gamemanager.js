@@ -2,7 +2,10 @@
 
 let rawdata = {};
 let cardpositionmaster = {};
-let budget = 100000
+const budgeteachturn = 100000;
+const maxturns = 4;
+let turn = 0;
+let currentbudget = 0;
 
 function initialise() {
     rawdata = getJSON("defences.json");
@@ -11,6 +14,7 @@ function initialise() {
         let location = "unstaged";
         cardpositionmaster[id] = location;
     });
+    currentbudget = budgeteachturn;
     recalculatecost();
 }
 
@@ -31,7 +35,7 @@ function recalculatecost() {
         }
     }
     console.log("[+] Total cost of staged cards: " + accumulator);
-    const moneyleft = budget - accumulator;
+    const moneyleft = currentbudget - accumulator;
     document.getElementById("budget").innerHTML = moneyformat(moneyleft);
     let budgetdisplay = document.getElementById("budget");
     if (moneyleft < 0) {
@@ -45,4 +49,15 @@ function recalculatecost() {
 
 function moneyformat(val) {
     return "£" + val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function endgame() {
+    // Calculate final score
+
+    // Show final score thing
+
+    // Modals etc
+
+    // Placeholder
+    alert("Game over");
 }
