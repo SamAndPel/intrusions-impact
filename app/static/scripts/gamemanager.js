@@ -16,6 +16,7 @@ function initialise() {
     });
     currentbudget = budgeteachturn;
     recalculatecost();
+    closeallmodals();
 }
 
 function getJSON(path) {

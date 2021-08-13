@@ -3,6 +3,6 @@
 
 window.onload = function () {
     // Initialise game data structures
-    console.log("[*] Initialising game environment");
-    initialise();
+    console.log("[*] Showing intro modal");
+    document.getElementById("welcomemodal").style.display = "block";
 }
