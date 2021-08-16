@@ -7,35 +7,56 @@ function actionturn() {
     let stagedcardids = getstagedcards();
     console.log("[+] Staged cards: " + stagedcardids);
     if (validatecards(stagedcardids)) {
-        // Increment turn counter
-        turn += 1;
+        // Move played cards to the 'played' deck
+        stagedcardids.forEach(idno => {
+            playcard(idno);
+        });
 
         // RUN ANIMATION HERE
 
         // Generate consequence list
+        let conseqs = [];
+        Object.values(rawdata).forEach(card => {
+            let idno = card.id;
+            if (cardpositionmaster[idno] == "played") {
+                conseqs.push(card.consequences[turn].installed);
+            } else {
+                conseqs.push(card.consequences[turn].notinstalled);
+            }
+        });
+        // TODO: Prune empty consequences from conseqs[] data structure before continuing
+
+        // Action results of consequences on score etc
+        conseqs.forEach(cons => {
+            currentscore = currentscore + cons.scoredelta;
+        });
+        console.log("[*] Global score is now " + currentscore);
 
         // Render consequence window
+        showconsequences(conseqs);
+
+        // ONCE CONSEQUENCE WINDOW CLOSED
+        // Increment turn counter
+        turn += 1;
 
         // Should the game continue?
-        // If yes, render card locations and budget updates
-        // Else enter the endgame routine
         if (turn < maxturns) {
             // Set budget to 100k + leftover cash
             let totalcost = getcostfromidlist(stagedcardids);
             let newbudget = (currentbudget - totalcost) + budgeteachturn;
             currentbudget = newbudget;
             document.getElementById("budget").innerHTML = moneyformat(currentbudget);
-
-            // Move played cards to the 'played' deck
-            stagedcardids.forEach(idno => {
-                playcard(idno);
-            });
         } else {
+            // Subtract staged cards from budget
+            let totalcost = getcostfromidlist(stagedcardids);
+            let newbudget = (currentbudget - totalcost);
+            currentbudget = newbudget;
+            document.getElementById("budget").innerHTML = moneyformat(currentbudget);
+            // Enter endgame routine
             endgame();
         }
-
     } else {
-        alert("Over Budget!\nYour defences are too expensive and you've gone over budget - try again.");
+        alert("Over Budget!\nYour defences are too expensive - try again.");
     }
 }
 
@@ -63,3 +84,8 @@ function validatecards(stagedcards) {
     return valid;
 }
 
+// Renders a consequences modal
+showconsequences(consequencelist) {
+    console.log("[+] Consequence modal rendered, waiting for user input");
+    document.getElementById("conseqmodal").style.display = "block";
+}
