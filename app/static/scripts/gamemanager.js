@@ -1,14 +1,23 @@
 // Master game management script
 
-let rawdata = {};
-let cardpositionmaster = {};
-const budgeteachturn = 100000;
-const maxturns = 4;
-let turn = 0;
-let currentbudget = 0;
+// Define global variables
+let rawdata = {};               // Raw immutable object containing JSON data
+let cardpositionmaster = {};    // Lookup table (Card ID Number --> Position as string)
 
+const budgeteachturn = 100000;  // Funding to be allocated each turn (extra carries over)
+let currentbudget = 0;          // Current budget (including rollover)
+
+const maxturns = 4;             // Turns to run before forcing endgame (may be unneeded due to causesEnd in JSON)
+let turn = 0;                   // Current turn
+
+let currentscore = 0;           // Current score (impacted by scoredeltas)
+
+// Gets JSON and builds required data structures on game start
 function initialise() {
-    rawdata = getJSON("defences.json");
+    var request = new XMLHttpRequest();
+    request.open("GET", "defences.json", false);
+    request.send(null)
+    rawdata = JSON.parse(request.responseText);
     Object.values(rawdata).forEach(element => {
         let id = element.id;
         let location = "unstaged";
@@ -19,13 +28,8 @@ function initialise() {
     closeallmodals();
 }
 
-function getJSON(path) {
-    var request = new XMLHttpRequest();
-    request.open("GET", path, false);
-    request.send(null)
-    return JSON.parse(request.responseText);
-}
-
+// Use card posn master to calculate cost of staged cards, current budget
+// Also updates display to reflect calculated result
 function recalculatecost() {
     let accumulator = 0;
     for (const idno in cardpositionmaster) {
@@ -46,10 +50,6 @@ function recalculatecost() {
         budgetdisplay.classList.remove("underfunded");
         budgetdisplay.classList.add("funded");
     }
-}
-
-function moneyformat(val) {
-    return "£" + val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 function endgame() {

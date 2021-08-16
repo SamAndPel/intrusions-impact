@@ -5,6 +5,7 @@ function actionturn() {
     // Verify cards to be played are valid
     // All cards in staging have prerequisites played, total cost is cheap enough
     let stagedcardids = getstagedcards();
+    console.log("[+] Staged cards: " + stagedcardids);
     if (validatecards(stagedcardids)) {
         // Increment turn counter
         turn += 1;
@@ -43,7 +44,7 @@ function validatecards(stagedcards) {
 
     // Is the total cost of the staged cards less than the budget?
     let totalcost = getcostfromidlist(stagedcards);
-    if (totalcost > budget) {
+    if (totalcost > currentbudget) {
         valid = false;
     }
 
@@ -62,22 +63,3 @@ function validatecards(stagedcards) {
     return valid;
 }
 
-function getstagedcards() {
-    let c = [];
-    for (const idno in cardpositionmaster) {
-        const loc = cardpositionmaster[idno];
-        if (loc == "staged") {
-            c.push(idno);
-        }
-    }
-    return c;
-}
-
-function getcostfromidlist(idlist) {
-    let accumulator = 0;
-    idlist.forEach(idno => {
-        const cardcost = rawdata[idno].cost;
-        accumulator += cardcost;
-    });
-    return accumulator;
-}
