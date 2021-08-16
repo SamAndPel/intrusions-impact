@@ -1,7 +1,7 @@
 // Play sequence actioning controller
 // Actions play sequence on user clicking the play button
 
-function actionturn() {
+function doturn() {
     // Verify cards to be played are valid
     // All cards in staging have prerequisites played, total cost is cheap enough
     let stagedcardids = getstagedcards();
@@ -85,7 +85,7 @@ function validatecards(stagedcards) {
 }
 
 // Renders a consequences modal
-showconsequences(consequencelist) {
+function showconsequences(consequencelist) {
     console.log("[+] Consequence modal rendered, waiting for user input");
     document.getElementById("conseqmodal").style.display = "block";
 }
