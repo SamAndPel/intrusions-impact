@@ -32,29 +32,31 @@ function doturn() {
         });
         console.log("[*] Global score is now " + currentscore);
 
-        // Render consequence window
-        showconsequences(conseqs);
-
-        // ONCE CONSEQUENCE WINDOW CLOSED
         // Increment turn counter
         turn += 1;
 
-        // Should the game continue?
-        if (turn < maxturns) {
-            // Set budget to 100k + leftover cash
-            let totalcost = getcostfromidlist(stagedcardids);
-            let newbudget = (currentbudget - totalcost) + budgeteachturn;
-            currentbudget = newbudget;
-            document.getElementById("budget").innerHTML = moneyformat(currentbudget);
-        } else {
-            // Subtract staged cards from budget
-            let totalcost = getcostfromidlist(stagedcardids);
-            let newbudget = (currentbudget - totalcost);
-            currentbudget = newbudget;
-            document.getElementById("budget").innerHTML = moneyformat(currentbudget);
-            // Enter endgame routine
-            endgame();
-        }
+        // Render consequence modal
+        showconsequences(conseqs, () => {
+            // After consequence window has been closed
+            closeallmodals();
+
+            // Should the game continue?
+            if (turn < maxturns) {
+                // Set budget to 100k + leftover cash
+                let totalcost = getcostfromidlist(stagedcardids);
+                let newbudget = (currentbudget - totalcost) + budgeteachturn;
+                currentbudget = newbudget;
+                document.getElementById("budget").innerHTML = moneyformat(currentbudget);
+            } else {
+                // Subtract staged cards from budget
+                let totalcost = getcostfromidlist(stagedcardids);
+                let newbudget = (currentbudget - totalcost);
+                currentbudget = newbudget;
+                document.getElementById("budget").innerHTML = moneyformat(currentbudget);
+                // Enter endgame routine
+                endgame();
+            }
+        });
     } else {
         alert("Over Budget!\nYour defences are too expensive - try again.");
     }
@@ -85,7 +87,14 @@ function validatecards(stagedcards) {
 }
 
 // Renders a consequences modal
-function showconsequences(consequencelist) {
+function showconsequences(consequencelist, callback) {
     console.log("[+] Consequence modal rendered, waiting for user input");
     document.getElementById("conseqmodal").style.display = "block";
+
+    // Only trigger the callback when the user clicks continue
+    let continuebtn = document.getElementById("conseqcontinue");
+    continuebtn.addEventListener("click", function conseqcont(e) {
+        continuebtn.removeEventListener("click", conseqcont, false);
+        callback();
+    }, false);
 }
