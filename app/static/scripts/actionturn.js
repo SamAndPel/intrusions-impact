@@ -69,6 +69,7 @@ function validatecards(stagedcards) {
     // Is the total cost of the staged cards less than the budget?
     let totalcost = getcostfromidlist(stagedcards);
     if (totalcost > currentbudget) {
+        console.log("[-] Staged cards invalid due to finance");
         valid = false;
     }
 
@@ -81,9 +82,9 @@ function validatecards(stagedcards) {
     allprereqs.forEach(prereqid => {
         if (prereqid != -1 && cardpositionmaster[prereqid] != "played") {
             valid = false;
+            console.log("[-] Staged cards invalid due to prerequisites");
         }
     });
-    valid ? console.log("[+] All staged cards valid") : console.log("[-] Staged cards invalid");
     return valid;
 }
 
@@ -124,10 +125,18 @@ function showconsequences(consequencelist, callback) {
     stinger.appendChild(embolden);
     modalroot.appendChild(stinger);
 
+    // For each consequence
     consequencelist.forEach(conseq => {
+        // Create the div for the consequence
         const consdiv = document.createElement("div");
         consdiv.classList.add("consequence-div");
-        consdiv.innerHTML = JSON.stringify(conseq);
+
+        // Display the main text
+        const maintextelement = document.createElement("p");
+        maintextelement.classList.add("info-body-text");
+        const maintext = document.createTextNode(conseq["text"])
+        maintextelement.appendChild(maintext);
+        consdiv.appendChild(maintextelement);
         modalroot.appendChild(consdiv);
     });
 
@@ -142,6 +151,7 @@ function showconsequences(consequencelist, callback) {
     contbtndiv.appendChild(contbtn);
     modalroot.appendChild(contbtndiv);
 
+    // Show the consequences modal
     document.getElementById("conseqmodal").style.display = "block";
     console.log("[+] Consequence modal rendered, waiting for user input");
 
