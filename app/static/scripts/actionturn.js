@@ -48,6 +48,7 @@ function doturn() {
 
         // Increment turn counter
         turn += 1;
+        document.getElementById("turndisplay").innerHTML = "Year " + (turn + 1);
 
         // Render consequence modal
         showconsequences(conseqs, () => {
@@ -107,27 +108,6 @@ function validatecards(stagedcards) {
 // Renders a consequences modal
 function showconsequences(consequencelist, callback) {
     // Generate HTML for each consequence in list and append it to the modal
-    // EXAMPLE -------------------------------------------------------------------
-    // <p class="info-body-text"><b>Here are the consequences of your actions</b></p>
-    // <p class="info-body-text">Here's a whole lot of consequence text blah blah blah don't read me I repeat! Here's a whole lot of consequence text blah blah blah don't read me I repeat! Here's a whole lot of consequence text blah blah blah don't read me I repeat! Here's a whole lot of consequence text blah blah blah don't read me I repeat! </p>
-    // <div class="modallinkspace">
-    //     <a href="google.co.uk" class="modallink" target="_blank">Read more</a>
-    //     <a href="google.co.uk" class="modallink" target="_blank">Example details</a>
-    // </div>
-    // <p class="info-body-text">Here's a whole lot of consequence text blah blah blah don't read me I repeat! Here's a whole lot of consequence text blah blah blah don't read me I repeat! Here's a whole lot of consequence text blah blah blah don't read me I repeat! Here's a whole lot of consequence text blah blah blah don't read me I repeat! </p>
-    // <div class="modallinkspace">
-    //     <a href="google.co.uk" class="modallink" target="_blank">Read more</a>
-    //     <a href="google.co.uk" class="modallink" target="_blank">Example details</a>
-    // </div>
-    // <p class="info-body-text">Here's a whole lot of consequence text blah blah blah don't read me I repeat! Here's a whole lot of consequence text blah blah blah don't read me I repeat! Here's a whole lot of consequence text blah blah blah don't read me I repeat! Here's a whole lot of consequence text blah blah blah don't read me I repeat! </p>
-    // <div class="modallinkspace">
-    //     <a href="google.co.uk" class="modallink" target="_blank">Read more</a>
-    //     <a href="google.co.uk" class="modallink" target="_blank">Example details</a>
-    // </div>
-    // <div class="modallinkspace">
-    //     <p id="conseqcontinue" class="modallink">Continue</p>
-    // </div>
-
     let modalroot = document.getElementById("conseqmodalroot");
 
     // Wipe existing content in the consequence modal
@@ -135,10 +115,9 @@ function showconsequences(consequencelist, callback) {
 
     // Create the stinger at the top
     const stinger = document.createElement("p");
-    const embolden = document.createElement("b");
+    stinger.classList.add("stinger");
     const stingertext = document.createTextNode("Here are the consequences of your actions:");
-    embolden.appendChild(stingertext);
-    stinger.appendChild(embolden);
+    stinger.appendChild(stingertext);
     modalroot.appendChild(stinger);
 
     // For each consequence
@@ -187,7 +166,7 @@ function showconsequences(consequencelist, callback) {
         maintextelement.appendChild(maintext);
         consdiv.appendChild(maintextelement);
 
-        // Display image if present
+        // Display image if present TODO THIS DO THIS SAM FOR THE LOVE OF ALL THAT IS HOLY
 
         // Display collapsible ribbon with fact and stat inside, if provided
         if (conseq["stat"] && conseq["example"]) {
