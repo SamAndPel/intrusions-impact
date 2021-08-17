@@ -74,11 +74,11 @@ function validatecards(stagedcards) {
     // Do any of the cards have prerequisites? If so, have they been played?
     let allprereqs = [];
     stagedcards.forEach(idno => {
-        const cardprereqs = rawdata[idno].prerequisites;
-        allprereqs = allprereqs.concat(cardprereqs);
+        const cardprereq = rawdata[idno].prerequisite;
+        allprereqs.push(cardprereq);
     });
     allprereqs.forEach(prereqid => {
-        if (cardpositionmaster[prereqid] != "played") {
+        if (prereqid != -1 && cardpositionmaster[prereqid] != "played") {
             valid = false;
         }
     });

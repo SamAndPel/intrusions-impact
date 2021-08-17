@@ -2,7 +2,7 @@
 // Triggers dropzone popups and calls passthrough functions on drop
 
 function dragStart(ev) {
-    let idno = ev.target.id.charAt(ev.target.id.length - 1);
+    let idno = ev.target.id.substring(4);
     ev.dataTransfer.setData("text", idno);
     document.getElementById("leftdrag").style.visibility = "visible";
     document.getElementById("stagedrag").style.visibility = "visible";
@@ -10,7 +10,7 @@ function dragStart(ev) {
 }
 
 function dragStop(ev) {
-    let idno = ev.target.id.charAt(ev.target.id.length - 1);
+    let idno = ev.target.id.substring(4);
     document.getElementById("leftdrag").style.visibility = "hidden";
     document.getElementById("stagedrag").style.visibility = "hidden";
     console.log("[+] Finished dragging card " + idno);
