@@ -151,6 +151,10 @@
   align-items: center;
 }
 
+.consequence-div {
+  margin: 5px auto;
+}
+
 .info-header-text {
   font-weight: bold;
   font-size: 3rem;
