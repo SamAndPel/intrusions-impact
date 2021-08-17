@@ -51,6 +51,7 @@
   width: 5rem;
   height: 5rem;
   object-fit: contain;
+  pointer-events: none;
 }
 
 .card-cost {
