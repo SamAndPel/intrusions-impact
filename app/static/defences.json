@@ -16,10 +16,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -27,10 +27,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -40,10 +40,10 @@
                     "scoredelta": 20,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -51,10 +51,10 @@
                     "scoredelta": 0,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "Spearphishing is used by 2/3 of advanced persistant threat groups.",
-                    "Stat-Source": "https://hub.dragos.com/2020-year-in-review-report",
-                    "Example": "Energy sector in Azerbaijan (2019,2020) - An APT used Spearphishing to get victims to download a malicious Word document, these then lead to the group being able to spy on the government.",
-                    "Example-Source": "https://cyware.com/news/method-in-madness-targeted-cyberattacks-hit-azerbaijan-dc48d301/",
+                    "stat": "Spearphishing is used by 2/3 of advanced persistant threat groups.",
+                    "stat-source": "https://hub.dragos.com/2020-year-in-review-report",
+                    "example": "Energy sector in Azerbaijan (2019,2020) - An APT used Spearphishing to get victims to download a malicious Word document, these then lead to the group being able to spy on the government.",
+                    "example-source": "https://cyware.com/news/method-in-madness-targeted-cyberattacks-hit-azerbaijan-dc48d301/",
                     "causes-end": false
                 }
             },
@@ -64,10 +64,10 @@
                     "scoredelta": 10,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -75,10 +75,10 @@
                     "scoredelta": 0,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "Phishing is a contributing factor in 90% of data breaches.",
-                    "Stat-Source": "https://learn-umbrella.cisco.com/ebook-library/2021-cyber-security-threat-trends-phishing-crypto-top-the-list",
-                    "Example": "UK energy firm (2019) - Criminals used DeepFake  software to fake their CEOs voice to demand €220,000 be sent to a fraudulent account. ",
-                    "Example-Source": "https://www.wsj.com/articles/fraudsters-use-ai-to-mimic-ceos-voice-in-unusual-cybercrime-case-11567157402",
+                    "stat": "Phishing is a contributing factor in 90% of data breaches.",
+                    "stat-source": "https://learn-umbrella.cisco.com/ebook-library/2021-cyber-security-threat-trends-phishing-crypto-top-the-list",
+                    "example": "UK energy firm (2019) - Criminals used DeepFake  software to fake their CEOs voice to demand €220,000 be sent to a fraudulent account. ",
+                    "example-source": "https://www.wsj.com/articles/fraudsters-use-ai-to-mimic-ceos-voice-in-unusual-cybercrime-case-11567157402",
                     "causes-end": false
                 }
             },
@@ -88,10 +88,10 @@
                     "scoredelta": 5,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -99,10 +99,10 @@
                     "scoredelta": -300,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "More than 11 Billion online accounts have been compromised, including passwords.",
-                    "Stat-Source": "https://haveibeenpwned.com/",
-                    "Example": "French TV network (2015) - A group (Suspected to be Russian) took control over a french TV network for a few hours. The suspected method of intrusion is that they braodcast some of their passwords during an interview.",
-                    "Example-Source": "https://arstechnica.com/information-technology/2015/04/hacked-french-network-exposed-its-own-passwords-during-tv-interview/",
+                    "stat": "More than 11 Billion online accounts have been compromised, including passwords.",
+                    "stat-source": "https://haveibeenpwned.com/",
+                    "example": "French TV network (2015) - A group (Suspected to be Russian) took control over a french TV network for a few hours. The suspected method of intrusion is that they braodcast some of their passwords during an interview.",
+                    "example-source": "https://arstechnica.com/information-technology/2015/04/hacked-french-network-exposed-its-own-passwords-during-tv-interview/",
                     "causes-end": true
                 }
             }
@@ -125,10 +125,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -136,10 +136,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -149,10 +149,10 @@
                     "scoredelta": 20,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -160,10 +160,10 @@
                     "scoredelta": 0,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "Between July 2018 and August 2021 more than 1 Billion Euros have been paid in fines for violating GDPR.",
-                    "Stat-Source": "https://www.enforcementtracker.com/?insights",
-                    "Example": "British Dental Association (2020) - More than 5,000 staff records were leaked on the dark web, including information about employee beneficiaries and payroll documents.",
-                    "Example-Source": "https://www.teiss.co.uk/british-dental-association-hack/",
+                    "stat": "Between July 2018 and August 2021 more than 1 Billion Euros have been paid in fines for violating GDPR.",
+                    "stat-source": "https://www.enforcementtracker.com/?insights",
+                    "example": "British Dental Association (2020) - More than 5,000 staff records were leaked on the dark web, including information about employee beneficiaries and payroll documents.",
+                    "example-source": "https://www.teiss.co.uk/british-dental-association-hack/",
                     "causes-end": false
                 }
             },
@@ -173,10 +173,10 @@
                     "scoredelta": 10,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -184,10 +184,10 @@
                     "scoredelta": 10,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "Devices being added to an ICS network is the biggest concern for ICS organisations.",
-                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
-                    "Example": "US windfarm (2017) - researchers were able to a Raspberry Pi to stop several wind farms using a single command. Fortunately this was a proof of concept and was not done maliciously.",
-                    "Example-Source": "https://www.wired.com/story/wind-turbine-hack/",
+                    "stat": "Devices being added to an ICS network is the biggest concern for ICS organisations.",
+                    "stat-source": "https://www.sans.org/white-papers/38995/",
+                    "example": "US windfarm (2017) - researchers were able to a Raspberry Pi to stop several wind farms using a single command. Fortunately this was a proof of concept and was not done maliciously.",
+                    "example-source": "https://www.wired.com/story/wind-turbine-hack/",
                     "causes-end": false
                 }
             },
@@ -197,10 +197,10 @@
                     "scoredelta": 5,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -208,10 +208,10 @@
                     "scoredelta": -300,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "90% of ICS organisations have limited to no visability into their ICS networks and so do not have a good understanding of their assets.",
-                    "Stat-Source": "https://hub.dragos.com/2020-year-in-review-report",
-                    "Example": "TalkTalk (2015) - After a vulnerability in their system was posted, TalkTalk found that several groups of hackers raided their network, leading to at least £77 million in damages.",
-                    "Example-Source": "https://www.bbc.co.uk/news/uk-england-stoke-staffordshire-46264327",
+                    "stat": "90% of ICS organisations have limited to no visability into their ICS networks and so do not have a good understanding of their assets.",
+                    "stat-source": "https://hub.dragos.com/2020-year-in-review-report",
+                    "example": "TalkTalk (2015) - After a vulnerability in their system was posted, TalkTalk found that several groups of hackers raided their network, leading to at least £77 million in damages.",
+                    "example-source": "https://www.bbc.co.uk/news/uk-england-stoke-staffordshire-46264327",
                     "causes-end": true
                 }
             }
@@ -234,10 +234,10 @@
                     "scoredelta": 20,
                     "type": "Script Kiddie",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -245,10 +245,10 @@
                     "scoredelta": 0,
                     "type": "Script Kiddie",
                     "image": "",
-                    "Stat": "Between January 2018 and October 2020, the number of Ransomware incidents in industrial companies have increased over 500%.",
-                    "Stat-Source": "https://www.dragos.com/resource/ransomware-in-ics-environments/",
-                    "Example": "Chemical Distribution Company (2021) - Brenntag was infected with ransomware that encrypted and exfiltrated data from their network. They paid a $4.4 million ransom to stop the data from being leaked.",
-                    "Example-Source": "https://www.bleepingcomputer.com/news/security/chemical-distributor-pays-44-million-to-darkside-ransomware/",
+                    "stat": "Between January 2018 and October 2020, the number of Ransomware incidents in industrial companies have increased over 500%.",
+                    "stat-source": "https://www.dragos.com/resource/ransomware-in-ics-environments/",
+                    "example": "Chemical Distribution Company (2021) - Brenntag was infected with ransomware that encrypted and exfiltrated data from their network. They paid a $4.4 million ransom to stop the data from being leaked.",
+                    "example-source": "https://www.bleepingcomputer.com/news/security/chemical-distributor-pays-44-million-to-darkside-ransomware/",
                     "causes-end": false
                 }
             },
@@ -258,10 +258,10 @@
                     "scoredelta": 10,
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -269,10 +269,10 @@
                     "scoredelta": 0,
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
-                    "Stat": "36% of Ransomware attacks were performed on manufacturing organisations and 10% were on utility companies.",
-                    "Stat-Source": "https://www.dragos.com/resource/ransomware-in-ics-environments/",
-                    "Example": "WannaCry (2017) - A Ransomware worm spread across the internet infecting a large number of networks ranging from banks to public transport systems. Thankfully, it was stopped after a few days but in this time it became one of the most damaging cyber attacks ever.",
-                    "Example-Source": "https://www.techrepublic.com/article/wannacry-the-smart-persons-guide/",
+                    "stat": "36% of Ransomware attacks were performed on manufacturing organisations and 10% were on utility companies.",
+                    "stat-source": "https://www.dragos.com/resource/ransomware-in-ics-environments/",
+                    "example": "WannaCry (2017) - A Ransomware worm spread across the internet infecting a large number of networks ranging from banks to public transport systems. Thankfully, it was stopped after a few days but in this time it became one of the most damaging cyber attacks ever.",
+                    "example-source": "https://www.techrepublic.com/article/wannacry-the-smart-persons-guide/",
                     "causes-end": false
                 }
             },
@@ -282,10 +282,10 @@
                     "scoredelta": 5,
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -293,10 +293,10 @@
                     "scoredelta": -300,
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
-                    "Stat": "Only 53% of OT networks either use antivirus or log analysis.",
-                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
-                    "Example": "Colonial Pipeline (2021) - The gasoline distribution company was attacked by ransomware, shutting down their enterprise network. However, in order to protect their buiness and possible damage to the plant network, they shut their whole network down. This mean that many Americans were affected by a gasoline shortage.",
-                    "Example-Source": "https://www.zdnet.com/article/colonial-pipeline-ransomware-attack-everything-you-need-to-know/",
+                    "stat": "Only 53% of OT networks either use antivirus or log analysis.",
+                    "stat-source": "https://www.sans.org/white-papers/38995/",
+                    "example": "Colonial Pipeline (2021) - The gasoline distribution company was attacked by ransomware, shutting down their enterprise network. However, in order to protect their buiness and possible damage to the plant network, they shut their whole network down. This mean that many Americans were affected by a gasoline shortage.",
+                    "example-source": "https://www.zdnet.com/article/colonial-pipeline-ransomware-attack-everything-you-need-to-know/",
                     "causes-end": true
                 }
             },
@@ -306,10 +306,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -317,10 +317,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 }
             }
@@ -343,10 +343,10 @@
                     "scoredelta": 10,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -354,10 +354,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -367,10 +367,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -378,10 +378,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -391,10 +391,10 @@
                     "scoredelta": 20,
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -402,10 +402,10 @@
                     "scoredelta": 0,
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
-                    "Stat": "More than 40% of initial attack vectors in 2019 were via remote access.",
-                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
-                    "Example": "Ukrainian Power Grid (2016) - During the winter of 2016, a Ukrainian substation was attacked by malware that manipulated circuit breakers in order to send commands and control the controllers to shut down the station. Leaving 200,000 people without power.",
-                    "Example-Source": "https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/",
+                    "stat": "More than 40% of initial attack vectors in 2019 were via remote access.",
+                    "stat-source": "https://www.sans.org/white-papers/38995/",
+                    "example": "Ukrainian Power Grid (2016) - During the winter of 2016, a Ukrainian substation was attacked by malware that manipulated circuit breakers in order to send commands and control the controllers to shut down the station. Leaving 200,000 people without power.",
+                    "example-source": "https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/",
                     "causes-end": false
                 }
             },
@@ -415,10 +415,10 @@
                     "scoredelta": 10,
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -426,10 +426,10 @@
                     "scoredelta": 0,
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
-                    "Stat": "On average only 65% of encrypted data was restored after the ransom was paid. (Sophos Ransomware 2021)",
-                    "Stat-Source": "https://www.sophos.com/en-us/medialibrary/pdfs/whitepaper/sophos-state-of-ransomware-2021-wp.pdf?cmp=120469",
-                    "Example": "NotPetya (2017) - A ransomware that spread through password harvesting and the same vulnerability as WannaCry, what stands out about this ransomware is that even if you paid the ransom, the files were not encrypted. This has lead people to believe that it was Russia trying to cause as much damage possible to Ukrainian networks.",
-                    "Example-Source": "https://www.itpro.co.uk/malware/34381/what-is-notpetya",
+                    "stat": "On average only 65% of encrypted data was restored after the ransom was paid. (Sophos Ransomware 2021)",
+                    "stat-source": "https://www.sophos.com/en-us/medialibrary/pdfs/whitepaper/sophos-state-of-ransomware-2021-wp.pdf?cmp=120469",
+                    "example": "NotPetya (2017) - A ransomware that spread through password harvesting and the same vulnerability as WannaCry, what stands out about this ransomware is that even if you paid the ransom, the files were not encrypted. This has lead people to believe that it was Russia trying to cause as much damage possible to Ukrainian networks.",
+                    "example-source": "https://www.itpro.co.uk/malware/34381/what-is-notpetya",
                     "causes-end": true
                 }
             }
@@ -452,10 +452,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -463,10 +463,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -476,10 +476,10 @@
                     "scoredelta": 20,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -487,10 +487,10 @@
                     "scoredelta": 0,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "42% of security professionals do not trust their organisation's ability to secure physical access to their systems.",
-                    "Stat-Source": "https://edge.spiceworksstatic.com/service.client-interactive/2018/hpi/toolkit%20lp/Security-toolkit-assets/2018_Global_Cyber_Megatrends.pdf",
-                    "Example": "Ferranti Factory in Oldham (2021) - Vandals occupied the factory grounds and spray painted the factory in protest of a new military contract with the Israeli military.",
-                    "Example-Source": "https://themeteor.org/2021/02/05/israeli-company-elbit-owner-of-recently-occupied-arms-factory-in-oldham-receives-multi-million-uk-contract/",
+                    "stat": "42% of security professionals do not trust their organisation's ability to secure physical access to their systems.",
+                    "stat-source": "https://edge.spiceworksstatic.com/service.client-interactive/2018/hpi/toolkit%20lp/Security-toolkit-assets/2018_Global_Cyber_Megatrends.pdf",
+                    "example": "Ferranti Factory in Oldham (2021) - Vandals occupied the factory grounds and spray painted the factory in protest of a new military contract with the Israeli military.",
+                    "example-source": "https://themeteor.org/2021/02/05/israeli-company-elbit-owner-of-recently-occupied-arms-factory-in-oldham-receives-multi-million-uk-contract/",
                     "causes-end": false
                 }
             },
@@ -500,10 +500,10 @@
                     "scoredelta": 10,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -511,10 +511,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -524,10 +524,10 @@
                     "scoredelta": 5,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -535,10 +535,10 @@
                     "scoredelta": -300,
                     "type": "Organised APT",
                     "image": "/relative/image/path",
-                    "Stat": "Nationstate and state-sponsered parties are involved in 27% of all cyber attacks on industrial companies.",
-                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
-                    "Example": "Stuxnet (2007) - Stuxnet was the first malware to explicitly target ICS network, with the aim of a specific Iranian nuclear facility. It was successful in being able to copy the expected readings, display them back to the operators while tampering with the process.",
-                    "Example-Source": "https://www.csoonline.com/article/3218104/what-is-stuxnet-who-created-it-and-how-does-it-work.html",
+                    "stat": "Nationstate and state-sponsered parties are involved in 27% of all cyber attacks on industrial companies.",
+                    "stat-source": "https://www.sans.org/white-papers/38995/",
+                    "example": "Stuxnet (2007) - Stuxnet was the first malware to explicitly target ICS network, with the aim of a specific Iranian nuclear facility. It was successful in being able to copy the expected readings, display them back to the operators while tampering with the process.",
+                    "example-source": "https://www.csoonline.com/article/3218104/what-is-stuxnet-who-created-it-and-how-does-it-work.html",
                     "causes-end": true
                 }
             }
@@ -561,10 +561,10 @@
                     "scoredelta": 20,
                     "type": "Researcher",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -572,10 +572,10 @@
                     "scoredelta": 0,
                     "type": "Researcher",
                     "image": "",
-                    "Stat": "More than 110,000 Industrial control systems are viewable on Shodan.io.",
-                    "Stat-Source": "https://blog.shodan.io/trends-in-internet-exposure/",
-                    "Example": "Xzeres Wind (2015) - Researchers discovered that Xzeres wind turbines had basic vulnerabilities and were also easily accessible via Shodan.io.",
-                    "Example-Source": "https://www.vice.com/en/article/ezv8dj/some-wind-turbines-can-be-hacked-by-anyone-with-an-internet-connection",
+                    "stat": "More than 110,000 Industrial control systems are viewable on Shodan.io.",
+                    "stat-source": "https://blog.shodan.io/trends-in-internet-exposure/",
+                    "example": "Xzeres Wind (2015) - Researchers discovered that Xzeres wind turbines had basic vulnerabilities and were also easily accessible via Shodan.io.",
+                    "example-source": "https://www.vice.com/en/article/ezv8dj/some-wind-turbines-can-be-hacked-by-anyone-with-an-internet-connection",
                     "causes-end": false
                 }
             },
@@ -585,10 +585,10 @@
                     "scoredelta": 10,
                     "type": "Researcher",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -596,10 +596,10 @@
                     "scoredelta": 0,
                     "type": "Researcher",
                     "image": "/relative/image/path",
-                    "Stat": "100% of attackers accessed the ICS network from the internet.",
-                    "Stat-Source": "https://hub.dragos.com/2020-year-in-review-report",
-                    "Example": "Nexus Healthcare (2021) - Researchers at Armis security research were able to find a vulnerability using insecure permission settings. This vulnerability is considered one fo the most dangerous, highlighting the importance of cyber security research and vulnerability disclosure.",
-                    "Example-Source": "https://www.swisslog-healthcare.com/-/media/swisslog-healthcare/documents/customer-service/armis-documents/cve-2021-37167-bulletin---privilege-escalation.pdf?rev=20c909e5f00048838620b52471f266fc&hash=F43731C7A882EEBB5CE28DFBC75933D3",
+                    "stat": "100% of attackers accessed the ICS network from the internet.",
+                    "stat-source": "https://hub.dragos.com/2020-year-in-review-report",
+                    "example": "Nexus Healthcare (2021) - Researchers at Armis security research were able to find a vulnerability using insecure permission settings. This vulnerability is considered one fo the most dangerous, highlighting the importance of cyber security research and vulnerability disclosure.",
+                    "example-source": "https://www.swisslog-healthcare.com/-/media/swisslog-healthcare/documents/customer-service/armis-documents/cve-2021-37167-bulletin---privilege-escalation.pdf?rev=20c909e5f00048838620b52471f266fc&hash=F43731C7A882EEBB5CE28DFBC75933D3",
                     "causes-end": false
                 }
             },
@@ -609,10 +609,10 @@
                     "scoredelta": 5,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -620,10 +620,10 @@
                     "scoredelta": -300,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "43% of industrial organisations use firewalls inside their network OT network as well as at the boundary.",
-                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
-                    "Example": "Saudi Aramco (2012) - The attack stared during Ramadan, when most employees were on holiday, when malware called Shamoon that collected sensitive data and then deleted everything. This meant that the company had to use type writers, send oil without payment and bought the world's supply of hard drives.",
-                    "Example-Source": "https://money.cnn.com/2015/08/05/technology/aramco-hack/index.html",
+                    "stat": "43% of industrial organisations use firewalls inside their network OT network as well as at the boundary.",
+                    "stat-source": "https://www.sans.org/white-papers/38995/",
+                    "example": "Saudi Aramco (2012) - The attack stared during Ramadan, when most employees were on holiday, when malware called Shamoon that collected sensitive data and then deleted everything. This meant that the company had to use type writers, send oil without payment and bought the world's supply of hard drives.",
+                    "example-source": "https://money.cnn.com/2015/08/05/technology/aramco-hack/index.html",
                     "causes-end": true
                 }
             },
@@ -633,10 +633,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -644,10 +644,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 }
             }
@@ -670,10 +670,10 @@
                     "scoredelta": 2,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -681,10 +681,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -694,10 +694,10 @@
                     "scoredelta": 5,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -705,10 +705,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -718,10 +718,10 @@
                     "scoredelta": 10,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -729,10 +729,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -742,10 +742,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -753,10 +753,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 }
             }
@@ -779,10 +779,10 @@
                     "scoredelta": 20,
                     "type": "Script Kiddie",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -790,10 +790,10 @@
                     "scoredelta": 0,
                     "type": "Script Kiddie",
                     "image": "",
-                    "Stat": "The number of DDoS attacks increased 340% between 2019 and 2020.",
-                    "Stat-Source": "https://blog.nexusguard.com/threat-report/annual-threat-report-2020",
-                    "Example": "Ukrainian Power Grid (2015) - Russian malware infected the Ukrainian power grid, leading to 230,000 people being without electricity for between 1 and 6 hours. AS part of this attack, the attackers DDoSed the call centre so that it was impossible to get information to customers.",
-                    "Example-Source": "https://www.itproportal.com/features/the-world-changing-2015-cyberattack-on-ukraines-power-grid/",
+                    "stat": "The number of DDoS attacks increased 340% between 2019 and 2020.",
+                    "stat-source": "https://blog.nexusguard.com/threat-report/annual-threat-report-2020",
+                    "example": "Ukrainian Power Grid (2015) - Russian malware infected the Ukrainian power grid, leading to 230,000 people being without electricity for between 1 and 6 hours. AS part of this attack, the attackers DDoSed the call centre so that it was impossible to get information to customers.",
+                    "example-source": "https://www.itproportal.com/features/the-world-changing-2015-cyberattack-on-ukraines-power-grid/",
                     "causes-end": false
                 }
             },
@@ -803,10 +803,10 @@
                     "scoredelta": 10,
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -814,10 +814,10 @@
                     "scoredelta": 0,
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
-                    "Stat": "56% of organisations spend between 10 and 49% of their security budget on firewalls.",
-                    "Stat-Source": "https://www.firemon.com/2019-state-of-the-firewall-report/?utm_source=BusinessWire&utm_medium=PR-Organic&utm_campaign=SoFR19&utm_term=Press-Release&utm_content=7011Q000001ROhp&Salesforce_Campaign_ID=7011Q000001ROhp",
-                    "Example": "Elexon (2020) - Elexon was hit by a ransomware attack. While the whole network was not affected,  a large amount of highly confidential information was leaked.",
-                    "Example-Source": "https://www.securityweek.com/hackers-leak-data-stolen-uk-electricity-market-administrator-elexon",
+                    "stat": "56% of organisations spend between 10 and 49% of their security budget on firewalls.",
+                    "stat-source": "https://www.firemon.com/2019-state-of-the-firewall-report/?utm_source=BusinessWire&utm_medium=PR-Organic&utm_campaign=SoFR19&utm_term=Press-Release&utm_content=7011Q000001ROhp&Salesforce_Campaign_ID=7011Q000001ROhp",
+                    "example": "Elexon (2020) - Elexon was hit by a ransomware attack. While the whole network was not affected,  a large amount of highly confidential information was leaked.",
+                    "example-source": "https://www.securityweek.com/hackers-leak-data-stolen-uk-electricity-market-administrator-elexon",
                     "causes-end": false
                 }
             },
@@ -827,10 +827,10 @@
                     "scoredelta": 5,
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -838,10 +838,10 @@
                     "scoredelta": -300,
                     "type": "Script Kiddie",
                     "image": "/relative/image/path",
-                    "Stat": "95% of organisations believe that a firewall is going to be more important in the near future. (firemon 2019 firewall)",
-                    "Stat-Source": "https://www.firemon.com/2019-state-of-the-firewall-report/?utm_source=BusinessWire&utm_medium=PR-Organic&utm_campaign=SoFR19&utm_term=Press-Release&utm_content=7011Q000001ROhp&Salesforce_Campaign_ID=7011Q000001ROhp",
-                    "Example": "NSO Group (2021) - The NSO group provides spyware for Android and Apple operating systems. While they say that they screen clients to ensure that the software will not be used to target journalists and political oponents, their software has been found on many people who would fall into these catagories.",
-                    "Example-Source": "https://www.theguardian.com/news/2021/jul/18/what-is-pegasus-spyware-and-how-does-it-hack-phones",
+                    "stat": "95% of organisations believe that a firewall is going to be more important in the near future. (firemon 2019 firewall)",
+                    "stat-source": "https://www.firemon.com/2019-state-of-the-firewall-report/?utm_source=BusinessWire&utm_medium=PR-Organic&utm_campaign=SoFR19&utm_term=Press-Release&utm_content=7011Q000001ROhp&Salesforce_Campaign_ID=7011Q000001ROhp",
+                    "example": "NSO Group (2021) - The NSO group provides spyware for Android and Apple operating systems. While they say that they screen clients to ensure that the software will not be used to target journalists and political oponents, their software has been found on many people who would fall into these catagories.",
+                    "example-source": "https://www.theguardian.com/news/2021/jul/18/what-is-pegasus-spyware-and-how-does-it-hack-phones",
                     "causes-end": true
                 }
             },
@@ -851,10 +851,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -862,10 +862,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 }
             }
@@ -888,10 +888,10 @@
                     "scoredelta": 5,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -899,10 +899,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -912,10 +912,10 @@
                     "scoredelta": 10,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -923,10 +923,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -936,10 +936,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -947,10 +947,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -960,10 +960,10 @@
                     "scoredelta": 20,
                     "type": "Ex-Employee",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -971,10 +971,10 @@
                     "scoredelta": 0,
                     "type": "Ex-Employee",
                     "image": "/relative/image/path",
-                    "Stat": "10% of OT cyber incidents were caused by a former employee in 2019.",
-                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
-                    "Example": "Maroochy Shire Sewage Spill (2000) - After being fired from Maroochy sewage plant, he stole a wireless radio and used this to dump up to 1 million litres of sewage into the river causing massive environmental damage.",
-                    "Example-Source": "https://www.tofinosecurity.com/sites/default/files/CP-102-Case_Profile-Maroochy_Shire-rev1.pdf",
+                    "stat": "10% of OT cyber incidents were caused by a former employee in 2019.",
+                    "stat-source": "https://www.sans.org/white-papers/38995/",
+                    "example": "Maroochy Shire Sewage Spill (2000) - After being fired from Maroochy sewage plant, he stole a wireless radio and used this to dump up to 1 million litres of sewage into the river causing massive environmental damage.",
+                    "example-source": "https://www.tofinosecurity.com/sites/default/files/CP-102-Case_Profile-Maroochy_Shire-rev1.pdf",
                     "causes-end": true
                 }
             }
@@ -997,10 +997,10 @@
                     "scoredelta": 10,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1008,10 +1008,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1021,10 +1021,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1032,10 +1032,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1045,10 +1045,10 @@
                     "scoredelta": 20,
                     "type": "Competitor",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1056,10 +1056,10 @@
                     "scoredelta": 0,
                     "type": "Competitor",
                     "image": "/relative/image/path",
-                    "Stat": "10% of OT cyber incidents were caused by a competitor in 2019.",
-                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
-                    "Example": "Siemens, Moody's Analytics and Trimble (2011-2017)  - 3 Chinese nationals were charged with stealing confidential data and trade secrets from the companies and sending the information to China.",
-                    "Example-Source": "https://www.csoonline.com/article/3238828/us-charges-3-chinese-security-firm-hackers-with-corporate-cyber-espionage.html",
+                    "stat": "10% of OT cyber incidents were caused by a competitor in 2019.",
+                    "stat-source": "https://www.sans.org/white-papers/38995/",
+                    "example": "Siemens, Moody's Analytics and Trimble (2011-2017)  - 3 Chinese nationals were charged with stealing confidential data and trade secrets from the companies and sending the information to China.",
+                    "example-source": "https://www.csoonline.com/article/3238828/us-charges-3-chinese-security-firm-hackers-with-corporate-cyber-espionage.html",
                     "causes-end": false
                 }
             },
@@ -1069,10 +1069,10 @@
                     "scoredelta": 10,
                     "type": "Nationstate",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -1080,10 +1080,10 @@
                     "scoredelta": -300,
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
-                    "Stat": "Current employees caused 35% of all icidents in OT organisations.",
-                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
-                    "Example": "General Electric (2017) - An employee at GE Aviation was approached by the Chinese government to send them some confidential design documents, suspected to have been worth $100 million. Fortunately, he was arrested before a transaction was able to take place.",
-                    "Example-Source": "https://www.theregister.com/2021/03/01/china_mosfet_theft/",
+                    "stat": "Current employees caused 35% of all icidents in OT organisations.",
+                    "stat-source": "https://www.sans.org/white-papers/38995/",
+                    "example": "General Electric (2017) - An employee at GE Aviation was approached by the Chinese government to send them some confidential design documents, suspected to have been worth $100 million. Fortunately, he was arrested before a transaction was able to take place.",
+                    "example-source": "https://www.theregister.com/2021/03/01/china_mosfet_theft/",
                     "causes-end": true
                 }
             }
@@ -1106,10 +1106,10 @@
                     "scoredelta": 2,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1117,10 +1117,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1130,10 +1130,10 @@
                     "scoredelta": 5,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1141,10 +1141,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1154,10 +1154,10 @@
                     "scoredelta": 10,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1165,10 +1165,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1178,10 +1178,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -1189,10 +1189,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 }
             }
@@ -1215,10 +1215,10 @@
                     "scoredelta": 5,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1226,10 +1226,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1239,10 +1239,10 @@
                     "scoredelta": 10,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1250,10 +1250,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1263,10 +1263,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1274,10 +1274,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1287,10 +1287,10 @@
                     "scoredelta": 20,
                     "type": "Malicious Insider",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -1298,10 +1298,10 @@
                     "scoredelta": 0,
                     "type": "Malicious Insider",
                     "image": "",
-                    "Stat": "More than 75% of industrial organisations have obsolete Windows systems. (CyberX 2017)",
-                    "Stat-Source": "https://cyberx-labs.com/en/risk-report-2017/",
-                    "Example": "Boeing (1979 - 2006) - An employee who started working for a company that was then taken over by Boeing, was convicted for sending more than 300,000 pages of confidential designs to China.",
-                    "Example-Source": "https://www.theguardian.com/business/2009/jul/17/boeing-space-technology-industrial-espionage",
+                    "stat": "More than 75% of industrial organisations have obsolete Windows systems. (CyberX 2017)",
+                    "stat-source": "https://cyberx-labs.com/en/risk-report-2017/",
+                    "example": "Boeing (1979 - 2006) - An employee who started working for a company that was then taken over by Boeing, was convicted for sending more than 300,000 pages of confidential designs to China.",
+                    "example-source": "https://www.theguardian.com/business/2009/jul/17/boeing-space-technology-industrial-espionage",
                     "causes-end": true
                 }
             }
@@ -1324,10 +1324,10 @@
                     "scoredelta": 2,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1335,10 +1335,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1348,10 +1348,10 @@
                     "scoredelta": 5,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1359,10 +1359,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1372,10 +1372,10 @@
                     "scoredelta": 10,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1383,10 +1383,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1396,10 +1396,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -1407,10 +1407,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 }
             }
@@ -1433,10 +1433,10 @@
                     "scoredelta": 10,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1444,10 +1444,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1457,10 +1457,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1468,10 +1468,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1481,10 +1481,10 @@
                     "scoredelta": 20,
                     "type": "Hacktivist",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1492,10 +1492,10 @@
                     "scoredelta": 0,
                     "type": "Hacktivist",
                     "image": "/relative/image/path",
-                    "Stat": "Of all OT incidents are caused by 17% by activists.",
-                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
-                    "Example": "SeaWorld (2014) - A 14 year old took down part of the SeaWorld website for several days using a DDoS attack. His reason for doing this was that he is an animal rights activist.",
-                    "Example-Source": "https://www.bbc.co.uk/news/uk-england-devon-36649391",
+                    "stat": "Of all OT incidents are caused by 17% by activists.",
+                    "stat-source": "https://www.sans.org/white-papers/38995/",
+                    "example": "SeaWorld (2014) - A 14 year old took down part of the SeaWorld website for several days using a DDoS attack. His reason for doing this was that he is an animal rights activist.",
+                    "example-source": "https://www.bbc.co.uk/news/uk-england-devon-36649391",
                     "causes-end": false
                 }
             },
@@ -1505,10 +1505,10 @@
                     "scoredelta": 10,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -1516,10 +1516,10 @@
                     "scoredelta": -300,
                     "type": "Hacker",
                     "image": "/relative/image/path",
-                    "Stat": "Failing to notify data subjects in due time has contributed to more than €18 million in fines under GDPR.",
-                    "Stat-Source": "https://gdprhub.eu/index.php?title=Welcome_to_GDPRhub",
-                    "Example": "British Airways (2018) - For 2 weeks, hackers were able to harvest all information entered into certain sections of the website, this included card information. BA were fined £183,000 by the ICO.",
-                    "Example-Source": "https://en.wikipedia.org/wiki/2018_British_Airways_cyberattack",
+                    "stat": "Failing to notify data subjects in due time has contributed to more than €18 million in fines under GDPR.",
+                    "stat-source": "https://gdprhub.eu/index.php?title=Welcome_to_GDPRhub",
+                    "example": "British Airways (2018) - For 2 weeks, hackers were able to harvest all information entered into certain sections of the website, this included card information. BA were fined £183,000 by the ICO.",
+                    "example-source": "https://en.wikipedia.org/wiki/2018_British_Airways_cyberattack",
                     "causes-end": true
                 }
             }
@@ -1542,10 +1542,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1553,10 +1553,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1566,10 +1566,10 @@
                     "scoredelta": 20,
                     "type": "3rd Party",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1577,10 +1577,10 @@
                     "scoredelta": 0,
                     "type": "3rd Party",
                     "image": "",
-                    "Stat": "Suppliers and partners are the 3rd biggest security concern in industrial organisations.",
-                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
-                    "Example": "Target (2013) - The attackers first compromised a 3rd party HVAC company and then connected to Target's network via the 3rd party maintenance portal. The attackers then used this access to 40 million card details.",
-                    "Example-Source": "https://www.zdnet.com/article/anatomy-of-the-target-data-breach-missed-opportunities-and-lessons-learned/",
+                    "stat": "Suppliers and partners are the 3rd biggest security concern in industrial organisations.",
+                    "stat-source": "https://www.sans.org/white-papers/38995/",
+                    "example": "Target (2013) - The attackers first compromised a 3rd party HVAC company and then connected to Target's network via the 3rd party maintenance portal. The attackers then used this access to 40 million card details.",
+                    "example-source": "https://www.zdnet.com/article/anatomy-of-the-target-data-breach-missed-opportunities-and-lessons-learned/",
                     "causes-end": false
                 }
             },
@@ -1590,10 +1590,10 @@
                     "scoredelta": 10,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1601,10 +1601,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1614,10 +1614,10 @@
                     "scoredelta": 5,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -1625,10 +1625,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 }
             }
@@ -1651,10 +1651,10 @@
                     "scoredelta": 10,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1662,10 +1662,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1675,10 +1675,10 @@
                     "scoredelta": 15,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1686,10 +1686,10 @@
                     "scoredelta": 0,
                     "type": "",
                     "image": "",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 }
             },
@@ -1699,10 +1699,10 @@
                     "scoredelta": 20,
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": false
                 },
                 "notinstalled": {
@@ -1710,10 +1710,10 @@
                     "scoredelta": 0,
                     "type": "Malicious Insider",
                     "image": "/relative/image/path",
-                    "Stat": "88% of OT organisations have inadequate network segmentation.",
-                    "Stat-Source": "https://hub.dragos.com/2020-year-in-review-report",
-                    "Example": "Facebook (2018) - Multiple engineers admitted to using thier priveleiged access to personal data to stalk people using the service. Demonstrating that not all employees are not as benign as they may seem.",
-                    "Example-Source": "https://screenrant.com/facebook-an-ugly-truth-engineer-stalking-allegations/",
+                    "stat": "88% of OT organisations have inadequate network segmentation.",
+                    "stat-source": "https://hub.dragos.com/2020-year-in-review-report",
+                    "example": "Facebook (2018) - Multiple engineers admitted to using thier priveleiged access to personal data to stalk people using the service. Demonstrating that not all employees are not as benign as they may seem.",
+                    "example-source": "https://screenrant.com/facebook-an-ugly-truth-engineer-stalking-allegations/",
                     "causes-end": false
                 }
             },
@@ -1723,10 +1723,10 @@
                     "scoredelta": 0,
                     "type": "Nationstate",
                     "image": "/relative/image/path",
-                    "Stat": "",
-                    "Stat-Source": "",
-                    "Example": "",
-                    "Example-Source": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
                     "causes-end": true
                 },
                 "notinstalled": {
@@ -1734,10 +1734,10 @@
                     "scoredelta": -185,
                     "type": "Nationstate",
                     "image": "/relative/image/path",
-                    "Stat": "Only 22% of industrial organisations physically air gap their main plant network from their safety syatems.",
-                    "Stat-Source": "https://www.sans.org/white-papers/38995/",
-                    "Example": "Triton (2017) - A petrochemical plant in Saudi Arabia was attacked, with the attackers aiming specifically at the safety systems, specifically a Triconex controller, that would prevent possible explosions in the plant. This is the first time that a malicious atack on safety systems have taken place.",
-                    "Example-Source": "https://www.zdnet.com/article/cybersecurity-the-key-lessons-of-the-triton-malware-cyberattack-you-need-to-learn/",
+                    "stat": "Only 22% of industrial organisations physically air gap their main plant network from their safety syatems.",
+                    "stat-source": "https://www.sans.org/white-papers/38995/",
+                    "example": "Triton (2017) - A petrochemical plant in Saudi Arabia was attacked, with the attackers aiming specifically at the safety systems, specifically a Triconex controller, that would prevent possible explosions in the plant. This is the first time that a malicious atack on safety systems have taken place.",
+                    "example-source": "https://www.zdnet.com/article/cybersecurity-the-key-lessons-of-the-triton-malware-cyberattack-you-need-to-learn/",
                     "causes-end": true
                 }
             }
