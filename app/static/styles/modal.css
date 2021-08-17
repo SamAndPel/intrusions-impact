@@ -41,9 +41,9 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -77,7 +77,7 @@
   margin: 2rem auto;
   padding: 25px;
   border: 1px solid var(--text-colour);
-  width: 30rem; /* Could be more or less, depending on screen size */
+  width: 40rem; /* Could be more or less, depending on screen size */
   border-radius: 50px;
   -webkit-animation-name: modalin;
   animation-name: modalin;
@@ -193,6 +193,7 @@
 .info-body-text {
   font-size: 1rem;
   font-style: italic;
+  margin: 20px 10px;
 }
 
 .collapsibletrigger {
