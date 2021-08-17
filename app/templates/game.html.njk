@@ -16,7 +16,7 @@
                 {% for card in defences %}
                 <div id="{{ 'card' + card.id }}" class="card" onclick="showmodal({{ card.id }})" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
                     <p class="card-title">{{ card.name }}</p>
-                    <p class="card-image">{{ card.image }}</p>
+                    <img src="/images/cards/{{ card.image }}" class="card-image" alt="Image of {{ card.name }}">
                     <p class="card-cost">{{ '£' + card.cost | moneycomma }}</p>
                 </div>
                 {% endfor %}
@@ -55,7 +55,7 @@
     <div id="{{ 'card' + card.id + 'modal' }}" class="modal cardmodal">
         <div class="cardmodalcontent">
             <p class="big-card-title">{{ card.name }}</p>
-            <p class="big-card-image">{{ card.image }}</p>
+            <img src="/images/cards/{{ card.image }}" class="big-card-image" alt="Large image of {{ card.name }}">
             <p class="big-card-cost">{{ '£' + card.cost | moneycomma }}</p>
             <p class="big-card-shortdesc">{{ card.shortdesc }}</p>
             <p class="big-card-longdesc">{{ card.longdesc }}</p>

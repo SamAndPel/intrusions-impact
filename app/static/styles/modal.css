@@ -99,9 +99,11 @@
 }
 
 .big-card-image {
-  font-size: 8rem;
-  margin: 0 auto;
+  margin: 5px auto;
   padding: 0;
+  width: 15rem;
+  height: 15rem;
+  object-fit: contain;
 }
 
 .big-card-cost {
