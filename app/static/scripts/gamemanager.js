@@ -2,7 +2,7 @@
 
 // Define global variables
 let rawdata = {};               // Raw immutable object containing JSON data
-let cardpositionmaster = {};    // Lookup table (Card ID Number --> Position as string)
+let cardpositionmaster = {};    // Lookup table (Card ID Number --> Position as string (can be 'unstaged', 'staged' or 'played'))
 
 const budgeteachturn = 100000;  // Funding to be allocated each turn (extra carries over)
 let currentbudget = 0;          // Current budget (including rollover)
@@ -20,8 +20,7 @@ function initialise() {
     rawdata = JSON.parse(request.responseText);
     Object.values(rawdata).forEach(element => {
         let id = element.id;
-        let location = "unstaged";
-        cardpositionmaster[id] = location;
+        cardpositionmaster[id] = "unstaged";
     });
     currentbudget = budgeteachturn;
     recalculatecost();

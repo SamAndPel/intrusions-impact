@@ -34,6 +34,10 @@
   transition: 0.3s ease;
 }
 
+.unplayable {
+  display: none
+}
+
 .card:hover {
   border: 2px solid var(--emph-a-colour);
 }

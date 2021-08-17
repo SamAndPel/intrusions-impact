@@ -14,6 +14,19 @@ function doturn() {
 
         // RUN ANIMATION HERE
 
+        // Have any new cards been revealed by prerequisite?
+        Object.values(rawdata).forEach(card => {
+            const idno = card.id;
+            const prereq = card.prerequisite;
+            if (card.prerequisite != -1) {
+                if (cardpositionmaster[prereq] == "played") {
+                    console.log("[*] New card revealed - card " + idno);
+                    const cardid = "card" + idno;
+                    document.getElementById(cardid).classList.remove("unplayable");
+                }
+            }
+        });
+
         // Generate consequence list
         let conseqs = [];
         Object.values(rawdata).forEach(card => {
@@ -59,6 +72,9 @@ function doturn() {
             }
         });
     } else {
+        // Staged cards may also be rejected as their prerequisite hasn't been played,
+        // but that *shouldnt* be possible unless the user has been playing around with
+        // the source code.
         alert("Over Budget!\nYour defences are too expensive - try again.");
     }
 }

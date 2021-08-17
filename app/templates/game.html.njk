@@ -14,11 +14,19 @@
             <p class="colhead">Defences available:</p>
             <div id="unstageddeck" class="carddeck scroll-y">
                 {% for card in defences %}
+                {% if card.prerequisite == -1 %}
                 <div id="{{ 'card' + card.id }}" class="card" onclick="showmodal({{ card.id }})" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
                     <p class="card-title">{{ card.name }}</p>
                     <img src="/images/cards/{{ card.image }}" class="card-image" alt="Image of {{ card.name }}">
                     <p class="card-cost">{{ '£' + card.cost | moneycomma }}</p>
                 </div>
+                {% else %}
+                <div id="{{ 'card' + card.id }}" class="card unplayable" onclick="showmodal({{ card.id }})" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
+                    <p class="card-title">{{ card.name }}</p>
+                    <img src="/images/cards/{{ card.image }}" class="card-image" alt="Image of {{ card.name }}">
+                    <p class="card-cost">{{ '£' + card.cost | moneycomma }}</p>
+                </div>
+                {% endif %}
                 {% endfor %}
             </div>
             <div id="leftdrag" class="dragspace droppable" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -99,7 +107,7 @@
                 <p class="info-body-text">Game over</p>
                 <p class="info-body-text">Well Played here is a custom scoring thing</p>
                 <div class="modallinkspace">
-                    <a href="/" class="modallink" onclick="return confirm('Are you sure you want to leave the page?\nAll actions will be lost.')">Home</a>
+                    <a href="/" class="modallink" onclick="return confirm('Are you sure you want to leave the page?')">Home</a>
                     <p class="modallink" onclick="closeallmodals()">Review board</p>
                 </div>
             </div>
