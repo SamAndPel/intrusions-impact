@@ -134,9 +134,9 @@ function showconsequences(consequencelist, callback) {
     modalroot.innerHTML = ""
 
     // Create the stinger at the top
-    let stinger = document.createElement("p");
-    let embolden = document.createElement("b");
-    let stingertext = document.createTextNode("Here are the consequences of your actions:");
+    const stinger = document.createElement("p");
+    const embolden = document.createElement("b");
+    const stingertext = document.createTextNode("Here are the consequences of your actions:");
     embolden.appendChild(stingertext);
     stinger.appendChild(embolden);
     modalroot.appendChild(stinger);
@@ -147,12 +147,106 @@ function showconsequences(consequencelist, callback) {
         const consdiv = document.createElement("div");
         consdiv.classList.add("consequence-div");
 
+        // Create the div for the top bar
+        const topbar = document.createElement("div");
+        topbar.classList.add("topbar");
+
+        // Display the topbar, containing attack stinger and point delta
+        let verb = "";
+        let goodorbad = "";
+        let score = conseq.scoredelta;
+        if (conseq.scoredelta > 0) {
+            verb = "blocked!";
+            goodorbad = "good";
+            score = "+" + score;
+        } else {
+            verb = "attack!";
+            goodorbad = "bad";
+        }
+        const sourcetextelement = document.createElement("p");
+        sourcetextelement.classList.add("sourcetext");
+        sourcetextelement.classList.add(goodorbad);
+        const sourcetext = document.createTextNode(conseq["type"] + " " + verb);
+        sourcetextelement.appendChild(sourcetext);
+        topbar.appendChild(sourcetextelement);
+
+        const scoretextelement = document.createElement("p");
+        scoretextelement.classList.add("scoretext");
+        scoretextelement.classList.add(goodorbad);
+        const scoretext = document.createTextNode(score + " points");
+        scoretextelement.appendChild(scoretext);
+        topbar.appendChild(scoretextelement);
+
+        // Display the whole topbar
+        consdiv.appendChild(topbar);
+
         // Display the main text
         const maintextelement = document.createElement("p");
         maintextelement.classList.add("info-body-text");
-        const maintext = document.createTextNode(conseq["text"])
+        const maintext = document.createTextNode(conseq["text"]);
         maintextelement.appendChild(maintext);
         consdiv.appendChild(maintextelement);
+
+        // Display image if present
+
+        // Display collapsible ribbon with fact and stat inside, if provided
+        if (conseq["stat"] && conseq["example"]) {
+            // Collapsible trigger
+            const collapsibletrigger = document.createElement("p");
+            collapsibletrigger.classList.add("collapsibletrigger");
+            const collapsibletriggertext = document.createTextNode("In the real world...");
+            collapsibletrigger.appendChild(collapsibletriggertext);
+            consdiv.appendChild(collapsibletrigger);
+
+            // Set up handler for collapsible region
+            collapsibletrigger.addEventListener("click", () => {
+                collapsibletrigger.classList.toggle("collapsibleopen");
+                let content = collapsibletrigger.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+
+            // Collapsible content
+            const collapsiblecontent = document.createElement("div");
+            collapsiblecontent.classList.add("collapsiblecontent");
+
+            const exampleelement = document.createElement("p");
+            exampleelement.classList.add("info-body-text");
+            const exampletext = document.createTextNode(conseq["example"]);
+            exampleelement.appendChild(exampletext);
+            collapsiblecontent.appendChild(exampleelement);
+
+            const statelement = document.createElement("p");
+            statelement.classList.add("info-body-text");
+            const stattext = document.createTextNode(conseq["stat"]);
+            statelement.appendChild(stattext);
+            collapsiblecontent.appendChild(statelement);
+
+            const srcbtndiv = document.createElement("div");
+            srcbtndiv.classList.add("modallinkspace");
+            const srcbtnexample = document.createElement("a");
+            srcbtnexample.href = conseq["example-source"];
+            srcbtnexample.target = "_blank";
+            const srcbtnstat = document.createElement("a");
+            srcbtnstat.href = conseq["stat-source"];
+            srcbtnstat.target = "_blank";
+            srcbtnexample.classList.add("modallink");
+            srcbtnstat.classList.add("modallink");
+            const srcbtnexampletext = document.createTextNode("Case Study");
+            const srcbtnstattext = document.createTextNode("Stat Source");
+            srcbtnexample.appendChild(srcbtnexampletext);
+            srcbtnstat.appendChild(srcbtnstattext);
+            srcbtndiv.appendChild(srcbtnexample);
+            srcbtndiv.appendChild(srcbtnstat);
+            collapsiblecontent.appendChild(srcbtndiv);
+
+            consdiv.appendChild(collapsiblecontent);
+        }
+
+        // Add the consequence to the modal
         modalroot.appendChild(consdiv);
     });
 
