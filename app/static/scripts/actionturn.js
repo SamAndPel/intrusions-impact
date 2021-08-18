@@ -166,7 +166,14 @@ function showconsequences(consequencelist, callback) {
         maintextelement.appendChild(maintext);
         consdiv.appendChild(maintextelement);
 
-        // Display image if present TODO THIS DO THIS SAM FOR THE LOVE OF ALL THAT IS HOLY
+        // Display image if present
+        if (conseq["image"]) {
+            const imageelement = document.createElement("img");
+            imageelement.classList.add("conseqimage");
+            imageelement.src = "/images/consequences/" + conseq["image"];
+            imageelement.alt = "Image showing result of the above consequence";
+            consdiv.appendChild(imageelement);
+        }
 
         // Display collapsible ribbon with fact and stat inside, if provided
         if (conseq["stat"] && conseq["example"]) {

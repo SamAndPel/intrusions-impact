@@ -201,6 +201,12 @@
   font-size: 1.2rem;
 }
 
+.conseqimage {
+  margin: 0 auto 15px;
+  height: 8rem;
+  object-fit: contain;
+}
+
 .collapsibletrigger {
   margin: 0;
   background-color: var(--bg-page-colour);
