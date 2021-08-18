@@ -12,6 +12,9 @@ function doturn() {
             playcard(idno);
         });
 
+        // Log cards played in master log
+        gamelog[turn] = stagedcardids;
+
         // RUN ANIMATION HERE
 
         // Have any new cards been revealed by prerequisite?

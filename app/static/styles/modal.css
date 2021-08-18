@@ -207,6 +207,18 @@
   object-fit: contain;
 }
 
+.conclimage {
+  margin: 0 auto 15px;
+  height: 16rem;
+  object-fit: contain;
+}
+
+.conclscore {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
 .collapsibletrigger {
   margin: 0;
   background-color: var(--bg-page-colour);
