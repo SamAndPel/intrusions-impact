@@ -54,10 +54,67 @@ function recalculatecost() {
 function endgame() {
     // Calculate final score
 
-    // Show final score thing
+    // Use score to generate conclusion from conclusions.json
 
-    // Modals etc
+    // Show final conclusion modal
+    showconclusion(null, () => {
+        // If user clicks 'review board', set board up for review
+        // WORKING POINT
+        
+        // Then remove the conclusion modal
+        closeallmodals();
 
-    // Placeholder
-    document.getElementById("endgamemodal").style.display = "block";    
+        // END OF MAIN CLIENT-SIDE SCRIPT EXECUTION
+        console.log("[*] Main script execution complete");
+    });
+}
+
+function showconclusion(concl, callback) {
+    // Generate modal content
+    const modalroot = document.getElementById("conclusionmodalroot");
+
+    // Wipe existing content in the conclusion modal
+    modalroot.innerHTML = ""
+
+    // Generate stinger
+    const stingerelement = document.createElement("p");
+    stingerelement.classList.add("stinger");
+    const stingertext = document.createTextNode("You have completed your tenure as Head of Cyber Security at AquaVolt Power.");
+    stingerelement.appendChild(stingertext);
+    modalroot.appendChild(stingerelement);
+
+    // Generate conclusion from concl argument
+
+    // Display buttons
+    const btndiv = document.createElement("div");
+    btndiv.classList.add("modallinkspace");
+    const homebtnelement = document.createElement("a");
+    const reviewbtnelement = document.createElement("p");
+    homebtnelement.href = "/";
+    homebtnelement.classList.add("modallink");
+    reviewbtnelement.classList.add("modallink");
+    const homebtntext = document.createTextNode("Home");
+    const reviewbtntext = document.createTextNode("Review board");
+    homebtnelement.appendChild(homebtntext);
+    reviewbtnelement.appendChild(reviewbtntext);
+    btndiv.appendChild(homebtnelement);
+    btndiv.appendChild(reviewbtnelement);
+    modalroot.appendChild(btndiv);
+
+    // Display modal
+    document.getElementById("endgamemodal").style.display = "block";
+    document.getElementById("endgamemodal").scrollTop = 0;
+    console.log("[+] Conclusion modal rendered, waiting for user input");
+
+    // Set up event listeners if the user clicks either button
+    homebtnelement.addEventListener("click", function homebtn(e) {
+        if (!confirm('Are you sure you want to leave the page?')) {
+            e.preventDefault();
+        }
+    }, false);
+
+    reviewbtnelement.addEventListener("click", function reviewbtn(e) {
+        reviewbtnelement.removeEventListener("click", reviewbtn, false);
+        callback();
+    }, false);
 }

@@ -48,7 +48,6 @@ function doturn() {
 
         // Increment turn counter
         turn += 1;
-        document.getElementById("turndisplay").innerHTML = "Year " + (turn + 1);
 
         // Render consequence modal
         showconsequences(conseqs, () => {
@@ -62,6 +61,7 @@ function doturn() {
                 let newbudget = (currentbudget - totalcost) + budgeteachturn;
                 currentbudget = newbudget;
                 document.getElementById("budget").innerHTML = moneyformat(currentbudget);
+                document.getElementById("turndisplay").innerHTML = "Year " + (turn + 1);
             } else {
                 // Subtract staged cards from budget
                 let totalcost = getcostfromidlist(stagedcardids);
@@ -249,6 +249,7 @@ function showconsequences(consequencelist, callback) {
 
     // Show the consequences modal
     document.getElementById("conseqmodal").style.display = "block";
+    document.getElementById("conseqmodal").scrollTop = 0;
     console.log("[+] Consequence modal rendered, waiting for user input");
 
     // Only trigger the callback when the user clicks continue
