@@ -2,12 +2,45 @@
 /* Defines styles for elements used on info pages*/
 
 #infopagecontent {
-    width: 70%;
-    background-color: var(--emph-a-colour);
-    margin: 5px auto;
-    padding: 10px;
-    border-radius: 5px;
-    border: 0;
-    min-height: 25rem;
-    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, .2);
+  width: 70%;
+  background-color: var(--emph-a-colour);
+  margin: 10px auto;
+  padding: 30px;
+  border-radius: 5px;
+  border: 0;
+  min-height: 25rem;
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.ip-sectionhead {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+
+.ip-text {
+  margin: 20px;
+}
+
+.ip-button {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px auto;
+  padding: 20px;
+  border: 0;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  width: 30%;
+  transition-duration: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--bg-page-colour);
+  color: var(--text-colour);
+  cursor: pointer;
+}
+
+.ip-button:hover {
+    background-color: var(--emph-b-colour);
 }
