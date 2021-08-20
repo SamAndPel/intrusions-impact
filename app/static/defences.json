@@ -1175,7 +1175,7 @@
                     "causes-end": true
                 },
                 "notinstalled": {
-                    "text": "A staff member decided that he can make more money by stealing from you than working for you. One day, they install a pen drive in one of your databases, stealing all your unencrypted data. This makes headline news, and the resulting reputational damage is catastrophic. To add salt to the wound, the ICO fine you £2 million for a breaching Principle 6 of the GDPR. With a loss like this, your company goes bust.",
+                    "text": "A staff member decided that he can make more money by stealing from you than working for you. One day, they install a pen drive in one of your databases, stealing all your decrypted data. This makes headline news, and the resulting reputational damage is catastrophic. To add salt to the wound, the ICO fine you £2 million for a breaching Principle 6 of the GDPR. With a loss like this, your company goes bust.",
                     "scoredelta": -50,
                     "type": "Malicious Insider",
                     "image": "",
@@ -1651,7 +1651,7 @@
                     "causes-end": true
                 },
                 "notinstalled": {
-                    "text": "Due to the weaknesses in your server, someone can remotely log in. They steal all your files and the key to unencrypt your data. You fail to notify the data subjects without undue delay and the regulators, within the 72 hour time limit, as specified in the Data Protection Act. The resulting investigation uncovers that you have previously had weaknesses identified with you server, which you failed to act upon. The ICO decide to make an example of you and fine you £5 million. This fine, in combination with the lost files and negative publicity, causes you to permanently shut down. It's unlikely that you'll ever work in a senior role again.",
+                    "text": "Due to the weaknesses in your server, someone can remotely log in. They steal all your files and the key to decrypt your data. You fail to notify the data subjects without undue delay and the regulators, within the 72 hour time limit, as specified in the Data Protection Act. The resulting investigation uncovers that you have previously had weaknesses identified with you server, which you failed to act upon. The ICO decide to make an example of you and fine you £5 million. This fine, in combination with the lost files and negative publicity, causes you to permanently shut down. It's unlikely that you'll ever work in a senior role again.",
                     "scoredelta": -50,
                     "type": "Hacker",
                     "image": "",
