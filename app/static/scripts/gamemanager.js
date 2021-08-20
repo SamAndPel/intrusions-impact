@@ -63,17 +63,17 @@ function endgame() {
     const concldata = JSON.parse(request.responseText);
 
     let concl = {};
-    if (currentscore < -3000) {
+    if (currentscore < -2000) {
         concl = concldata["0"];
-    } else if (currentscore < -2000){
+    } else if (currentscore < -1000){
         concl = concldata["1"];
-    } else if (currentscore < 0){
-        concl = concldata["2"];
     } else if (currentscore < 100){
+        concl = concldata["2"];
+    } else if (currentscore < 500){
         concl = concldata["3"];
-    } else if (currentscore < 200){
+    } else if (currentscore < 750){
         concl = concldata["4"];
-    } else if (currentscore < 300){
+    } else if (currentscore < 2000){
         concl = concldata["5"];
     } else {
         concl = concldata["0"];
@@ -131,7 +131,7 @@ function showconclusion(concl, callback) {
     modalroot.appendChild(scoretitleelement);
 
     let goodorbad = "";
-    if (currentscore > 200 && currentscore < 300) {
+    if (currentscore > 100 && currentscore < 2000) {
         goodorbad = "good";
     } else {
         goodorbad = "bad";

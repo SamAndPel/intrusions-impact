@@ -74,7 +74,14 @@ function doturn() {
             closeallmodals();
 
             // Should the game continue?
-            if (turn < maxturns) {
+            let causedend = false;
+            conseqs.forEach(conseq => {
+                if (conseq["causes-end"]) {
+                    causedend = true;
+                }
+            });
+
+            if (turn < maxturns && (causedend == false)) {
                 // Set budget to 100k + leftover cash
                 let totalcost = getcostfromidlist(stagedcardids);
                 let newbudget = (currentbudget - totalcost) + budgeteachturn;
