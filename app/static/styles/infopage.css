@@ -2,7 +2,6 @@
 /* Defines styles for elements used on info pages*/
 
 #infopagecontent {
-  display: block;
   width: 70%;
   background-color: var(--emph-a-colour);
   margin: 10px auto;
@@ -11,6 +10,31 @@
   border: 0;
   min-height: 25rem;
   box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.homeimg {
+  display: block;
+  margin: 10px auto;
+  height: 15rem;
+  width: 15rem;
+  object-fit: contain;
+}
+
+.homehead {
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.homesubtitle {
+  display: block;
+  text-align: center;
+  margin: 0 auto 30px;
+  font-size: 2rem;
+  font-style: italic;
+  letter-spacing: 5px;
 }
 
 .ip-sectionhead {
