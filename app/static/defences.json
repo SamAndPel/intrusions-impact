@@ -9,13 +9,13 @@
         "longdesc": "Security training is vital for all employees in at-risk organisations, even if they are not a part of the cybersecurity team. One of the main causes of cyberattacks is a lack of awareness – many employees fall victim to phishing scams, which can result in serious consequences for the whole organisation. Hence, a quick course in basic cybersecurity can prevent a great deal of damage. These courses usually involve: identifying different types of threats (spam, phishing, malware, ransomware, etc.), importance of password security, policies to adhere to, data protection and identifying and reporting threats. Employees are an organisation’s first line of defence... educating them is key!",
         "outlink": "https://www.ncsc.gov.uk/blog-post/ncsc-cyber-security-training-for-staff-now-available",
         "prerequisite": -1,
-        "onplay-scoredelta": [30, 20, 10, 0],
+        "onplay-scoredelta": [75, 100, 50, 25],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -41,7 +41,7 @@
             {
                 "installed": {
                     "text": "Due to your awareness training event, a staff member identifies a spearphishing email. They realise that all the personal information within said email is easily available via a basic Google search. Hence, they don't click on the attached malicious link. Had they fallen victim to this scam, the company would've lost contracts worth £20,000.",
-                    "scoredelta": 20,
+                    "scoredelta": 10,
                     "type": "Organised APT",
                     "image": "",
                     "stat": "",
@@ -53,7 +53,7 @@
                 },
                 "notinstalled": {
                     "text": "One day, a staff member receives a spearphishing email, containing information about the university they attended. Not knowing about social engineering or being aware of their data footprint, they click on the attached link. It tells them that there is a problem with their company account, and requests their login details to rectify the issue. The staff member provides these, allowing the hackers to access the company systems remotely. They interfere, cancelling contracts, which leads to a loss of £20,000.",
-                    "scoredelta": 0,
+                    "scoredelta": -10,
                     "type": "Organised APT",
                     "image": "",
                     "stat": "Spearphishing is used by 2/3 of advanced persistant threat groups.",
@@ -67,7 +67,7 @@
             {
                 "installed": {
                     "text": "One day, the finance department receives an urgent email from someone claiming to be the CEO. He wants £150,000 transferred into a new business account ASAP. He sends instructions not to contact him, as he is holding a very important meeting at the golf course. However, a staff member remembers the training they received, so they call the CEO to check. Well done, you've just saved £150,000. It's a good job that you installed a positive behaviour change within your company.",
-                    "scoredelta": 10,
+                    "scoredelta": 25,
                     "type": "Organised APT",
                     "image": "",
                     "stat": "",
@@ -79,7 +79,7 @@
                 },
                 "notinstalled": {
                     "text": "One day, the finance department receives an urgent email from someone claiming to be the CEO. He wants £150,000 transferred into a new business account ASAP. He sends instructions not to contact him, as he is holding a very important meeting at the golf course. Not being aware of phishing, the finance department transfers the £150,000. The staff are soon told that this was fraud, and that they'll never see the money again. If only your staff had known what to look out for...",
-                    "scoredelta": 0,
+                    "scoredelta": -25,
                     "type": "Organised APT",
                     "image": "",
                     "stat": "Phishing is a contributing factor in 90% of data breaches.",
@@ -93,7 +93,7 @@
             {
                 "installed": {
                     "text": "You're made aware of the fact that an organised crime group have been targeting you, trying to crack your staff’s passwords. Luckily, they all have strong passwords made of 3 random words... as they were advised at their training day. Business continues as usual. Without the appropriate training, it could've been disastrous.",
-                    "scoredelta": 5,
+                    "scoredelta": 75,
                     "type": "Organised APT",
                     "image": "",
                     "stat": "",
@@ -105,7 +105,7 @@
                 },
                 "notinstalled": {
                     "text": "Like many people, a number of employees use the same password for their VPN as they use for other websites. After a data dump on one of these websites, someone is able to use the employee's password to log in via the VPN. You discover that all your accounts have been emptied, and all contracts cancelled. Your business is no more. Frankly, it's a wonder how it survived this long.",
-                    "scoredelta": -50,
+                    "scoredelta": -150,
                     "type": "Organised APT",
                     "image": "",
                     "stat": "More than 11 Billion online accounts have been compromised, including passwords.",
@@ -128,13 +128,13 @@
         "longdesc": "A cybersecurity asset audit acts as a checklist, thoroughly assessing the infrastructure of an organisation, checking for vulnerabilities. This will also ensure they are adhering to regulations and policies regarding their cybersecurity, and so it is important these audits are carried out regularly. The audits are usually carried out by a third party, in order to ensure there is no bias, or conflict of interest. The assets audited include: control systems, networking equipment, storage hardware, data acquisition systems, and any other assets that may be deemed vulnerable. It’s recommended that an audit is carried out at least annually, however, this will vary hugely depending on an organisation’s size, budget, risk appetite (willingness to take risk), etc.",
         "outlink": "https://www.ncsc.gov.uk/guidance/asset-management",
         "prerequisite": -1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [75, 100, 50, 25],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -160,7 +160,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 20,
+                    "scoredelta": 0,
                     "type": "Hacker",
                     "image": "",
                     "stat": "",
@@ -172,7 +172,7 @@
                 },
                 "notinstalled": {
                     "text": "Somehow, some of your sensitive files have ended up for sale on the dark web. The resulting ICO investigation discovers that access to these files was gained via your servers. They decide to fine you £17,500, due to breaching Principle 6 of the General Data Protection Regulations.",
-                    "scoredelta": 0,
+                    "scoredelta": -25,
                     "type": "Hacker",
                     "image": "",
                     "stat": "Between July 2018 and August 2021 more than 1 Billion Euros have been paid in fines for violating GDPR.",
@@ -186,7 +186,7 @@
             {
                 "installed": {
                     "text": "Your company decides to explore Industrial Internet of Things (IIoT), so they invest in sensors to help ensure that the generator runs smoothly. The engineers install these sensors, without informing the security department, and they also do not realise that these sensors are still configured to connect to the Internet. Fortunately, the security department performs an asset audit – they find the sensors and configure them correctly. The sensors are disconnected from the Internet, and no one outside of the company can modify them.",
-                    "scoredelta": 10,
+                    "scoredelta": 50,
                     "type": "Hacker",
                     "image": "",
                     "stat": "",
@@ -198,7 +198,7 @@
                 },
                 "notinstalled": {
                     "text": "Your company decides to explore Industrial Internet of Things (IIoT), so they invest in sensors to help ensure that the generator runs smoothly. The engineers install these sensors, without informing the security department, and they also do not realise that these sensors are still configured to connect to the Internet. A cyber enthusiast, using Shodan.io, is able to easily connect to these new sensors, and mess around with the readings. The plant shuts down for 10 hours, whilst the teams figure out what was wrong, and resolve the issue. Consequently, the company suffers a loss in revenue of £50,000.",
-                    "scoredelta": 0,
+                    "scoredelta": -50,
                     "type": "Hacker",
                     "image": "",
                     "stat": "Devices being added to an ICS network is the biggest concern for ICS organisations.",
@@ -212,7 +212,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 5,
+                    "scoredelta": 0,
                     "type": "Hacker",
                     "image": "",
                     "stat": "",
@@ -224,7 +224,7 @@
                 },
                 "notinstalled": {
                     "text": "After spending the last 3 years randomly guessing what security you've needed, you finally realise that you should’ve assessed your vulnerabilities! Unfortunately, this epiphany comes far too late. Multiple weaknesses have been exploited – all your data has been extracted, your computers locked and your SCADA controller jammed, causing your turbines to permanently stop. You've not only let your company and all your staff down, you've let yourself down.",
-                    "scoredelta": -50,
+                    "scoredelta": -200,
                     "type": "Hacker",
                     "image": "",
                     "stat": "90% of ICS organisations have limited to no visability into their ICS networks and so do not have a good understanding of their assets.",
@@ -247,13 +247,13 @@
         "longdesc": "Antivirus software is a basic cybersecurity tool. It runs in the background, detecting and dealing with viruses, worms, trojans, adware, ransomware, etc. These programs will have multiple layers of security – this is necessary considering the power of some malware nowadays. This software may be installed on computers, servers, etc. Antivirus will use numerous techniques: Virus definitions – matching a threat to a database of known virus signatures, to identify it; Heuristic detection – detecting virus families even if there is no existing signature; Behavioural blocking – identifying suspicious behaviour through keystrokes, modifying files, etc; Sandbox detection – testing programs in a separate virtual environment, before running on the actual system.",
         "outlink": "https://www.ncsc.gov.uk/collection/device-security-guidance/policies-and-settings/antivirus-and-other-security-software",
         "prerequisite": -1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [100, 50, 25, 10],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "It's a good job that you've got one of the basic forms of protection in early. Although you don't realise it, your antivirus stops a ransomware from infecting your systems. You've just saved the company a lot of work and money.",
-                    "scoredelta": 20,
+                    "scoredelta": 5,
                     "type": "Script Kiddie",
                     "image": "",
                     "stat": "",
@@ -265,7 +265,7 @@
                 },
                 "notinstalled": {
                     "text": "A ransomware has somehow made its way onto your networks. All computers at your plant and office have been locked. You decide to pay the ransom, a total of £5,000. Luckily, this unlocks all the computers and you get all your data back. However, this has lost the company £5,000.",
-                    "scoredelta": 0,
+                    "scoredelta": -5,
                     "type": "Script Kiddie",
                     "image": "",
                     "stat": "Between January 2018 and October 2020, the number of Ransomware incidents in industrial companies have increased over 500%.",
@@ -279,7 +279,7 @@
             {
                 "installed": {
                     "text": "After a lot of negative publicity from when you were the victim of a ransomware, your new antivirus software has been working extra hard. You seem to have become a target for a lot of attacks. Your decision to install antivirus was clearly a wise choice.",
-                    "scoredelta": 10,
+                    "scoredelta": 25,
                     "type": "Script Kiddie",
                     "image": "",
                     "stat": "",
@@ -291,7 +291,7 @@
                 },
                 "notinstalled": {
                     "text": "With word spreading on the dark web that you were the victim of a ransomware virus, you are again victim to ransomware. A 13-year-old decides to test his skills, and successfully launches an attack on your systems. Although the suspect is arrested and found guilty, the negative news story results in your company’s share price falling by 50%. This also loses you £50,000 in yearly revenue.",
-                    "scoredelta": 0,
+                    "scoredelta": -25,
                     "type": "Script Kiddie",
                     "image": "",
                     "stat": "36% of Ransomware attacks were performed on manufacturing organisations and 10% were on utility companies.",
@@ -305,7 +305,7 @@
             {
                 "installed": {
                     "text": "After a lot of negative publicity from the last two years of ransomware attacks, your new antivirus has been working extra hard. You seem to have become the target of many attacks. Your decision to install an antivirus was clearly a wise choice. If only you had done this earlier!",
-                    "scoredelta": 5,
+                    "scoredelta": 75,
                     "type": "Script Kiddie",
                     "image": "",
                     "stat": "",
@@ -317,7 +317,7 @@
                 },
                 "notinstalled": {
                     "text": "With your lack of security being common knowledge on the dark web, you become a target for people wanting to test their hacking skills. Your systems are attacked almost daily – your computers and SCADA controller are locked by hackers. Your business can't continue, and you are forced to shut down for good.",
-                    "scoredelta": -100,
+                    "scoredelta": -300,
                     "type": "Script Kiddie",
                     "image": "",
                     "stat": "Only 53% of OT networks either use antivirus or log analysis.",
@@ -366,13 +366,13 @@
         "longdesc": "Network monitoring is exactly what it says – monitoring the network. Software or hardware can be installed to keep track of activity on a network, including response time, uptime and availability. The monitoring allows organisations to see how the network behaves regularly, so if there is an unusual change in activity, they can quickly identify any failures or issues, such as cyberattacks. Hence, they can resolve the issue with minimal disruption. Network monitoring offers further benefits such as reducing manual work for IT staff, and highlighting parts of the network infrastructure that may need changing or upgrading.",
         "outlink": "https://www.ncsc.gov.uk/collection/device-security-guidance/managing-deployed-devices/logging-and-protective-monitoring",
         "prerequisite": -1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [50, 75, 100, 50],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 10,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -398,7 +398,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -424,7 +424,7 @@
             {
                 "installed": {
                     "text": "With the control system being so vital to your company, it was clearly a good decision to monitor it more closely. Ignoring these vulnerabilities would have been very costly.",
-                    "scoredelta": 20,
+                    "scoredelta": 25,
                     "type": "Malicious Insider",
                     "image": "",
                     "stat": "",
@@ -436,7 +436,7 @@
                 },
                 "notinstalled": {
                     "text": "Over the last year your turbines have been behaving erratically, almost as if somebody else is in control… This results in a loss of £60,000.",
-                    "scoredelta": 0,
+                    "scoredelta": -25,
                     "type": "Malicious Insider",
                     "image": "",
                     "stat": "More than 40% of initial attack vectors in 2019 were via remote access.",
@@ -450,7 +450,7 @@
             {
                 "installed": {
                     "text": "With the control system being so vital to your company, it was clearly a good decision to monitor it more closely. This decision prevents a rogue member of staff from carrying out a serious attack, which would’ve damaged a turbine. That would’ve caused an environmental and safety incident, costing you £275,000. The board are very pleased that this has been prevented, as the rogue member of staff is now serving a prison term, rather than them.",
-                    "scoredelta": 10,
+                    "scoredelta": 75,
                     "type": "Malicious Insider",
                     "image": "",
                     "stat": "",
@@ -462,7 +462,7 @@
                 },
                 "notinstalled": {
                     "text": "Halfway through the year, an explosion damages one of your turbines, stopping production. Nobody is hurt, however this constitutes a near miss, which must be reported to the HSE (Health and Safety Executive). In addition, a large volume of oil is discharged into the river, causing environmental and reputational damage. This is worsened by national reporting on the Environment Authority’s investigation. It is discovered that someone has been conducting reconnaissance on your SCADA network for some time, and has worked out how to disrupt operations and then lock you out from the SCADA system and the controller. You pay the ransom that is demanded, but nothing happens. You are forced to replace the turbine and the control system. The combined loss from repairs, fines, paying the ransom, lost sales and new software equates to £275,000. If you had installed monitoring sooner, you would have detected the intrusion whilst it was still in the reconnaissance stage.",
-                    "scoredelta": 5,
+                    "scoredelta": -125,
                     "type": "Malicious Insider",
                     "image": "",
                     "stat": "On average only 65% of encrypted data was restored after the ransom was paid.",
@@ -485,13 +485,13 @@
         "longdesc": "CCTV offers excellent physical security to a business. Simply having CCTV installed is a deterrent to criminals. Having a camera watching equipment and employees at all times would certainly be useful were something bad to happen. For example, if someone plugged a malware-infested USB into a computer (maliciously or not), CCTV would be a simple way to identify said person, and at what time the incident occurred. Or, if the system for a piece of machinery was under a cyberattack and began malfunctioning, the CCTV would catch this, in case an employee was not present.",
         "outlink": "https://www.ramsac.com/blog/why-physical-security-is-part-of-cybersecurity/",
         "prerequisite": -1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [75, 100, 50, 25],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -517,7 +517,7 @@
             {
                 "installed": {
                     "text": "It's lucky that you've got defence in depth. Your security guard hands you a report, that says he stopped someone trying to break into the plant overnight. This person also had a key logger on them. It turns out that he had links to an organised crime group. <br> Who knows what could've happened!",
-                    "scoredelta": 20,
+                    "scoredelta": 50,
                     "type": "Organised APT",
                     "image": "",
                     "stat": "",
@@ -529,7 +529,7 @@
                 },
                 "notinstalled": {
                     "text": "After running a minimum staffing level across the bank holiday, a break-in is discovered at the plant. It seems that nothing has been taken, but graffiti has been sprayed everywhere and all the computers have been damaged. Luckily it appears that the SCADA controller wasn't targeted. It costs you £15,000 for a thorough clean and to replace all the damage. Everything has been replaced to the same specification as before. How must they have gotten away with that?",
-                    "scoredelta": 0,
+                    "scoredelta": -25,
                     "type": "Organised APT",
                     "image": "",
                     "stat": "42% of security professionals do not trust their organisation's ability to secure physical access to their systems.",
@@ -543,7 +543,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 10,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -569,7 +569,7 @@
             {
                 "installed": {
                     "text": "You receive a report from your plant security guard. Overnight, they stopped someone who was trying to retrieve a key logger from the SCADA controller. It turns out that this was placed there the last time your plant was physically attacked. The damage and graffiti were just a diversion from something far more sinister. Had the data on the key logger been retrieved, it would’ve been enough to close you down for good. <br> Phew!",
-                    "scoredelta": 5,
+                    "scoredelta": 50,
                     "type": "Organised APT",
                     "image": "",
                     "stat": "",
@@ -581,7 +581,7 @@
                 },
                 "notinstalled": {
                     "text": "It has now been discovered that the first time you had a break in, the graffiti was a “smoke screen” for something more sinister. A key logger had been placed on your SCADA controller. As you haven't invested in CCTV, the criminals were able to recover this key logger undetected. They've used the details to remotely access the controller and cause the turbines to spin uncontrollably, until they explode. This seriously injures workers at the plant. Your business collapses, leaving your professional reputation in tatters.",
-                    "scoredelta": -50,
+                    "scoredelta": -150,
                     "type": "Organised APT",
                     "image": "",
                     "stat": "Nationstate and state-sponsored parties are involved in 27% of all cyber attacks on industrial companies.",
@@ -604,13 +604,13 @@
         "longdesc": "A firewall is either hardware (device between network and gateway), or software (program installed on a device), though it is obviously more effective to implement both. It monitors all incoming/outgoing traffic on a network, when it goes through the ports. It will then allow through, or discard these packets, depending on the rules specified. These rules will vary depending on the organisation, household, etc. There are various types of firewalls: packet-filtering, next generation, proxy, NAT, and stateful multilayer inspection.",
         "outlink": "https://searchsecurity.techtarget.com/definition/firewall",
         "prerequisite": -1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [100,50,25,10],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "The plant’s firewall intercepts a number of scanning attempts from all over the world. Apparently, there are people out there very interested in knowing more about your plant.",
-                    "scoredelta": 20,
+                    "scoredelta": 5,
                     "type": "Researcher",
                     "image": "",
                     "stat": "",
@@ -622,7 +622,7 @@
                 },
                 "notinstalled": {
                     "text": "A university student studying Information Security decides to practice on a live company, and starts by looking at open ports on Shodan.io. They find that your network is easy to get into, and can’t believe how a company like yours doesn’t have basic cyber security at your plant! As they're a future white hat, they decide to report you to the news instead of stealing from you. The news story loses you £20,000 in sales over the year. The ICO (Information Commissioner’s Office) also conduct an investigation and decide not to fine you, but they do remind you of your responsibilities of securing your service by following the NIS regulations.",
-                    "scoredelta": 0,
+                    "scoredelta": -10,
                     "type": "Researcher",
                     "image": "",
                     "stat": "More than 110,000 Industrial control systems are viewable on Shodan.io.",
@@ -636,7 +636,7 @@
             {
                 "installed": {
                     "text": "The plant firewall intercepts a number of scanning attempts from all over the world. Apparently, there are people out there very interested in knowing more about your plant. A failure to install a plant firewall would have cost you £150,000.",
-                    "scoredelta": 10,
+                    "scoredelta": 25,
                     "type": "Researcher",
                     "image": "",
                     "stat": "",
@@ -647,8 +647,8 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "The white hat Information Security student is bored one day, and decides to see if you now have basic cyber security at your plant. They're astounded to see that you still don't have a firewall installed. They report you directly to Ofgem. Ofgem inform you that they consider your previous breach as an aggravating factor. They decide to issue you a fine of £150,000 under Section 18 in the NIS regulations. They warn you that any further breaches that may cause disruption to the service, will not be tolerated.",
-                    "scoredelta": 0,
+                    "text": "The white hat Information Security student is bored one day, and decides to see if you now have basic cyber security at your plant. They're astounded to see that you still don't have a firewall installed. They report you directly to the ICO. The ICO inform you that they consider your previous breach as an aggravating factor. They decide to issue you a fine of £150,000 under Section 18 in the NIS regulations. They warn you that any further breaches that may cause disruption to the service, will not be tolerated.",
+                    "scoredelta": -50,
                     "type": "Researcher",
                     "image": "",
                     "stat": "100% of attackers accessed the ICS network from the internet.",
@@ -662,7 +662,7 @@
             {
                 "installed": {
                     "text": "The plant firewall intercepts a number of scanning attempts from all over the world. Apparently, there are people out there very interested in knowing more about your plant. You don't realise it, but your decision to finally install a firewall has just saved your company.",
-                    "scoredelta": 5,
+                    "scoredelta": 75,
                     "type": "Hacker",
                     "image": "",
                     "stat": "",
@@ -674,7 +674,7 @@
                 },
                 "notinstalled": {
                     "text": "Overnight, your SCADA controller makes your turbines spin faster and faster until eventually they explode, killing people close by. Not only does your business close for good, but you are held responsible and are found guilty of corporate manslaughter. It is discovered during the investigation that over three years, you have failed to install a plant firewall, despite numerous previous warnings.",
-                    "scoredelta": -100,
+                    "scoredelta": -300,
                     "type": "Hacker",
                     "image": "",
                     "stat": "43% of industrial organisations use firewalls inside their network OT network as well as at the boundary.",
@@ -723,13 +723,13 @@
         "longdesc": "CCTV (closed circuit television) offers excellent physical security to a business. Simply having CCTV installed is a deterrent to (cyber)criminals. Having a camera watching equipment and employees at all times would certainly be useful were something bad to happen. For example, if someone plugged a malware-infested USB into a computer (maliciously or not), CCTV would be a simple way to identify said person, and at what time the incident occurred. Or, if the system for a piece of machinery was under a cyberattack and began malfunctioning, the CCTV would catch this, in case an employee was not present.",
         "outlink": "https://www.ramsac.com/blog/why-physical-security-is-part-of-cybersecurity/",
         "prerequisite": -1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [10,25,50,75],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 2,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -755,7 +755,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 5,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -781,7 +781,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 10,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -807,7 +807,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -842,13 +842,13 @@
         "longdesc": "A firewall is either hardware (device between network and gateway), or software (program installed on a device), though it is obviously more effective to implement both. It monitors all incoming/outgoing traffic on a network, when it goes through the ports. It will then allow through, or discard these packets, depending on the rules specified. These rules will vary depending on the organisation, household, etc. There are various types of firewalls: packet-filtering, next generation, proxy, NAT, and stateful multilayer inspection.",
         "outlink": "https://searchsecurity.techtarget.com/definition/firewall",
         "prerequisite": -1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [100, 50, 25, 10],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "A sudden surge of traffic is detected, as a number of machines from all around the world are trying to flood your office network with requests. Fortunately, your network administrator can quickly update the filtering rules of the office firewall, and the DDoS attack does not cause much disruption.",
-                    "scoredelta": 20,
+                    "scoredelta": 5,
                     "type": "Script Kiddie",
                     "image": "",
                     "stat": "",
@@ -860,7 +860,7 @@
                 },
                 "notinstalled": {
                     "text": "A bored script kiddie decided to practice hacking by trying to hack into your company. She can’t believe how easy it is, and that a company like yours doesn’t have an office firewall! Unfortunately, she's a future black hat and decides to intercept payment request emails to your providers using a Remote Access Trojan. She ends up committing a mandate fraud of £15,000. She prevents you from seeing this by launching a DDOS attack as a “smoke screen”. Without a firewall in place, there is nothing you can do about it.",
-                    "scoredelta": 0,
+                    "scoredelta": -5,
                     "type": "Script Kiddie",
                     "image": "",
                     "stat": "The number of DDoS attacks increased 340% between 2019 and 2020.",
@@ -874,7 +874,7 @@
             {
                 "installed": {
                     "text": "A sudden surge of traffic is detected, as a number of machines from all around the world are trying to flood your office network with requests. Fortunately, your network administrator can quickly update the filtering rules of the office firewall, and the DDoS attack does not cause much disruption. You have just prevented the script kiddie from taking your biggest contract of the year.",
-                    "scoredelta": 10,
+                    "scoredelta": 25,
                     "type": "Script Kiddie",
                     "image": "",
                     "stat": "",
@@ -886,7 +886,7 @@
                 },
                 "notinstalled": {
                     "text": "The same script kiddie can't believe her luck. She's still able to hack into your system. This time she waits for a big contract before committing mandate fraud. Unfortunately for you, it is one of your biggest contracts for the year, of £100,000.",
-                    "scoredelta": 0,
+                    "scoredelta": -25,
                     "type": "Script Kiddie",
                     "image": "",
                     "stat": "56% of organisations spend between 10 and 49% of their security budget on firewalls.",
@@ -900,7 +900,7 @@
             {
                 "installed": {
                     "text": "A sudden surge of traffic is detected, as a number of machines from all around the world are trying to flood your office network with requests. Fortunately, your network administrator can quickly update the filtering rules of the office firewall, and the attack does not cause much disruption. It would’ve been disastrous had you not had a firewall in place.",
-                    "scoredelta": 5,
+                    "scoredelta": 75,
                     "type": "Script Kiddie",
                     "image": "",
                     "stat": "",
@@ -912,7 +912,7 @@
                 },
                 "notinstalled": {
                     "text": "You have successfully made someone a millionaire. The script kiddie has been living off your terrible decision making for the last year. She has managed to commit mandate fraud on over 20 different contracts this year, costing you millions of pounds. Unsurprisingly, you can't afford to lose this kind of business, and your company goes bankrupt. Your professional reputation is in tatters.",
-                    "scoredelta": -100,
+                    "scoredelta": -300,
                     "type": "Script Kiddie",
                     "image": "",
                     "stat": "95% of organisations believe that a firewall is going to be more important in the near future.",
@@ -961,7 +961,7 @@
         "longdesc": "Network monitoring is exactly what it says – monitoring the network. Software or hardware can be installed to keep track of activity on a network, including response time, uptime and availability. The monitoring allows organisations to see how the network behaves regularly, so if there is an unusual change in activity, they can quickly identify any failures or issues, such as cyberattacks. Hence, they can resolve the issue with minimal disruption. Network monitoring offers further benefits such as reducing manual work for IT staff, and highlighting parts of the network infrastructure that may need changing or upgrading.",
         "outlink": "https://www.ncsc.gov.uk/collection/device-security-guidance/managing-deployed-devices/logging-and-protective-monitoring",
         "prerequisite": -1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [25,50,75,100],
         "onplay-text": "",
         "consequences": [
             {
@@ -993,7 +993,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 10,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1019,7 +1019,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1045,7 +1045,7 @@
             {
                 "installed": {
                     "text": "Having been fired from your company, an ex-employee has accessed your system remotely. They intend to wipe everything from your systems and bring your company crashing down around you.  Fortunately, your network monitor identified this unusual activity and you prevented this from happening.  You identify how they gained access and close the weakness. Nothing of any value is lost.",
-                    "scoredelta": 20,
+                    "scoredelta": -25,
                     "type": "Ex-Employee",
                     "image": "",
                     "stat": "",
@@ -1057,7 +1057,7 @@
                 },
                 "notinstalled": {
                     "text": "Having been fired from your company, an ex-employee realises there is a vulnerability in an update for a network management software that your company uses, and exploits it. They wipe as much data as they can, trying to bring your company crashing down around you. Fortunately, they're only partly successful. They wipe significant amounts of data but miss the chance to wipe out business critical data. This results in a combination of business and operational consequences, and costs you £40,000.",
-                    "scoredelta": 10,
+                    "scoredelta": -25,
                     "type": "Ex-Employee",
                     "image": "",
                     "stat": "10% of OT cyber incidents were caused by a former employee in 2019.",
@@ -1080,13 +1080,13 @@
         "longdesc": "Encrypting the 'data at-rest' in a database adds a layer of security – a decryption key is needed to access the data. This key is stored elsewhere, not on the same server. Furthermore, data protection is becoming increasingly important these days. Although organisations are not explicitly required to encrypt their data, GDPR states they should have “security measures and safeguards” in order to protect personal data. A database’s job is to store data. Hence, it should be adequately secure, should a cyberattacker attempt to gain access to it. If the attacker does gain access to the data, they may use it for ransom, sell the data, etc.",
         "outlink": "https://www.thesecuritybuddy.com/database-security/what-is-database-encryption/?__cf_chl_captcha_tk__=pmd_6ec363f8573baa88310527c3eaa7ce23b7dc8aec-1629114777-0-gqNtZGzNAuKjcnBszQb6",
         "prerequisite": 1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [50,75,100,50],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 10,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1112,7 +1112,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1138,7 +1138,7 @@
             {
                 "installed": {
                     "text": "You discover that someone has managed to gain access to your databases. They’ve stolen customers’ personal data. You correctly record the breach in your data breach log. Fortunately, all your data was encrypted so the breach doesn't pose a high risk of adversely affecting individuals’ rights and freedom. This means that you don't have to inform the ICO or the data subjects. You have just prevented massive reputational damage to your company.",
-                    "scoredelta": 20,
+                    "scoredelta": 25,
                     "type": "Competitor",
                     "image": "",
                     "stat": "",
@@ -1150,7 +1150,7 @@
                 },
                 "notinstalled": {
                     "text": "Throughout the year, your main competitor has been winning every contract that they've bid for, by undercutting you by minimal amounts. It's as if they know what some of your sensitive data says… You have lost £70,000 in sales over the year.",
-                    "scoredelta": 0,
+                    "scoredelta": -25,
                     "type": "Competitor",
                     "image": "",
                     "stat": "10% of OT cyber incidents were caused by a competitor in 2019.",
@@ -1164,7 +1164,7 @@
             {
                 "installed": {
                     "text": "You discover that someone has managed to gain access to your databases. They have stolen customers’ personal data. You correctly record the breach in your data breach log. Fortunately, all your data was encrypted so the breach doesn't pose a high risk of adversely affecting individuals’ rights and freedom. This means that you don't have to inform the ICO or the data subjects. You have just prevented massive reputational damage to your company.",
-                    "scoredelta": 10,
+                    "scoredelta": 50,
                     "type": "Nationstate",
                     "image": "",
                     "stat": "",
@@ -1176,7 +1176,7 @@
                 },
                 "notinstalled": {
                     "text": "A staff member decided that he can make more money by stealing from you than working for you. One day, they install a pen drive in one of your databases, stealing all your decrypted data. This makes headline news, and the resulting reputational damage is catastrophic. To add salt to the wound, the ICO fine you £2 million for a breaching Principle 6 of the GDPR. With a loss like this, your company goes bust.",
-                    "scoredelta": -50,
+                    "scoredelta": -150,
                     "type": "Malicious Insider",
                     "image": "",
                     "stat": "Current employees caused 35% of all icidents in OT organisations.",
@@ -1199,13 +1199,13 @@
         "longdesc": "Encrypting the data on PCs adds a layer of security – a decryption key is needed to access the data. Many PCs will come with encryption built-in, however paying for encryption may offer further, enhanced security. PC encryption encompasses file encryption, as well as 'data in-transit'. When data is travelling within and to other devices, it must be protected, to avoid cyberattackers stealing or altering the data. This could be through a man-in-the-middle attack, for example, where an attacker intrudes on communication between two parties, either to listen or alter the data. To protect data in-transit, the data will be encrypted, transferred, and then decrypted at its destination.",
         "outlink": "https://www.aheliotech.com/tutorials/why-you-should-encrypt-your-computer/",
         "prerequisite": 1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [10,25,50,75],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 2,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1231,7 +1231,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 5,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1257,7 +1257,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 10,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1283,7 +1283,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1295,7 +1295,7 @@
                 },
                 "notinstalled": {
                     "text": "",
-                    "scoredelta": 20,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1318,13 +1318,13 @@
         "longdesc": "Upgrading PCs will provide benefits in numerous areas, especially security. PCs nowadays are designed with security as a priority, due to the increasing prevalence of cyberattacks. They come with built-in security features. New PCs will also be more compatible with current cybersecurity products, and support for this upgraded hardware will be more available. With older systems being more vulnerable, unstable and unreliable, the cost of fixing these issues as they arise (instead of upgrading), may rack up hugely.",
         "outlink": "https://echopath.com/updating-operating-system-os-important/",
         "prerequisite": 1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [25,50,75,100],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 5,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1350,7 +1350,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 10,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1376,7 +1376,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1402,7 +1402,7 @@
             {
                 "installed": {
                     "text": "You upgrade all your PCs, which also includes updates on all security patches. This prevents a member of staff from elevating their access privileges and causing havoc with the management's email system. Your decision to patch has just saved you £50,000.",
-                    "scoredelta": 20,
+                    "scoredelta": 25,
                     "type": "Malicious Insider",
                     "image": "",
                     "stat": "",
@@ -1414,7 +1414,7 @@
                 },
                 "notinstalled": {
                     "text": "An employee with a particular dislike for the management has used one of the known vulnerabilities in your PCs’ operating system to elevate their access privileges. They get access to the management's email systems and send out abusive emails to all your customers. This costs you £50,000 in sales.",
-                    "scoredelta": 10,
+                    "scoredelta": -25,
                     "type": "Malicious Insider",
                     "image": "",
                     "stat": "More than 75% of industrial organisations have obsolete Windows systems.",
@@ -1437,13 +1437,13 @@
         "longdesc": "Upgrading the SCADA controller’s firmware may offer benefits to an organisation in many areas, including their cybersecurity. As the SCADA system is what controls all PLCs, it’s vital that this system functions well and is secure. These types of systems are closely observed and researched, as they form a part of critical national infrastructure. It has been shown that, over time, the controllers degrade, and vulnerabilities are found. In newer controllers, these vulnerabilities have been secured, there is more support available for issues and the overall cybersecurity is generally more effective.",
         "outlink": "",
         "prerequisite": 1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [10,25,50,75],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 2,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1469,7 +1469,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 5,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1495,7 +1495,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 10,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1521,7 +1521,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1533,7 +1533,7 @@
                 },
                 "notinstalled": {
                     "text": "",
-                    "scoredelta": 20,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1556,13 +1556,13 @@
         "longdesc": "Upgrading servers will improve both efficiency and security. Technology is constantly evolving –upgrading servers will provide more storage, less downtime, etc. Cyberattacks are also becoming more prevalent and powerful. Nowadays, new server technology takes this into account, by building in features that will help to prevent/minimise the risk of cyberattacks. Increasing the cybersecurity of a system is known as system hardening. This may include: encryption for communication, removal of unnecessary software, updating operating systems, strong password complexity, intrusion detection systems and data back-ups.",
         "outlink": "http://blog.plantautomation-technology.com/why-upgrade-your-scada/",
         "prerequisite": 1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [50,75,100,50],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 10,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1588,7 +1588,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1614,7 +1614,7 @@
             {
                 "installed": {
                     "text": "Unbeknownst to you, a group known to protest for green power attacks your server. Apparently, they believe that your turbines create a lot of pollution. Thanks to your upgraded server, they are unable to deface your website as planned. They give up trying to get through your strong security and decide to attack an easier target, which turns out to be your main competitor! What a good result!",
-                    "scoredelta": 20,
+                    "scoredelta": 30,
                     "type": "Hacktivist",
                     "image": "",
                     "stat": "",
@@ -1626,7 +1626,7 @@
                 },
                 "notinstalled": {
                     "text": "A group known to protest for green power attack your server. Apparently, they believe that your turbines create a lot of pollution. They have defaced your website by posting some very unpleasant things. The resulting loss of reputation and sales amounts to £65,000.",
-                    "scoredelta": 0,
+                    "scoredelta": -25,
                     "type": "Hacktivist",
                     "image": "",
                     "stat": "Of all OT incidents, 17% are caused by activists.",
@@ -1640,7 +1640,7 @@
             {
                 "installed": {
                     "text": "As servers are the usual way for hackers to target your system, it's a good job that you've finally upgraded them. The consequences of not doing this could've been disastrous.",
-                    "scoredelta": 10,
+                    "scoredelta": 75,
                     "type": "Hacker",
                     "image": "",
                     "stat": "",
@@ -1652,7 +1652,7 @@
                 },
                 "notinstalled": {
                     "text": "Due to the weaknesses in your server, someone can remotely log in. They steal all your files and the key to decrypt your data. You fail to notify the data subjects without undue delay and the regulators, within the 72 hour time limit, as specified in the Data Protection Act. The resulting investigation uncovers that you have previously had weaknesses identified with you server, which you failed to act upon. The ICO decide to make an example of you and fine you £5 million. This fine, in combination with the lost files and negative publicity, causes you to permanently shut down. It's unlikely that you'll ever work in a senior role again.",
-                    "scoredelta": -50,
+                    "scoredelta": -150,
                     "type": "Hacker",
                     "image": "",
                     "stat": "Failing to notify data subjects in due time has contributed to more than €18 million in fines under GDPR.",
@@ -1675,13 +1675,13 @@
         "longdesc": "A threat assessment provides details of any existing threats to an organisation. After this, a risk management plan may be created, taking into account the vulnerabilities discovered. High-value data is identified, such as customer/staff information, patented/secret data, information that may damage reputation, etc. Assets analysed include: software/hardware, IT policies, network architecture, data storage, environmental/physical security controls, etc. The organisation must also realise that, although external threats can be menacing, often there are internal threats, intentional or unintentional, that can cause them a great deal of damage. Hence, the risk management plan resulting from the threat assessment may suggest: data handling policies, security training, disaster recovery procedures, etc.",
         "outlink": "https://cybersecuritykings.com/2020/03/23/10-tips-for-a-cyber-threat-and-risk-assessment/",
         "prerequisite": -1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [75,100,50,25],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1707,13 +1707,13 @@
             {
                 "installed": {
                     "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018.",
-                    "scoredelta": 20,
+                    "scoredelta": 0,
                     "type": "3rd Party",
                     "image": "",
-                    "stat": "",
-                    "stat-source": "",
-                    "example": "",
-                    "example-source": "",
+                    "stat": "Suppliers and partners are the 3rd biggest security concern in industrial organisations.",
+                    "stat-source": "https://www.sans.org/white-papers/38995/",
+                    "example": "Target (2013) - The attackers first compromised a 3rd party HVAC company and then connected to Target's network via the 3rd party maintenance portal. The attackers then used this access to 40 million card details.",
+                    "example-source": "https://www.zdnet.com/article/anatomy-of-the-target-data-breach-missed-opportunities-and-lessons-learned/",
                     "improvement": "",
                     "causes-end": false
                 },
@@ -1733,7 +1733,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 10,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1759,7 +1759,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 5,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1771,7 +1771,7 @@
                 },
                 "notinstalled": {
                     "text": "",
-                    "scoredelta": 2,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1794,13 +1794,13 @@
         "longdesc": "In ICS environments, network and device segmentation is important for security. It’s a security measure that prevents a hacker from easily travelling through a network. Without system segmentation, if a hacker gains access to the system, they have the potential to “hack their way” through. However, by separating the systems, physically or logically, the hacker can no longer travel between sections of the network. At the very minimum, the OT network of a hydroplant should be separated from the corporate IT network. But this separation should ideally go further. The network that runs the business-as-usual processes may be separated from their back-up systems – so should the hacker gain access and interfere with the main systems, the back-up systems can protect these processes. This could save the organisation from a lot of damage.",
         "outlink": "https://www.ncsc.gov.uk/guidance/preventing-lateral-movement",
         "prerequisite": -1,
-        "onplay-scoredelta": [],
+        "onplay-scoredelta": [50,75,100,50],
         "onplay-text": "",
         "consequences": [
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 10,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1826,7 +1826,7 @@
             {
                 "installed": {
                     "text": "",
-                    "scoredelta": 15,
+                    "scoredelta": 0,
                     "type": "",
                     "image": "",
                     "stat": "",
@@ -1852,7 +1852,7 @@
             {
                 "installed": {
                     "text": "Implementing network segmentation greatly reduces the number of ways someone can gain access to an ICS network. This stops a curious employee from being able to do damage in the plant network.",
-                    "scoredelta": 20,
+                    "scoredelta": 25,
                     "type": "Malicious Insider",
                     "image": "",
                     "stat": "",
@@ -1864,7 +1864,7 @@
                 },
                 "notinstalled": {
                     "text": "A mischievous employee starts messing around on the enterprise network and works his way onto the ICS network. They find a HMI, and play with some of the variables. Luckily, an operator notices and stops this before too much damage is caused. The loss of revenues costs the company £27,000. Segmenting the ICS network and enterprise network helps prevent giving people easy access to the ICS network.",
-                    "scoredelta": 0,
+                    "scoredelta": -25,
                     "type": "Malicious Insider",
                     "image": "",
                     "stat": "88% of OT organisations have inadequate network segmentation.",
@@ -1878,7 +1878,7 @@
             {
                 "installed": {
                     "text": "After noticing how easy it is to gain to the ICS network from the enterprise network, you decide to segregate it. Whilst doing this, you segregate the ICS and SIS networks to ensure that your safety backup remains protected as well. This is a good idea – a nation state gains access to the ICS and performs an attack, disrupting the plant. However, as the SIS is protected, an overflow pipe opens, preventing a lot of damage. It would have been much worse if you hadn't segmented your network.",
-                    "scoredelta": 10,
+                    "scoredelta": 75,
                     "type": "Nationstate",
                     "image": "",
                     "stat": "",
@@ -1890,7 +1890,7 @@
                 },
                 "notinstalled": {
                     "text": "Having previously accessed your office network and moved into the plant network, the nation state knows that the safety system will automatically stop the water flowing into the plant too quickly. They can easily shut down this system, as it is not segmented from the ICS network. A few weeks later, after a storm, the water flows too quickly for the turbine, leading to a turbine malfunction. This damage and the loss of revenue costs the company is £385,000.",
-                    "scoredelta": 5,
+                    "scoredelta": -125,
                     "type": "Nationstate",
                     "image": "",
                     "stat": "Only 22% of industrial organisations physically air gap their main plant network from their safety systems.",
