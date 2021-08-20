@@ -7,28 +7,28 @@ function doturn() {
     let stagedcardids = getstagedcards();
     console.log("[+] Staged cards: " + stagedcardids);
     if (validatecards(stagedcardids)) {
-        // Move played cards to the 'played' deck
-        stagedcardids.forEach(idno => {
-            playcard(idno);
-        });
-
         // Log cards played in master log
         gamelog[turn] = stagedcardids;
-
-        // RUN ANIMATION HERE
 
         // Have any new cards been revealed by prerequisite?
         Object.values(rawdata).forEach(card => {
             const idno = card.id;
             const prereq = card.prerequisite;
             if (card.prerequisite != -1) {
-                if (cardpositionmaster[prereq] == "played") {
+                if (cardpositionmaster[prereq] == "staged") {
                     console.log("[*] New card revealed - card " + idno);
                     const cardid = "card" + idno;
                     document.getElementById(cardid).classList.remove("unplayable");
                 }
             }
         });
+
+        // Move played cards to the 'played' deck
+        stagedcardids.forEach(idno => {
+            playcard(idno);
+        });
+
+        // RUN ANIMATION HERE
 
         // Generate consequence list
         let conseqs = [];
@@ -42,6 +42,14 @@ function doturn() {
         });
         // Prune empty consequences from list
         conseqs = conseqs.filter(conseq => (conseq["text"]));
+
+        // Build onplays list
+        let onplays = []
+        stagedcardids.forEach(idno => {
+            if (rawdata[idno]["onplay-text"]) {
+                onplays.push(rawdata[idno]["onplay-text"]);
+            }
+        });
 
         // Action results of consequences on score
         conseqs.forEach(cons => {
@@ -61,7 +69,7 @@ function doturn() {
         turn += 1;
 
         // Render consequence modal
-        showconsequences(conseqs, () => {
+        showconsequences(onplays, conseqs, () => {
             // After consequence window has been closed
             closeallmodals();
 
@@ -117,7 +125,7 @@ function validatecards(stagedcards) {
 }
 
 // Renders a consequences modal
-function showconsequences(consequencelist, callback) {
+function showconsequences(onplaylist, consequencelist, callback) {
     // Generate HTML for each consequence in list and append it to the modal
     let modalroot = document.getElementById("conseqmodalroot");
 
@@ -130,6 +138,22 @@ function showconsequences(consequencelist, callback) {
     const stingertext = document.createTextNode("Here are the consequences of your actions:");
     stinger.appendChild(stingertext);
     modalroot.appendChild(stinger);
+
+    // For each onplay
+    onplaylist.forEach(onplay => {
+        // Create the div for the onplay
+        const onplaydiv = document.createElement("div");
+        onplaydiv.classList.add("consequence-div");
+
+        // Display the onplay text
+        const onplayelement = document.createElement("p");
+        onplayelement.classList.add("info-body-text");
+        const onplaytext = document.createTextNode(onplay);
+        onplayelement.appendChild(onplaytext);
+        onplaydiv.appendChild(onplayelement);
+
+        modalroot.appendChild(onplaydiv);
+    });
 
     // For each consequence
     consequencelist.forEach(conseq => {
