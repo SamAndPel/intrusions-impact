@@ -2,10 +2,11 @@
 /* Defines styles for elements used on info pages*/
 
 #infopagecontent {
+  display: block;
   width: 70%;
   background-color: var(--emph-a-colour);
   margin: 10px auto;
-  padding: 30px;
+  padding: 10px 20px;
   border-radius: 5px;
   border: 0;
   min-height: 25rem;
@@ -13,13 +14,20 @@
 }
 
 .ip-sectionhead {
+  display: block;
   font-weight: bold;
   font-size: 1.5rem;
   margin: 5px;
+  padding: 10px 0 0 0;
 }
 
 .ip-text {
+  display: block;
   margin: 20px;
+}
+
+.ip-list {
+  list-style: none;
 }
 
 .ip-button {
@@ -42,5 +50,5 @@
 }
 
 .ip-button:hover {
-    background-color: var(--emph-b-colour);
+  background-color: var(--emph-b-colour);
 }
