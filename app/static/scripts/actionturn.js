@@ -43,9 +43,17 @@ function doturn() {
         // Prune empty consequences from list
         conseqs = conseqs.filter(conseq => (conseq["text"]));
 
-        // Action results of consequences on score etc
+        // Action results of consequences on score
         conseqs.forEach(cons => {
-            currentscore = currentscore + cons.scoredelta;
+            currentscore += cons.scoredelta;
+        });
+
+        // Action results of onplay-scoredeltas on score
+        stagedcardids.forEach(idno => {
+            if (rawdata[idno]["onplay-scoredelta"].length) {
+                currentscore += rawdata[idno]["onplay-scoredelta"][turn];
+                console.log("[+] OnplayScoredelta for card " + idno + " applied: " + rawdata[idno]["onplay-scoredelta"][turn]);
+            }
         });
         console.log("[*] Global score is now " + currentscore);
 
