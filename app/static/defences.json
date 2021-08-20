@@ -129,7 +129,7 @@
         "outlink": "https://www.ncsc.gov.uk/guidance/asset-management",
         "prerequisite": -1,
         "onplay-scoredelta": [],
-        "onplay-text": "",
+        "onplay-text": "An experienced team of auditors visit the plant and asses your equipment. They find numerous problems, caused mostly by your out-of-date equipment. You're still using old Windows XP workstations, none of your databases are encrypted and your plant controller hasn't been upgraded since 1996! You've unlocked new defences.",
         "consequences": [
             {
                 "installed": {
