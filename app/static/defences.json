@@ -521,7 +521,7 @@
             },
             {
                 "installed": {
-                    "text": "It's lucky that you've got defence in depth. Your security guard hands you a report, that says he stopped someone trying to break into the plant overnight. This person also had a key logger on them. It turns out that he had links to an organised crime group. <br> Who knows what could've happened!",
+                    "text": "It's lucky that you've got defence in depth. Your security guard hands you a report, that says he stopped someone trying to break into the plant overnight. This person also had a key logger on them. It turns out that he had links to an organised crime group. Who knows what could've happened!",
                     "scoredelta": 50,
                     "type": "Organised APT",
                     "image": "",
@@ -573,7 +573,7 @@
             },
             {
                 "installed": {
-                    "text": "You receive a report from your plant security guard. Overnight, they stopped someone who was trying to retrieve a key logger from the SCADA controller. It turns out that this was placed there the last time your plant was physically attacked. The damage and graffiti were just a diversion from something far more sinister. Had the data on the key logger been retrieved, it would’ve been enough to close you down for good. <br> Phew!",
+                    "text": "You receive a report from your plant security guard. Overnight, they stopped someone who was trying to retrieve a key logger from the SCADA controller. It turns out that this was placed there the last time your plant was physically attacked. The damage and graffiti were just a diversion from something far more sinister. Had the data on the key logger been retrieved, it would’ve been enough to close you down for good. Phew!",
                     "scoredelta": 50,
                     "type": "Organised APT",
                     "image": "",
