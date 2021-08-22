@@ -12,6 +12,7 @@ const maxturns = 4;             // Turns to run before forcing endgame (may be u
 let turn = 0;                   // Current turn
 
 let currentscore = 0;           // Current score (impacted by scoredeltas)
+let currentimprovements = []    // A log of the current, most recommended improvements
 
 // Gets JSON and builds required data structures on game start
 function initialise() {
