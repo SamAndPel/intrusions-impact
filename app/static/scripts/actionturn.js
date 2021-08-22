@@ -30,16 +30,66 @@ function doturn() {
 
         // RUN ANIMATION HERE
 
-        // Generate consequence list
+        // Generate consequence list and adds ti improvements list
         let conseqs = [];
         Object.values(rawdata).forEach(card => {
             let idno = card.id;
             if (cardpositionmaster[idno] == "played") {
                 conseqs.push(card.consequences[turn].installed);
+                // Checks if card was played this turn
+                if (gamelog[turn].includes(idno.toString())){
+                    addimprovement(card, card.consequences[turn].installed, false);
+                }
             } else {
                 conseqs.push(card.consequences[turn].notinstalled);
+                if (card.consequences[turn].notinstalled["causes-end"]){
+                    addimprovement(card, card.consequences[turn].notinstalled, true);
+                }
             }
         });
+
+        // Adds improvement to list
+        function addimprovement(card, cons, ended){
+            // Assigns score delta based on whether the card was played or not
+            if (cons.improvement != ""){
+                if (!ended){
+                    impscore = card["onplay-scoredelta"][turn];
+                } else{
+                    impscore = card["neverplayed-scoredelta"];
+                }
+                desc = cons.improvement;
+                let currentimp = {scoredelta: impscore, description: desc};
+                // Automatically adds card to list if not full 
+                if (currentimprovements.length < 3){
+                    temp = currentimp;
+                    length = currentimprovements.length;
+                    // Ensures list remains ordered (increasing in score)
+                    for (let i = 0; i <= length; i++){
+                        if (i == currentimprovements.length){
+                            currentimprovements[i] = temp;
+                        } else if (temp.scoredelta < currentimprovements[i].scoredelta){
+                            r = currentimprovements[i];
+                            currentimprovements[i] = temp;
+                            temp = r;
+                        }
+                    }
+                // Adds improvement to the list if the score is less than the largest score in the list and ensures list remains order (increasing in score)
+                } else if (currentimp.scoredelta < currentimprovements[2].scoredelta){
+                    if (currentimp.scoredelta >= currentimprovements[1].scoredelta){
+                        currentimprovements[2] = currentimp;
+                    } else if (currentimp.scoredelta >= currentimprovements[0].scoredelta){
+                        currentimprovements[2] = currentimprovements[1];
+                        currentimprovements[1] = currentimp;
+                    } else{
+                        currentimprovements[2] = currentimprovements[1];
+                        currentimprovements[1] = currentimprovements[0];
+                        currentimprovements[0] = currentimp;
+                    }
+                }
+            }
+        }
+
+
         // Prune empty consequences from list
         conseqs = conseqs.filter(conseq => (conseq["text"]));
 
