@@ -10,6 +10,7 @@
         "outlink": "https://www.ncsc.gov.uk/blog-post/ncsc-cyber-security-training-for-staff-now-available",
         "prerequisite": -1,
         "onplay-scoredelta": [75, 100, 50, 25],
+        "neverplayed-scoredelta": -1,
         "onplay-text": "",
         "consequences": [
             {
@@ -129,6 +130,7 @@
         "outlink": "https://www.ncsc.gov.uk/guidance/asset-management",
         "prerequisite": -1,
         "onplay-scoredelta": [75, 100, 50, 25],
+        "neverplayed-scoredelta": -1,
         "onplay-text": "An experienced team of auditors visit the plant and asses your equipment. They find numerous problems, caused mostly by your out-of-date equipment. You're still using old Windows XP workstations, none of your databases are encrypted and your plant controller hasn't been upgraded since 1996! You've unlocked new defences.",
         "consequences": [
             {
@@ -248,6 +250,7 @@
         "outlink": "https://www.ncsc.gov.uk/collection/device-security-guidance/policies-and-settings/antivirus-and-other-security-software",
         "prerequisite": -1,
         "onplay-scoredelta": [100, 50, 25, 10],
+        "neverplayed-scoredelta": -2,
         "onplay-text": "",
         "consequences": [
             {
@@ -367,6 +370,7 @@
         "outlink": "https://www.ncsc.gov.uk/collection/device-security-guidance/managing-deployed-devices/logging-and-protective-monitoring",
         "prerequisite": -1,
         "onplay-scoredelta": [50, 75, 100, 50],
+        "neverplayed-scoredelta": 25,
         "onplay-text": "",
         "consequences": [
             {
@@ -486,6 +490,7 @@
         "outlink": "https://www.ramsac.com/blog/why-physical-security-is-part-of-cybersecurity/",
         "prerequisite": -1,
         "onplay-scoredelta": [75, 100, 50, 25],
+        "neverplayed-scoredelta": -1,
         "onplay-text": "",
         "consequences": [
             {
@@ -605,6 +610,7 @@
         "outlink": "https://searchsecurity.techtarget.com/definition/firewall",
         "prerequisite": -1,
         "onplay-scoredelta": [100,50,25,10],
+        "neverplayed-scoredelta": -2,
         "onplay-text": "",
         "consequences": [
             {
@@ -724,6 +730,7 @@
         "outlink": "https://www.ramsac.com/blog/why-physical-security-is-part-of-cybersecurity/",
         "prerequisite": -1,
         "onplay-scoredelta": [10,25,50,75],
+        "neverplayed-scoredelta": 100,
         "onplay-text": "",
         "consequences": [
             {
@@ -843,6 +850,7 @@
         "outlink": "https://searchsecurity.techtarget.com/definition/firewall",
         "prerequisite": -1,
         "onplay-scoredelta": [100, 50, 25, 10],
+        "neverplayed-scoredelta": -2,
         "onplay-text": "",
         "consequences": [
             {
@@ -962,6 +970,7 @@
         "outlink": "https://www.ncsc.gov.uk/collection/device-security-guidance/managing-deployed-devices/logging-and-protective-monitoring",
         "prerequisite": -1,
         "onplay-scoredelta": [25,50,75,100],
+        "neverplayed-scoredelta": 50,
         "onplay-text": "",
         "consequences": [
             {
@@ -1081,6 +1090,7 @@
         "outlink": "https://www.thesecuritybuddy.com/database-security/what-is-database-encryption/?__cf_chl_captcha_tk__=pmd_6ec363f8573baa88310527c3eaa7ce23b7dc8aec-1629114777-0-gqNtZGzNAuKjcnBszQb6",
         "prerequisite": 1,
         "onplay-scoredelta": [50,75,100,50],
+        "neverplayed-scoredelta": -1,
         "onplay-text": "",
         "consequences": [
             {
@@ -1200,6 +1210,7 @@
         "outlink": "https://www.aheliotech.com/tutorials/why-you-should-encrypt-your-computer/",
         "prerequisite": 1,
         "onplay-scoredelta": [10,25,50,75],
+        "neverplayed-scoredelta": 100,
         "onplay-text": "",
         "consequences": [
             {
@@ -1319,6 +1330,7 @@
         "outlink": "https://echopath.com/updating-operating-system-os-important/",
         "prerequisite": 1,
         "onplay-scoredelta": [25,50,75,100],
+        "neverplayed-scoredelta": 50,
         "onplay-text": "",
         "consequences": [
             {
@@ -1438,6 +1450,7 @@
         "outlink": "",
         "prerequisite": 1,
         "onplay-scoredelta": [10,25,50,75],
+        "neverplayed-scoredelta": 100,
         "onplay-text": "",
         "consequences": [
             {
@@ -1557,6 +1570,7 @@
         "outlink": "http://blog.plantautomation-technology.com/why-upgrade-your-scada/",
         "prerequisite": 1,
         "onplay-scoredelta": [50,75,100,50],
+        "neverplayed-scoredelta": -1,
         "onplay-text": "",
         "consequences": [
             {
@@ -1676,6 +1690,7 @@
         "outlink": "https://cybersecuritykings.com/2020/03/23/10-tips-for-a-cyber-threat-and-risk-assessment/",
         "prerequisite": -1,
         "onplay-scoredelta": [75,100,50,25],
+        "neverplayed-scoredelta": 10,
         "onplay-text": "",
         "consequences": [
             {
@@ -1795,6 +1810,7 @@
         "outlink": "https://www.ncsc.gov.uk/guidance/preventing-lateral-movement",
         "prerequisite": -1,
         "onplay-scoredelta": [50,75,100,50],
+        "neverplayed-scoredelta": 25,
         "onplay-text": "",
         "consequences": [
             {
