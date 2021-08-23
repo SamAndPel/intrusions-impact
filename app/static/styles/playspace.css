@@ -92,7 +92,12 @@
   position: relative;
 }
 
+#stageddeck {
+  width: 75%;
+}
+
 #infoarea {
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
