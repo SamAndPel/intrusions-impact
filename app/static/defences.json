@@ -10,6 +10,7 @@
         "outlink": "https://www.ncsc.gov.uk/blog-post/ncsc-cyber-security-training-for-staff-now-available",
         "prerequisite": -1,
         "onplay-scoredelta": [75, 100, 50, 25],
+        "neverplayed-scoredelta": -1,
         "onplay-text": "",
         "consequences": [
             {
@@ -129,6 +130,7 @@
         "outlink": "https://www.ncsc.gov.uk/guidance/asset-management",
         "prerequisite": -1,
         "onplay-scoredelta": [75, 100, 50, 25],
+        "neverplayed-scoredelta": -1,
         "onplay-text": "An experienced team of auditors visit the plant and asses your equipment. They find numerous problems, caused mostly by your out-of-date equipment. You're still using old Windows XP workstations, none of your databases are encrypted and your plant controller hasn't been upgraded since 1996! You've unlocked new defences.",
         "consequences": [
             {
@@ -248,6 +250,7 @@
         "outlink": "https://www.ncsc.gov.uk/collection/device-security-guidance/policies-and-settings/antivirus-and-other-security-software",
         "prerequisite": -1,
         "onplay-scoredelta": [100, 50, 25, 10],
+        "neverplayed-scoredelta": -2,
         "onplay-text": "",
         "consequences": [
             {
@@ -367,6 +370,7 @@
         "outlink": "https://www.ncsc.gov.uk/collection/device-security-guidance/managing-deployed-devices/logging-and-protective-monitoring",
         "prerequisite": -1,
         "onplay-scoredelta": [50, 75, 100, 50],
+        "neverplayed-scoredelta": 25,
         "onplay-text": "",
         "consequences": [
             {
@@ -486,6 +490,7 @@
         "outlink": "https://www.ramsac.com/blog/why-physical-security-is-part-of-cybersecurity/",
         "prerequisite": -1,
         "onplay-scoredelta": [75, 100, 50, 25],
+        "neverplayed-scoredelta": -1,
         "onplay-text": "",
         "consequences": [
             {
@@ -516,7 +521,7 @@
             },
             {
                 "installed": {
-                    "text": "It's lucky that you've got defence in depth. Your security guard hands you a report, that says he stopped someone trying to break into the plant overnight. This person also had a key logger on them. It turns out that he had links to an organised crime group. <br> Who knows what could've happened!",
+                    "text": "It's lucky that you've got defence in depth. Your security guard hands you a report, that says he stopped someone trying to break into the plant overnight. This person also had a key logger on them. It turns out that he had links to an organised crime group. Who knows what could've happened!",
                     "scoredelta": 50,
                     "type": "Organised APT",
                     "image": "",
@@ -568,7 +573,7 @@
             },
             {
                 "installed": {
-                    "text": "You receive a report from your plant security guard. Overnight, they stopped someone who was trying to retrieve a key logger from the SCADA controller. It turns out that this was placed there the last time your plant was physically attacked. The damage and graffiti were just a diversion from something far more sinister. Had the data on the key logger been retrieved, it would’ve been enough to close you down for good. <br> Phew!",
+                    "text": "You receive a report from your plant security guard. Overnight, they stopped someone who was trying to retrieve a key logger from the SCADA controller. It turns out that this was placed there the last time your plant was physically attacked. The damage and graffiti were just a diversion from something far more sinister. Had the data on the key logger been retrieved, it would’ve been enough to close you down for good. Phew!",
                     "scoredelta": 50,
                     "type": "Organised APT",
                     "image": "",
@@ -605,6 +610,7 @@
         "outlink": "https://searchsecurity.techtarget.com/definition/firewall",
         "prerequisite": -1,
         "onplay-scoredelta": [100,50,25,10],
+        "neverplayed-scoredelta": -2,
         "onplay-text": "",
         "consequences": [
             {
@@ -724,6 +730,7 @@
         "outlink": "https://www.ramsac.com/blog/why-physical-security-is-part-of-cybersecurity/",
         "prerequisite": -1,
         "onplay-scoredelta": [10,25,50,75],
+        "neverplayed-scoredelta": 100,
         "onplay-text": "",
         "consequences": [
             {
@@ -843,6 +850,7 @@
         "outlink": "https://searchsecurity.techtarget.com/definition/firewall",
         "prerequisite": -1,
         "onplay-scoredelta": [100, 50, 25, 10],
+        "neverplayed-scoredelta": -2,
         "onplay-text": "",
         "consequences": [
             {
@@ -962,6 +970,7 @@
         "outlink": "https://www.ncsc.gov.uk/collection/device-security-guidance/managing-deployed-devices/logging-and-protective-monitoring",
         "prerequisite": -1,
         "onplay-scoredelta": [25,50,75,100],
+        "neverplayed-scoredelta": 50,
         "onplay-text": "",
         "consequences": [
             {
@@ -1081,6 +1090,7 @@
         "outlink": "https://www.thesecuritybuddy.com/database-security/what-is-database-encryption/?__cf_chl_captcha_tk__=pmd_6ec363f8573baa88310527c3eaa7ce23b7dc8aec-1629114777-0-gqNtZGzNAuKjcnBszQb6",
         "prerequisite": 1,
         "onplay-scoredelta": [50,75,100,50],
+        "neverplayed-scoredelta": -1,
         "onplay-text": "",
         "consequences": [
             {
@@ -1200,6 +1210,7 @@
         "outlink": "https://www.aheliotech.com/tutorials/why-you-should-encrypt-your-computer/",
         "prerequisite": 1,
         "onplay-scoredelta": [10,25,50,75],
+        "neverplayed-scoredelta": 100,
         "onplay-text": "",
         "consequences": [
             {
@@ -1319,6 +1330,7 @@
         "outlink": "https://echopath.com/updating-operating-system-os-important/",
         "prerequisite": 1,
         "onplay-scoredelta": [25,50,75,100],
+        "neverplayed-scoredelta": 50,
         "onplay-text": "",
         "consequences": [
             {
@@ -1438,6 +1450,7 @@
         "outlink": "",
         "prerequisite": 1,
         "onplay-scoredelta": [10,25,50,75],
+        "neverplayed-scoredelta": 100,
         "onplay-text": "",
         "consequences": [
             {
@@ -1557,6 +1570,7 @@
         "outlink": "http://blog.plantautomation-technology.com/why-upgrade-your-scada/",
         "prerequisite": 1,
         "onplay-scoredelta": [50,75,100,50],
+        "neverplayed-scoredelta": -1,
         "onplay-text": "",
         "consequences": [
             {
@@ -1676,6 +1690,7 @@
         "outlink": "https://cybersecuritykings.com/2020/03/23/10-tips-for-a-cyber-threat-and-risk-assessment/",
         "prerequisite": -1,
         "onplay-scoredelta": [75,100,50,25],
+        "neverplayed-scoredelta": 10,
         "onplay-text": "",
         "consequences": [
             {
@@ -1707,7 +1722,7 @@
             {
                 "installed": {
                     "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018.",
-                    "scoredelta": 0,
+                    "scoredelta": -25,
                     "type": "3rd Party",
                     "image": "",
                     "stat": "Suppliers and partners are the 3rd biggest security concern in industrial organisations.",
@@ -1719,7 +1734,7 @@
                 },
                 "notinstalled": {
                     "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018.",
-                    "scoredelta": 0,
+                    "scoredelta": -25,
                     "type": "3rd Party",
                     "image": "",
                     "stat": "Suppliers and partners are the 3rd biggest security concern in industrial organisations.",
@@ -1795,6 +1810,7 @@
         "outlink": "https://www.ncsc.gov.uk/guidance/preventing-lateral-movement",
         "prerequisite": -1,
         "onplay-scoredelta": [50,75,100,50],
+        "neverplayed-scoredelta": 25,
         "onplay-text": "",
         "consequences": [
             {
