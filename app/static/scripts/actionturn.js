@@ -74,7 +74,7 @@ function doturn() {
         });
         console.log("[*] Global score is now " + currentscore);
         let goodorbad = "";
-        currentscore < 0 ? goodorbad = "bad" : goodorbad = "good";
+        currentscore < 1500 ? goodorbad = "bad" : goodorbad = "good";
         document.getElementById("scoredisplay").innerHTML = currentscore + " points";
         document.getElementById("scoredisplay").classList.remove("good");
         document.getElementById("scoredisplay").classList.remove("bad");

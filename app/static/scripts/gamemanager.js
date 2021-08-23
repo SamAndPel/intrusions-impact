@@ -132,7 +132,7 @@ function showconclusion(concl, callback) {
     modalroot.appendChild(scoretitleelement);
 
     let goodorbad = "";
-    if (currentscore > 100 && currentscore < 2000) {
+    if (currentscore > 1500 && currentscore < 2150) {
         goodorbad = "good";
     } else {
         goodorbad = "bad";
