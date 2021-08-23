@@ -37,6 +37,14 @@
   letter-spacing: 5px;
 }
 
+#atkinslogo {
+  display: block;
+  margin: -70px auto;
+  height: 15rem;
+  width: 15rem;
+  object-fit: contain;
+}
+
 .ip-sectionhead {
   display: block;
   font-weight: bold;
