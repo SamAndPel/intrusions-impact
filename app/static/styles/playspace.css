@@ -49,36 +49,37 @@
   margin: 0 0 0 1rem;
 }
 
-#unityspace {
+#graphicsboard {
+  display: block;
+  position: relative;
   margin: 0 1rem 1rem;
-  padding: 0;
-  background-color: black;
+  border-radius: 20px;
+  /* forces 16:9 AR, but breaks layout */
+  /* padding: 0 0 56.25% 0; */
+  height: 50rem;
+  background-color: var(--bg-header-colour);
   border: 5px solid var(--emph-b-colour);
-  border-radius: 5px;
-  font-size: 3rem;
-  height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  /* Placeholder BG image */
-  background-image: url("/images/uph2.png");
-  background-size: 100% 100%;
+}
+
+.overlayimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
 }
 
 #staging {
-  margin: 0 1rem;
+  margin: -2rem 1rem 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
+  /* -webkit-box-flex: 1;
   -ms-flex: 1;
-  flex: 1;
+  flex: 1; */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-flow: row nowrap;

@@ -24,6 +24,7 @@ body {
   background-color: var(--bg-page-colour);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--text-colour);
+  font-size: 12pt;
 }
 
 #wrapper {
