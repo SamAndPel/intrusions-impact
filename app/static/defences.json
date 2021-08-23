@@ -53,7 +53,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "One day, a staff member receives a spearphishing email, containing information about the university they attended. Not knowing about social engineering or being aware of their data footprint, they click on the attached link. It tells them that there is a problem with their company account, and requests their login details to rectify the issue. The staff member provides these, allowing the hackers to access the company systems remotely. They interfere, cancelling contracts, which leads to a loss of £20,000.",
+                    "text": "One day, a staff member receives a spearphishing email, containing information about the university they attended. Not knowing about social engineering or being aware of their data footprint, they click on the attached link. It tells them that there is a problem with their company account, and requests their login details to rectify the issue. The staff member provides these, allowing the hackers to access the company systems remotely. They interfere, cancelling contracts, which leads to a loss of £20,000. Prehaps Security Training could have been a good idea.",
                     "scoredelta": -10,
                     "type": "Organised APT",
                     "image": "",
@@ -67,7 +67,7 @@
             },
             {
                 "installed": {
-                    "text": "One day, the finance department receives an urgent email from someone claiming to be the CEO. He wants £150,000 transferred into a new business account ASAP. He sends instructions not to contact him, as he is holding a very important meeting at the golf course. However, a staff member remembers the training they received, so they call the CEO to check. Well done, you've just saved £150,000. It's a good job that you installed a positive behaviour change within your company.",
+                    "text": "One day, the finance department receives an urgent email from someone claiming to be the CEO. He wants £150,000 transferred into a new business account ASAP. He sends instructions not to contact him, as he is holding a very important meeting at the golf course. However, a staff member remembers the training they received, so they call the CEO to check. Well done, you've just saved £150,000. It's a good job that you installed a positive behaviour change through your security training.",
                     "scoredelta": 25,
                     "type": "Organised APT",
                     "image": "",
@@ -105,7 +105,7 @@
                     "causes-end": true
                 },
                 "notinstalled": {
-                    "text": "Like many people, a number of employees use the same password for their VPN as they use for other websites. After a data dump on one of these websites, someone is able to use the employee's password to log in via the VPN. You discover that all your accounts have been emptied, and all contracts cancelled. Your business is no more. Frankly, it's a wonder how it survived this long.",
+                    "text": "Like many people, a number of employees use the same password for their VPN as they use for other websites. After a data dump on one of these websites, someone is able to use the employee's password to log in via the VPN. You discover that all your accounts have been emptied, and all contracts cancelled. Your business is no more. Frankly, it's a wonder how it survived this long without security training.",
                     "scoredelta": -150,
                     "type": "Organised APT",
                     "image": "",
@@ -173,7 +173,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "Somehow, some of your sensitive files have ended up for sale on the dark web. The resulting ICO investigation discovers that access to these files was gained via your servers. They decide to fine you £17,500, due to breaching Principle 6 of the General Data Protection Regulations.",
+                    "text": "Somehow, some of your sensitive files have ended up for sale on the dark web. The resulting ICO investigation discovers that access to these files was gained via your servers. They decide to fine you £17,500, due to breaching Principle 6 of the General Data Protection Regulations. Prehaps it is time to audit your network.",
                     "scoredelta": -25,
                     "type": "Hacker",
                     "image": "",
@@ -199,7 +199,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "Your company decides to explore Industrial Internet of Things (IIoT), so they invest in sensors to help ensure that the generator runs smoothly. The engineers install these sensors, without informing the security department, and they also do not realise that these sensors are still configured to connect to the Internet. A cyber enthusiast, using Shodan.io, is able to easily connect to these new sensors, and mess around with the readings. The plant shuts down for 10 hours, whilst the teams figure out what was wrong, and resolve the issue. Consequently, the company suffers a loss in revenue of £50,000.",
+                    "text": "Your company decides to explore Industrial Internet of Things (IIoT), so they invest in sensors to help ensure that the generator runs smoothly. The engineers install these sensors, without informing the security department, and they also do not realise that these sensors are still configured to connect to the Internet. Having not performed an asset audit, a cyber enthusiast, using Shodan.io, is able to easily connect to these new sensors, and mess around with the readings. The plant shuts down for 10 hours, whilst the teams figure out what was wrong, and resolve the issue. Consequently, the company suffers a loss in revenue of £50,000.",
                     "scoredelta": -50,
                     "type": "Hacker",
                     "image": "",
@@ -267,7 +267,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "A ransomware has somehow made its way onto your networks. All computers at your plant and office have been locked. You decide to pay the ransom, a total of £5,000. Luckily, this unlocks all the computers and you get all your data back. However, this has lost the company £5,000.",
+                    "text": "A ransomware has somehow made its way onto your networks. As you do not have antivirus, all computers at your plant and office have been locked. You decide to pay the ransom, a total of £5,000. Luckily, this unlocks all the computers and you get all your data back. However, this has lost the company £5,000.",
                     "scoredelta": -5,
                     "type": "Script Kiddie",
                     "image": "",
@@ -293,7 +293,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "With word spreading on the dark web that you were the victim of a ransomware virus, you are again victim to ransomware. A 13-year-old decides to test his skills, and successfully launches an attack on your systems. Although the suspect is arrested and found guilty, the negative news story results in your company’s share price falling by 50%. This also loses you £50,000 in yearly revenue.",
+                    "text": "With word spreading on the dark web that you were the victim of a ransomware virus, you are again victim to ransomware. A 13-year-old decides to test his skills, and successfully launches an attack on your systems. Although the suspect is arrested and found guilty, the negative news story results in your company’s share price falling by 50%. This also loses you £50,000 in yearly revenue. If only you had antivirus...",
                     "scoredelta": -25,
                     "type": "Script Kiddie",
                     "image": "",
@@ -319,7 +319,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "With your lack of security being common knowledge on the dark web, you become a target for people wanting to test their hacking skills. Your systems are attacked almost daily – your computers and SCADA controller are locked by hackers. Your business can't continue, and you are forced to shut down for good.",
+                    "text": "With your lack of antivirus being common knowledge on the dark web, you become a target for people wanting to test their hacking skills. Your systems are attacked almost daily – your computers and SCADA controller are locked by hackers. Your business can't continue, and you are forced to shut down for good.",
                     "scoredelta": -300,
                     "type": "Script Kiddie",
                     "image": "",
@@ -439,7 +439,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "Over the last year your turbines have been behaving erratically, almost as if somebody else is in control… This results in a loss of £60,000.",
+                    "text": "Over the last year your turbines have been behaving erratically, almost as if somebody else is in control… This results in a loss of £60,000. Prehaps it is time to see what is happening on your plant network.",
                     "scoredelta": -25,
                     "type": "Malicious Insider",
                     "image": "",
@@ -627,7 +627,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "A university student studying Information Security decides to practice on a live company, and starts by looking at open ports on Shodan.io. They find that your network is easy to get into, and can’t believe how a company like yours doesn’t have basic cyber security at your plant! As they're a future white hat, they decide to report you to the news instead of stealing from you. The news story loses you £20,000 in sales over the year. The ICO (Information Commissioner’s Office) also conduct an investigation and decide not to fine you, but they do remind you of your responsibilities of securing your service by following the NIS regulations.",
+                    "text": "A university student studying Information Security decides to practice on a live company, and starts by looking at open ports on Shodan.io. They find that your network is easy to get into, and can’t believe how a company like yours doesn’t have a basic firewall at your plant! As they're a future white hat, they decide to report you to the news instead of stealing from you. The news story loses you £20,000 in sales over the year. The ICO (Information Commissioner’s Office) also conduct an investigation and decide not to fine you, but they do remind you of your responsibilities of securing your service by following the NIS regulations.",
                     "scoredelta": -10,
                     "type": "Researcher",
                     "image": "",
@@ -893,7 +893,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "The same script kiddie can't believe her luck. She's still able to hack into your system. This time she waits for a big contract before committing mandate fraud. Unfortunately for you, it is one of your biggest contracts for the year, of £100,000.",
+                    "text": "The same script kiddie can't believe her luck, you still haven't implemented an office firewall. She's still able to hack into your system. This time she waits for a big contract before committing mandate fraud. Unfortunately for you, it is one of your biggest contracts for the year, of £100,000.",
                     "scoredelta": -25,
                     "type": "Script Kiddie",
                     "image": "",
@@ -919,7 +919,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "You have successfully made someone a millionaire. The script kiddie has been living off your terrible decision making for the last year. She has managed to commit mandate fraud on over 20 different contracts this year, costing you millions of pounds. Unsurprisingly, you can't afford to lose this kind of business, and your company goes bankrupt. Your professional reputation is in tatters.",
+                    "text": "You have successfully made someone a millionaire, all because you didn't pay for an office firewall. The script kiddie has been living off your terrible decision making for the last year. She has managed to commit mandate fraud on over 20 different contracts this year, costing you millions of pounds. Unsurprisingly, you can't afford to lose this kind of business, and your company goes bankrupt. Your professional reputation is in tatters.",
                     "scoredelta": -300,
                     "type": "Script Kiddie",
                     "image": "",
@@ -1053,7 +1053,7 @@
             },
             {
                 "installed": {
-                    "text": "Having been fired from your company, an ex-employee has accessed your system remotely. They intend to wipe everything from your systems and bring your company crashing down around you.  Fortunately, your network monitor identified this unusual activity and you prevented this from happening.  You identify how they gained access and close the weakness. Nothing of any value is lost.",
+                    "text": "Having been fired from your company, an ex-employee has accessed your system remotely. They intend to wipe everything from your systems and bring your company crashing down around you.  Fortunately, your office network monitor identified this unusual activity and you prevented this from happening.  You identify how they gained access and close the weakness. Nothing of any value is lost.",
                     "scoredelta": -25,
                     "type": "Ex-Employee",
                     "image": "",
@@ -1159,7 +1159,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "Throughout the year, your main competitor has been winning every contract that they've bid for, by undercutting you by minimal amounts. It's as if they know what some of your sensitive data says… You have lost £70,000 in sales over the year.",
+                    "text": "Throughout the year, your main competitor has been winning every contract that they've bid for, by undercutting you by minimal amounts. It's as if they know what some of your sensitive data says… Your staff come up with the suggestion of encrypting your databases, but you're the one in control. You have lost £70,000 in sales over the year.",
                     "scoredelta": -25,
                     "type": "Competitor",
                     "image": "",
@@ -1639,7 +1639,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "A group known to protest for green power attack your server. Apparently, they believe that your turbines create a lot of pollution. They have defaced your website by posting some very unpleasant things. The resulting loss of reputation and sales amounts to £65,000.",
+                    "text": "A group known to protest for green power attack your server. Apparently, they believe that your turbines create a lot of pollution. They have defaced your website by posting some very unpleasant things, using vulnerabilities in your old servers. The resulting loss of reputation and sales amounts to £65,000.",
                     "scoredelta": -25,
                     "type": "Hacktivist",
                     "image": "",
@@ -1721,7 +1721,7 @@
             },
             {
                 "installed": {
-                    "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018.",
+                    "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018. This is a good time to realise that sometimes, no matter hard you try, you just can't win everything...",
                     "scoredelta": -25,
                     "type": "3rd Party",
                     "image": "",
@@ -1733,7 +1733,7 @@
                     "causes-end": false
                 },
                 "notinstalled": {
-                    "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018.",
+                    "text": "Your company has been outsourcing it's HR department for years, however you have never checked their security. They haven’t encrypted their databases, and so when someone breaks into their system, they post some of your employee's confidential information on the dark web. You are fined £30,000 under the Data Protection Act 2018. This is a good time to realise that sometimes, no matter hard you try, you just can't win everything...",
                     "scoredelta": -25,
                     "type": "3rd Party",
                     "image": "",
