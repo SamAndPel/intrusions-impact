@@ -76,3 +76,8 @@
 .ip-button:hover {
   background-color: var(--emph-b-colour);
 }
+
+
+.understatedlink {
+  color: var(--text-colour);
+}
