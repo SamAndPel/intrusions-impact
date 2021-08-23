@@ -66,15 +66,15 @@ function endgame() {
     let concl = {};
     if (currentscore < -2000) {
         concl = concldata["0"];
-    } else if (currentscore < -1000){
+    } else if (currentscore < -1000) {
         concl = concldata["1"];
-    } else if (currentscore < 100){
+    } else if (currentscore < 100) {
         concl = concldata["2"];
-    } else if (currentscore < 500){
+    } else if (currentscore < 500) {
         concl = concldata["3"];
-    } else if (currentscore < 750){
+    } else if (currentscore < 750) {
         concl = concldata["4"];
-    } else if (currentscore < 2000){
+    } else if (currentscore < 2000) {
         concl = concldata["5"];
     } else {
         concl = concldata["0"];
@@ -159,6 +159,22 @@ function showconclusion(concl, callback) {
         imageelement.alt = "Image emphasising conclusion";
         modalroot.appendChild(imageelement);
     }
+
+    // Display improvements
+    const impsting = document.createElement("p");
+    impsting.classList.add("stinger");
+    const impstingtext = document.createTextNode("Here's what you could've done better:");
+    impsting.appendChild(impstingtext);
+    modalroot.appendChild(impsting);
+    
+    currentimprovements.forEach(improvement => {
+        const impelement = document.createElement("p");
+        impelement.classList.add("info-body-text")
+        const imptext = document.createTextNode(improvement["description"]);
+        impelement.appendChild(imptext);
+        modalroot.appendChild(impelement);
+    });
+
 
     // Display buttons
     const btndiv = document.createElement("div");
