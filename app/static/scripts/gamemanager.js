@@ -64,17 +64,17 @@ function endgame() {
     const concldata = JSON.parse(request.responseText);
 
     let concl = {};
-    if (currentscore < -2000) {
+    if (currentscore < -1300) {
         concl = concldata["0"];
-    } else if (currentscore < -1000) {
+    } else if (currentscore < 800) {
         concl = concldata["1"];
-    } else if (currentscore < 100) {
+    } else if (currentscore < 1100) {
         concl = concldata["2"];
-    } else if (currentscore < 500) {
+    } else if (currentscore < 1500) {
         concl = concldata["3"];
-    } else if (currentscore < 750) {
+    } else if (currentscore < 1900) {
         concl = concldata["4"];
-    } else if (currentscore < 2000) {
+    } else if (currentscore < 2150) {
         concl = concldata["5"];
     } else {
         concl = concldata["0"];
