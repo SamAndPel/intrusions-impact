@@ -28,7 +28,11 @@ function doturn() {
             playcard(idno);
         });
 
-        // RUN ANIMATION HERE
+        // Run graphics animations
+        stagedcardids.forEach (idno => {
+            const graphic = document.getElementById("card" + idno + "graphic");
+            graphic.classList.add("rendered");
+        });
 
         // Generate consequence list and adds to improvements list
         let conseqs = [];
@@ -47,7 +51,6 @@ function doturn() {
                 }
             }
         });
-
 
         // Prune empty consequences from list
         conseqs = conseqs.filter(conseq => (conseq["text"]));

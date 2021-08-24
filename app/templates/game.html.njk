@@ -38,7 +38,7 @@
             <div id="graphicsboard">
                 <img src="/images/board/baseplate.png" class="baseplateimage">
                 {% for card in defences %}
-                <img src="{{ '/images/board/' + card.graphic }}" alt="{{ 'Graphics overlay for ' + card.name }}" class="overlayimage">
+                <img src="{{ '/images/board/' + card.graphic }}" alt="{{ 'Graphics overlay for ' + card.name }}" id="{{ 'card' + card.id + 'graphic' }}" class="overlayimage">
                 {% endfor %}
             </div>
             <p class="colhead">Defences to play:</p>
