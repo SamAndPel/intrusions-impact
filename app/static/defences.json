@@ -1211,127 +1211,6 @@
     },
     "10": {
         "id": 10,
-        "name": "PC Encryption",
-        "location": "both",
-        "image": "pc_encryption.png",
-        "graphic": "ol_pcencryption.png",
-        "cost": 20000,
-        "shortdesc": "Military grade, proven encryption mechanism for the hard drives of all PCs.",
-        "longdesc": "Encrypting the data on PCs adds a layer of security – a decryption key is needed to access the data. Many PCs will come with encryption built-in, however paying for encryption may offer further, enhanced security. PC encryption encompasses file encryption, as well as 'data in-transit'. When data is travelling within and to other devices, it must be protected, to avoid cyberattackers stealing or altering the data. This could be through a man-in-the-middle attack, for example, where an attacker intrudes on communication between two parties, either to listen or alter the data. To protect data in-transit, the data will be encrypted, transferred, and then decrypted at its destination.",
-        "outlink": "https://www.aheliotech.com/tutorials/why-you-should-encrypt-your-computer/",
-        "prerequisite": 1,
-        "onplay-scoredelta": [10,25,50,75],
-        "neverplayed-scoredelta": 100,
-        "onplay-text": "",
-        "consequences": [
-            {
-                "installed": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "stat": "",
-                    "stat-source": "",
-                    "example": "",
-                    "example-source": "",
-                    "improvement": "PC Encryption - Ensuring that data is encrypted is easy and however it does not have much ensuring the security of your network as most of your sensitive information will be on your databases.",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "stat": "",
-                    "stat-source": "",
-                    "example": "",
-                    "example-source": "",
-                    "improvement": "",
-                    "causes-end": false
-                }
-            },
-            {
-                "installed": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "stat": "",
-                    "stat-source": "",
-                    "example": "",
-                    "example-source": "",
-                    "improvement": "PC Encryption - Ensuring that data is encrypted is easy and however it does not have much ensuring the security of your network as most of your sensitive information will be on your databases.",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "stat": "",
-                    "stat-source": "",
-                    "example": "",
-                    "example-source": "",
-                    "improvement": "",
-                    "causes-end": false
-                }
-            },
-            {
-                "installed": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "stat": "",
-                    "stat-source": "",
-                    "example": "",
-                    "example-source": "",
-                    "improvement": "PC Encryption - Ensuring that data is encrypted is easy and however it does not have much ensuring the security of your network as most of your sensitive information will be on your databases.",
-                    "causes-end": false
-                },
-                "notinstalled": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "stat": "",
-                    "stat-source": "",
-                    "example": "",
-                    "example-source": "",
-                    "improvement": "",
-                    "causes-end": false
-                }
-            },
-            {
-                "installed": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "stat": "",
-                    "stat-source": "",
-                    "example": "",
-                    "example-source": "",
-                    "improvement": "PC Encryption - Ensuring that data is encrypted is easy and however it does not have much ensuring the security of your network as most of your sensitive information will be on your databases.",
-                    "causes-end": true
-                },
-                "notinstalled": {
-                    "text": "",
-                    "scoredelta": 0,
-                    "type": "",
-                    "image": "",
-                    "stat": "",
-                    "stat-source": "",
-                    "example": "",
-                    "example-source": "",
-                    "improvement": "",
-                    "causes-end": true
-                }
-            }
-        ]
-    },
-    "11": {
-        "id": 11,
         "name": "PC Upgrade",
         "location": "both",
         "image": "pc_upgrade.png",
@@ -1446,6 +1325,127 @@
                     "example": "Boeing (1979 - 2006) - An employee who started working for a company that was then taken over by Boeing, was convicted for sending more than 300,000 pages of confidential designs to China.",
                     "example-source": "https://www.theguardian.com/business/2009/jul/17/boeing-space-technology-industrial-espionage",
                     "improvement": "PC Upgrade - Ensuring that your PCs don't have vulnerabilties can help prevent attackers from being able to move your network so easily.",
+                    "causes-end": true
+                }
+            }
+        ]
+    },
+    "11": {
+        "id": 11,
+        "name": "PC Encryption",
+        "location": "both",
+        "image": "pc_encryption.png",
+        "graphic": "ol_pcencryption.png",
+        "cost": 20000,
+        "shortdesc": "Military grade, proven encryption mechanism for the hard drives of all PCs.",
+        "longdesc": "Encrypting the data on PCs adds a layer of security – a decryption key is needed to access the data. Many PCs will come with encryption built-in, however paying for encryption may offer further, enhanced security. PC encryption encompasses file encryption, as well as 'data in-transit'. When data is travelling within and to other devices, it must be protected, to avoid cyberattackers stealing or altering the data. This could be through a man-in-the-middle attack, for example, where an attacker intrudes on communication between two parties, either to listen or alter the data. To protect data in-transit, the data will be encrypted, transferred, and then decrypted at its destination.",
+        "outlink": "https://www.aheliotech.com/tutorials/why-you-should-encrypt-your-computer/",
+        "prerequisite": 1,
+        "onplay-scoredelta": [10,25,50,75],
+        "neverplayed-scoredelta": 100,
+        "onplay-text": "",
+        "consequences": [
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
+                    "improvement": "PC Encryption - Ensuring that data is encrypted is easy and however it does not have much ensuring the security of your network as most of your sensitive information will be on your databases.",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
+                    "improvement": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
+                    "improvement": "PC Encryption - Ensuring that data is encrypted is easy and however it does not have much ensuring the security of your network as most of your sensitive information will be on your databases.",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
+                    "improvement": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
+                    "improvement": "PC Encryption - Ensuring that data is encrypted is easy and however it does not have much ensuring the security of your network as most of your sensitive information will be on your databases.",
+                    "causes-end": false
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
+                    "improvement": "",
+                    "causes-end": false
+                }
+            },
+            {
+                "installed": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
+                    "improvement": "PC Encryption - Ensuring that data is encrypted is easy and however it does not have much ensuring the security of your network as most of your sensitive information will be on your databases.",
+                    "causes-end": true
+                },
+                "notinstalled": {
+                    "text": "",
+                    "scoredelta": 0,
+                    "type": "",
+                    "image": "",
+                    "stat": "",
+                    "stat-source": "",
+                    "example": "",
+                    "example-source": "",
+                    "improvement": "",
                     "causes-end": true
                 }
             }

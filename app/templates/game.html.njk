@@ -36,23 +36,10 @@
         </div>
         <div id="midcol" class="column">
             <div id="graphicsboard">
-                <img src="/images/board/baseplate.png" class="overlayimage">
-                <img src="/images/board/ol_antivirus.png" class="overlayimage">
-                <img src="/images/board/ol_assetaudit.png" class="overlayimage">
-                <img src="/images/board/ol_cctv_office.png" class="overlayimage">
-                <img src="/images/board/ol_cctv_plant.png" class="overlayimage">
-                <img src="/images/board/ol_controllerupgrade.png" class="overlayimage">
-                <img src="/images/board/ol_databaseencryption.png" class="overlayimage">
-                <img src="/images/board/ol_firewall_office.png" class="overlayimage">
-                <img src="/images/board/ol_firewall_plant.png" class="overlayimage">
-                <img src="/images/board/ol_networkmonitoring_office.png" class="overlayimage">
-                <img src="/images/board/ol_networkmonitoring_plant.png" class="overlayimage">
-                <img src="/images/board/ol_networksegmentation.png" class="overlayimage">
-                <img src="/images/board/ol_pcencryption.png" class="overlayimage">
-                <img src="/images/board/ol_pcupgrade.png" class="overlayimage">
-                <img src="/images/board/ol_securitytraining.png" class="overlayimage">
-                <img src="/images/board/ol_serverupgrade.png" class="overlayimage">
-                <img src="/images/board/ol_threatassessment.png" class="overlayimage">
+                <img src="/images/board/baseplate.png" class="baseplateimage">
+                {% for card in defences %}
+                <img src="{{ '/images/board/' + card.graphic }}" alt="{{ 'Graphics overlay for ' + card.name }}" class="overlayimage">
+                {% endfor %}
             </div>
             <p class="colhead">Defences to play:</p>
             <div id="staging">

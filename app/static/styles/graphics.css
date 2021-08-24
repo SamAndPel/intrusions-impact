@@ -1,6 +1,17 @@
 /* Graphics CSS document */
 /* Handles css to do with graphicsboard display */
 
+.baseplateimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+}
+
 .overlayimage {
   position: absolute;
   top: 0;
@@ -10,4 +21,10 @@
   margin: 0;
   padding: 0;
   object-fit: contain;
+  /* opacity: 0; */
+  transition: 0.3s ease;
+}
+
+.rendered {
+  opacity: 1;
 }
