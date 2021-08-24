@@ -86,8 +86,9 @@ function doturn() {
         // Increment turn counter
         turn += 1;
 
-        // Render consequence modal
-        showconsequences(onplays, conseqs, () => {
+        // Render consequence modal afte n ms
+        // Function handle wrapped in JS Closure to prevent immediate execution
+        setTimeout(function() { showconsequences(onplays, conseqs, () => {
             // After consequence window has been closed
             closeallmodals();
 
@@ -115,7 +116,7 @@ function doturn() {
                 // Enter endgame routine
                 endgame();
             }
-        });
+        }) }, 2000);
     } else {
         // Staged cards may also be rejected as their prerequisite hasn't been played,
         // but that *shouldnt* be possible unless the user has been playing around with
