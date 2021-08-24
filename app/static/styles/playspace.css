@@ -50,15 +50,10 @@
 }
 
 #graphicsboard {
-  display: block;
+  display: flex;
+  flex: 1;
   position: relative;
   margin: 0 1rem 1rem;
-  border-radius: 20px;
-  /* forces 16:9 AR, but breaks layout */
-  /* padding: 0 0 56.25% 0; */
-  height: 50rem;
-  background-color: var(--bg-header-colour);
-  border: 5px solid var(--emph-b-colour);
 }
 
 #staging {

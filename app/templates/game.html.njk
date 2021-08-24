@@ -36,7 +36,7 @@
         </div>
         <div id="midcol" class="column">
             <div id="graphicsboard">
-                <img src="/images/board/baseplate.png" class="baseplateimage">
+                <img src="/images/board/baseplate.png" alt="Base image of AquaVolt Power Plant" class="baseplateimage">
                 {% for card in defences %}
                 <img src="{{ '/images/board/' + card.graphic }}" alt="{{ 'Graphics overlay for ' + card.name }}" id="{{ 'card' + card.id + 'graphic' }}" class="overlayimage">
                 {% endfor %}

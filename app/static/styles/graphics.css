@@ -22,7 +22,7 @@
   padding: 0;
   object-fit: contain;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: 1.5s ease;
 }
 
 .rendered {
