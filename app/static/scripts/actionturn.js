@@ -56,12 +56,20 @@ function doturn() {
         conseqs = conseqs.filter(conseq => (conseq["text"]));
 
         // Build onplays list
-        let onplays = []
+        let onplays = [];
         stagedcardids.forEach(idno => {
             if (rawdata[idno]["onplay-text"]) {
                 onplays.push(rawdata[idno]["onplay-text"]);
             }
         });
+        
+        if (gamelog[turn].includes("14")) {
+            checkid = 0;
+            while (cardpositionmaster[Object.values(threatassessdata)[checkid].id] == "played"){
+                checkid++;
+            }
+            onplays.push("Having hired some consultants to perform a threat assessment, they came back with the following advice: " + Object.values(threatassessdata)[checkid].description);
+        }
 
         // Action results of consequences on score
         conseqs.forEach(cons => {
@@ -190,6 +198,8 @@ function addimprovement(card, cons, ended) {
         }
     }
 }
+
+
 
 // Renders a consequences modal
 function showconsequences(onplaylist, consequencelist, callback) {
