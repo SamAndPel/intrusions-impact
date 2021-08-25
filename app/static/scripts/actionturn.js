@@ -29,10 +29,13 @@ function doturn() {
         });
 
         // Run graphics animations
-        stagedcardids.forEach (idno => {
+        stagedcardids.forEach(idno => {
             const graphic = document.getElementById("card" + idno + "graphic");
             graphic.classList.add("rendered");
         });
+        document.getElementById("workersteve").style.animation = "dowork 2s ease";
+        const workaudio = new Audio('/audio/workaudio.mp3');
+        workaudio.play();
 
         // Generate consequence list and adds to improvements list
         let conseqs = [];
@@ -62,10 +65,10 @@ function doturn() {
                 onplays.push(rawdata[idno]["onplay-text"]);
             }
         });
-        
+
         if (gamelog[turn].includes("14")) {
             checkid = 0;
-            while (cardpositionmaster[Object.values(threatassessdata)[checkid].id] == "played"){
+            while (cardpositionmaster[Object.values(threatassessdata)[checkid].id] == "played") {
                 checkid++;
             }
             onplays.push("Having hired some consultants to perform a threat assessment, they came back with the following advice: " + Object.values(threatassessdata)[checkid].description);
@@ -96,35 +99,38 @@ function doturn() {
 
         // Render consequence modal afte n ms
         // Function handle wrapped in JS Closure to prevent immediate execution
-        setTimeout(function() { showconsequences(onplays, conseqs, () => {
-            // After consequence window has been closed
-            closeallmodals();
+        setTimeout(function () {
+            showconsequences(onplays, conseqs, () => {
+                // After consequence window has been closed
+                closeallmodals();
+                document.getElementById("workersteve").style.animation = "";
 
-            // Should the game continue?
-            let causedend = false;
-            conseqs.forEach(conseq => {
-                if (conseq["causes-end"]) {
-                    causedend = true;
+                // Should the game continue?
+                let causedend = false;
+                conseqs.forEach(conseq => {
+                    if (conseq["causes-end"]) {
+                        causedend = true;
+                    }
+                });
+
+                if (turn < maxturns && (causedend == false)) {
+                    // Set budget to 100k + leftover cash
+                    let totalcost = getcostfromidlist(stagedcardids);
+                    let newbudget = (currentbudget - totalcost) + budgeteachturn;
+                    currentbudget = newbudget;
+                    document.getElementById("budget").innerHTML = moneyformat(currentbudget);
+                    document.getElementById("turndisplay").innerHTML = "Year " + (turn + 1);
+                } else {
+                    // Subtract staged cards from budget
+                    let totalcost = getcostfromidlist(stagedcardids);
+                    let newbudget = (currentbudget - totalcost);
+                    currentbudget = newbudget;
+                    document.getElementById("budget").innerHTML = moneyformat(currentbudget);
+                    // Enter endgame routine
+                    endgame();
                 }
-            });
-
-            if (turn < maxturns && (causedend == false)) {
-                // Set budget to 100k + leftover cash
-                let totalcost = getcostfromidlist(stagedcardids);
-                let newbudget = (currentbudget - totalcost) + budgeteachturn;
-                currentbudget = newbudget;
-                document.getElementById("budget").innerHTML = moneyformat(currentbudget);
-                document.getElementById("turndisplay").innerHTML = "Year " + (turn + 1);
-            } else {
-                // Subtract staged cards from budget
-                let totalcost = getcostfromidlist(stagedcardids);
-                let newbudget = (currentbudget - totalcost);
-                currentbudget = newbudget;
-                document.getElementById("budget").innerHTML = moneyformat(currentbudget);
-                // Enter endgame routine
-                endgame();
-            }
-        }) }, 2000);
+            })
+        }, 2000);
     } else {
         // Staged cards may also be rejected as their prerequisite hasn't been played,
         // but that *shouldnt* be possible unless the user has been playing around with
