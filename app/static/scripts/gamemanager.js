@@ -2,6 +2,7 @@
 
 // Define global variables
 let rawdata = {};               // Raw immutable object containing JSON data
+let threatassessdata = [];      // Raw immutable object containing threat_assessment.JSON data
 let cardpositionmaster = {};    // Lookup table (Card ID Number --> Position as string (can be 'unstaged', 'staged' or 'played'))
 let gamelog = {};               // Log of cardids played each turn
 
@@ -24,6 +25,10 @@ function initialise() {
         let id = element.id;
         cardpositionmaster[id] = "unstaged";
     });
+    var request1 = new XMLHttpRequest();
+    request1.open("GET", "threat_assessment.json", false);
+    request1.send(null)
+    threatassessdata = JSON.parse(request1.responseText);
     currentbudget = budgeteachturn;
     recalculatecost();
     closeallmodals();
