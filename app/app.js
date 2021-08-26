@@ -3,7 +3,6 @@
 const express = require("express");
 const app = express();
 const nunjucks = require("nunjucks");
-const dotenv = require("dotenv");
 
 // Load game data from JSON
 const gamedata = require(__dirname + "/static/defences.json");
@@ -22,8 +21,8 @@ nunconf.addFilter("moneycomma", (input) => {
     return input.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 });
 
-// Set port to .env variable value if found, else set port to 3000
-const PORT = process.env.PORT || 3000;
+// Set port to 3000
+const PORT = 3000;
 
 // ROUTES ---------------------------------------------------------------------
 app.get("/", (req, res) => {
