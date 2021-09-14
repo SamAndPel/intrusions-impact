@@ -8,8 +8,7 @@
         <link rel="stylesheet" href="styles/root.css" type="text/css">
         <link rel="stylesheet" href="styles/header.css" type="text/css">
         <link rel="stylesheet" href="styles/footer.css" type="text/css">
-        {% block meta %}
-        {% endblock %}
+        <link rel="stylesheet" href="styles/infopage.css" type="text/css">
     </head>
 
     <body>
@@ -30,8 +29,13 @@
 
             <!-- MAIN CONTENT -->
             <main>
-                {% block content %}
-                {% endblock %}
+                <div id="infopagecontent">
+                    <img src="/images/cybersteve.png" alt="Image of Cyber Steve, our mascot" class="homeimg">
+                    <p class="homehead">Intrusions and Impact</p>
+                    <p class="homesubtitle">Reinventing Cyber-Security Training</p>
+                    <img src="/images/atkins.png" alt="Atkins logo" id="atkinslogo">
+                    <a href="/game" class="ip-button">Play</a>
+                </div>
             </main>
 
             <!-- PADDING (to push the footer down if necessary) -->
@@ -43,10 +47,6 @@
                 <p>Inspired by <i><a class="understatedlink" href="https://www.decisions-disruptions.org">Decisions and Disruptions</a></i> (Lancaster University), built by Sam, Shevani, Adam and Hanna - Copyright August 2021</p>
             </footer>
 
-        </div>
-
-        {% block scripts %}
-        {% endblock %}
-        
+        </div>        
     </body>
 </html>

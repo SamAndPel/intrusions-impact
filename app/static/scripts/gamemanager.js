@@ -31,6 +31,7 @@ function initialise() {
     threatassessdata = JSON.parse(request1.responseText);
     currentbudget = budgeteachturn;
     recalculatecost();
+    preprocess(rawdata);
     closeallmodals();
 }
 
