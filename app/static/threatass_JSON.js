@@ -2,12 +2,12 @@ threatass_JSON = [
     {
         id: 5,
         description:
-            "A firewall to protect the plant from being easily accessed from the internet is vital to the security of the process.",
+            "A Firewall to protect the plant from being easily accessed from the internet is vital to the security of the process.",
     },
     {
         id: 7,
         description:
-            "A firewall to protect the office from being easily accessed from the internet is vital to the security of the organisation.",
+            "A Firewall to protect the office from being easily accessed from the internet is vital to the security of the organisation.",
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ threatass_JSON = [
     {
         id: 0,
         description:
-            "Your staff are some of the best security assets but without training, they will be one of your worst.",
+            "Your staff are some of the best security assets, but without training, they will be one of your greatest vulnerabilites.",
     },
     {
         id: 1,
@@ -26,22 +26,22 @@ threatass_JSON = [
     {
         id: 4,
         description:
-            "Ensuring that people can't just wander up to the plant and mess with the equipment is quite important for the integrity of the process.",
+            "Ensuring that people can't just wander up to the plant and mess with the equipment is vital in ensuring the integrity of the process.",
     },
     {
         id: 9,
         description:
-            "Currently all your customer information is easily accessible to any attackers or even members of staff, prehaps you should encrypt your databases.",
+            "Currently, all your customer information is easily accessible to any attackers or members of staff. Perhaps you should encrypt your databases.",
     },
     {
         id: 13,
         description:
-            "Your servers are easily from the internet, ensuring they are upgraded is a good way of not letting attackers get any further.",
+            "Your servers are easily accessed from the internet. Ensuring they are upgraded is a good way to prevent attackers getting in.",
     },
     {
         id: 15,
         description:
-            "Minimising the traffic flow between your plant, office and SIS hinders attackers greatly. Prehaps consider network segmentation.",
+            "Minimising the traffic flow between your plant, office and SIS hinders attackers greatly. Perhaps consider Network Segmentation.",
     },
     {
         id: 3,
@@ -54,20 +54,20 @@ threatass_JSON = [
     },
     {
         id: 10,
-        description: "Ensuring that your PCs are fully patched and upgraded is hinders some very effective attacks.",
+        description: "Ensuring that your PCs are fully patched and upgraded can hinder even the most effective attacks.",
     },
     {
         id: 6,
         description:
-            "Making sure that there is CCTV in your office can ensure that nobody that isn't supposed to be there, isn't there.",
+            "Installing CCTV in your office can ensure unwanted visitors do not gain access.",
     },
     {
         id: 11,
         description:
-            "Ensuring that the data on your PCs is good for hiding some of your important documents from attackers.",
+            "Encrypting the data on your PCs will make them more secure, hiding your important documents from attackers.",
     },
     {
         id: 12,
-        description: "By upgrading your controller you can ensure that you most important asset is more protected.",
+        description: "By upgrading your Controller you can ensure that your most important asset is protected.",
     },
 ];
