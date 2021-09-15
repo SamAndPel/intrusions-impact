@@ -13,7 +13,7 @@ function preprocess(masterdata) {
         if (card.prerequisite != -1) {
             cardelement.classList.add("unplayable");
         }
-        cardelement.onclick = "showmodal(" + card.id + ")";
+        cardelement.setAttribute("onclick", "showmodal(" + card.id + ")");
         cardelement.draggable = "true";
         cardelement.ondragstart = "dragStart(event)";
         cardelement.ondragend = "dragStop(event)";
@@ -26,7 +26,7 @@ function preprocess(masterdata) {
 
         const cardimg = document.createElement("img");
         cardimg.classList.add("card-image");
-        cardimg.src = "/images/cards/" + card.image;
+        cardimg.src = "static/images/cards/" + card.image;
         cardimg.alt = "Image of " + card.name;
         cardelement.appendChild(cardimg);
 
@@ -40,9 +40,9 @@ function preprocess(masterdata) {
 
 
         // Preprocess gameboard display
-        const graphicelement = documet.createElement("img");
+        const graphicelement = document.createElement("img");
         graphicelement.classList.add("overlayimage");
-        graphicelement.src = "/images/board/" + card.graphic;
+        graphicelement.src = "static/images/board/" + card.graphic;
         graphicelement.id = "card" + card.id + "graphic";
         graphicelement.alt = "Graphics overlay for " + card.name;
 
@@ -52,7 +52,8 @@ function preprocess(masterdata) {
         // Preprocess modal display
         const modalelement = document.createElement("div");
         modalelement.id = "card" + card.id + "modal";
-        modalelement.classList.add("modal cardmodal");
+        modalelement.classList.add("modal");
+        modalelement.classList.add("cardmodal")
         const modalcontent = document.createElement("div");
         modalcontent.classList.add("cardmodalcontent");
 
@@ -64,7 +65,7 @@ function preprocess(masterdata) {
 
         const modalimg = document.createElement("img");
         modalimg.classList.add("big-card-image");
-        modalimg.src = "/images/cards/" + card.image;
+        modalimg.src = "static/images/cards/" + card.image;
         modalimg.alt = "Large image of " + card.name;
         modalcontent.appendChild(modalimg);
 
@@ -100,7 +101,7 @@ function preprocess(masterdata) {
         const modaltogglestage = document.createElement("p");
         modaltogglestage.classList.add("modallink");
         modaltogglestage.classList.add("togglestage");
-        modaltogglestage.onclick = "togglestage(" + card.id + ")";
+        modaltogglestage.setAttribute("onclick", "togglestage(" + card.id + ")");
         const modaltogglestagetext = document.createTextNode("Play card");
         modaltogglestage.appendChild(modaltogglestagetext);
         linkspace.appendChild(modaltogglestage);
