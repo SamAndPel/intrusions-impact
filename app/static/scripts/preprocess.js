@@ -15,8 +15,8 @@ function preprocess(masterdata) {
         }
         cardelement.setAttribute("onclick", "showmodal(" + card.id + ")");
         cardelement.draggable = "true";
-        cardelement.ondragstart = "dragStart(event)";
-        cardelement.ondragend = "dragStop(event)";
+        cardelement.setAttribute("ondragstart", "dragStart(event)");
+        cardelement.setAttribute("ondragend", "dragStop(event)");
 
         const cardtitle = document.createElement("p");
         cardtitle.classList.add("card-title");
