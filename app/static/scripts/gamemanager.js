@@ -126,7 +126,7 @@ function showconclusion(concl, callback) {
     if (concl["image"]) {
         const imageelement = document.createElement("img");
         imageelement.classList.add("conclimage");
-        imageelement.src = "/images/conclusions/" + concl["image"];
+        imageelement.src = "static/images/conclusions/" + concl["image"];
         imageelement.alt = "Image emphasising conclusion";
         modalroot.appendChild(imageelement);
     }

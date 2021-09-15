@@ -33,9 +33,9 @@ function doturn() {
             const graphic = document.getElementById("card" + idno + "graphic");
             graphic.classList.add("rendered");
         });
-        document.getElementById("workersteve").style.animation = "dowork 2s ease";
-        const workaudio = new Audio('/audio/workaudio.mp3');
+        const workaudio = new Audio('static/audio/workaudio.mp3');
         workaudio.play();
+        document.getElementById("workersteve").style.animation = "dowork 2s ease";
 
         // Generate consequence list and adds to improvements list
         let conseqs = [];
@@ -288,7 +288,7 @@ function showconsequences(onplaylist, consequencelist, callback) {
         if (conseq["image"]) {
             const imageelement = document.createElement("img");
             imageelement.classList.add("conseqimage");
-            imageelement.src = "/images/consequences/" + conseq["image"];
+            imageelement.src = "static/images/consequences/" + conseq["image"];
             imageelement.alt = "Image showing result of the above consequence";
             consdiv.appendChild(imageelement);
         }
