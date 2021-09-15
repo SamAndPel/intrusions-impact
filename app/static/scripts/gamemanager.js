@@ -1,34 +1,28 @@
 // Master game management script
 
 // Define global variables
-let rawdata = {};               // Raw immutable object containing JSON data
-let threatassessdata = [];      // Raw immutable object containing threat_assessment.JSON data
-let cardpositionmaster = {};    // Lookup table (Card ID Number --> Position as string (can be 'unstaged', 'staged' or 'played'))
-let gamelog = {};               // Log of cardids played each turn
+const rawdata = defences_JSON;              // Raw immutable object containing defence JSON data
+const threatassessdata = threatass_JSON;    // Raw immutable object containing threat assessment JSON data
+const concldata = conclusions_JSON          // Raw immutable object containing conclusion JSON data
 
-const budgeteachturn = 100000;  // Funding to be allocated each turn (extra carries over)
-let currentbudget = 0;          // Current budget (including rollover)
+let cardpositionmaster = {};        // Lookup table (Card ID Number --> Position as string (can be 'unstaged', 'staged' or 'played'))
+let gamelog = {};                   // Log of cardids played each turn
 
-const maxturns = 4;             // Turns to run before forcing endgame (may be unneeded due to causesEnd in JSON)
-let turn = 0;                   // Current turn
+const budgeteachturn = 100000;      // Funding to be allocated each turn (extra carries over)
+let currentbudget = 0;              // Current budget (including rollover)
 
-let currentscore = 0;           // Current score (impacted by scoredeltas)
-let currentimprovements = []    // A log of the current, most recommended improvements
+const maxturns = 4;                 // Turns to run before forcing endgame (may be unneeded due to causesEnd in JSON)
+let turn = 0;                       // Current turn
+
+let currentscore = 0;               // Current score (impacted by scoredeltas)
+let currentimprovements = []        // A log of the current, most recommended improvements
 
 // Gets JSON and builds required data structures on game start
 function initialise() {
-    var request = new XMLHttpRequest();
-    request.open("GET", "defences.json", false);
-    request.send(null)
-    rawdata = JSON.parse(request.responseText);
     Object.values(rawdata).forEach(element => {
         let id = element.id;
         cardpositionmaster[id] = "unstaged";
     });
-    var request1 = new XMLHttpRequest();
-    request1.open("GET", "threat_assessment.json", false);
-    request1.send(null)
-    threatassessdata = JSON.parse(request1.responseText);
     currentbudget = budgeteachturn;
     recalculatecost();
     preprocess(rawdata);
@@ -39,12 +33,7 @@ function endgame() {
     // Calculate final score
     console.log("[*] Endgame reached, final score " + currentscore);
 
-    // Use score to generate conclusion from conclusions.json
-    var request = new XMLHttpRequest();
-    request.open("GET", "conclusions.json", false);
-    request.send(null)
-    const concldata = JSON.parse(request.responseText);
-
+    // Use score to generate conclusion
     let concl = {};
     if (currentscore < -1300) {
         concl = concldata["0"];
