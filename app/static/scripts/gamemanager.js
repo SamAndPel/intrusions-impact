@@ -152,7 +152,7 @@ function showconclusion(concl, callback) {
     btndiv.classList.add("modallinkspace");
     const homebtnelement = document.createElement("a");
     const reviewbtnelement = document.createElement("p");
-    homebtnelement.href = "/";
+    homebtnelement.href = "index.html";
     homebtnelement.classList.add("modallink");
     reviewbtnelement.classList.add("modallink");
     const homebtntext = document.createTextNode("Home");
