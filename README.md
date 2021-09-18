@@ -4,7 +4,7 @@ A Cyber Security discussion game based on Decisions and Disruptions
 This is a web-port of the card/tabletop/lego game [Decisions and Disruptions](https://www.decisions-disruptions.org/), originally designed by Lancaster University. It was built by four placement students in 4 weeks during our 2021 summer placement with Atkins.
 
 ## View the game online
-Access the live demo at [https://www.intrusions.samandpel.uk/](https://www.intrusions.samandpel.uk/)
+Access the live demo at [https://samandpel.github.io/intrusions-impact/](https://samandpel.github.io/intrusions-impact/)
 
 ## Running the game locally
 1. Clone or download
