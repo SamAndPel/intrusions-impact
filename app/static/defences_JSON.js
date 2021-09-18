@@ -26,7 +26,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Security Training- Security training is an important aspect to securing you organisation, however there are some tools that you should probably have considered beforehand.",
+                        "Security Training - Security training is an important aspect to securing your organisation, however, there are some fundementals that you should have considered beforehand.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -81,7 +81,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Security Training - While it might not seem so, but security training is a very important and powerful way to protect your network and so should be implemented early in the process.",
+                        "Security Training - While it might not seem so, Security Training is a very important and powerful way to protect your network, and should be implemented early in the process.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -111,7 +111,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Security Training - While it might not seem so, but security training is a very important and powerful way to protect your network and so should be implemented early in the process.",
+                        "Security Training - While it might not seem so, Security Training is a very important and powerful way to protect your network, and so should be implemented early in the process.",
                     "causes-end": true,
                 },
                 notinstalled: {
@@ -126,7 +126,7 @@ defences_JSON = {
                     "example-source":
                         "https://arstechnica.com/information-technology/2015/04/hacked-french-network-exposed-its-own-passwords-during-tv-interview/",
                     improvement:
-                        "Security Training - While it might not seem so, but security training is a very important and powerful way to protect your network and so should be implemented early in the process.",
+                        "Security Training - While it might not seem so, security training is a very important and powerful way to protect your network, and so should be implemented early in the process.",
                     "causes-end": true,
                 },
             },
@@ -148,7 +148,7 @@ defences_JSON = {
         "onplay-scoredelta": [75, 100, 50, 25],
         "neverplayed-scoredelta": -1,
         "onplay-text":
-            "An experienced team of auditors visit the plant and asses your equipment. They find numerous problems, caused mostly by your out-of-date equipment. You're still using old Windows XP workstations, none of your databases are encrypted and your plant controller hasn't been upgraded since 1996! You've unlocked new defences.",
+            "An experienced team of auditors visit the plant and asses your equipment. They find numerous problems, caused mostly by your out-of-date equipment. You're still using old Windows XP workstations, none of your databases are encrypted, and your plant controller hasn't been upgraded since 1996! You've unlocked new defences.",
         consequences: [
             {
                 installed: {
@@ -180,7 +180,7 @@ defences_JSON = {
                 installed: {
                     text: "",
                     scoredelta: 0,
-                    type: "Hacker",
+                    type: "",
                     image: "",
                     stat: "",
                     "stat-source": "",
@@ -214,7 +214,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Asset Audit - It's important to implment tools and stratergies to defend against attacks but it is important to know where your most important assets are and their vulnerabilities to be truly effective.",
+                        "Asset Audit - It's important to implment tools and strategies to defend against attacks but it is important to know where your most important assets are (and what their vulnerabilities may be) to be truly effective.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -242,7 +242,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Asset Audit - It's important to implment tools and stratergies to defend against attacks but it is important to know where your most important assets are and their vulnerabilities to be truly effective.",
+                        "Asset Audit - It's important to implment tools and strategies to defend against attacks but it is important to know where your most important assets are (and what their vulnerabilities may be) to be truly effective.",
                     "causes-end": true,
                 },
                 notinstalled: {
@@ -256,7 +256,7 @@ defences_JSON = {
                         "TalkTalk (2015) - After a vulnerability in their system was posted, TalkTalk found that several groups of hackers raided their network, leading to at least £77 million in damages.",
                     "example-source": "https://www.bbc.co.uk/news/uk-england-stoke-staffordshire-46264327",
                     improvement:
-                        "Asset Audit - It's important to implment tools and stratergies to defend against attacks but it is important to know where your most important assets are and their vulnerabilities to be truly effective.",
+                        "Asset Audit - It's important to implment tools and strategies to defend against attacks but it is important to know where your most important assets are (and what their vulnerabilities may be) to be truly effective.",
                     "causes-end": true,
                 },
             },
@@ -318,7 +318,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Antivirus - Antivirus is a vital to securing any network, by getting a high quality antivirus you are protecting yourself against almost all malware that will come your way. As such we recommend that you implement it earlier.",
+                        "Antivirus - A strong Antivirus is a vital to securing any network. By installing a high quality Antivirus you are protecting yourself against almost all malware that will come your way. As such, it should be one of the very first things you implement.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -346,7 +346,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Antivirus - Antivirus is a vital to securing any network, by getting a high quality antivirus you are protecting yourself against almost all malware that will come your way. As such we recommend that you implement it earlier.",
+                        "Antivirus - A strong Antivirus is a vital to securing any network. By installing a high quality Antivirus you are protecting yourself against almost all malware that will come your way. As such, it should be one of the very first things you implement.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -361,7 +361,7 @@ defences_JSON = {
                     "example-source":
                         "https://www.zdnet.com/article/colonial-pipeline-ransomware-attack-everything-you-need-to-know/",
                     improvement:
-                        "Antivirus - Antivirus is a vital to securing any network, by getting a high quality antivirus you are protecting yourself against almost all malware that will come your way. As such we recommend that you implement it earlier.",
+                        "Antivirus - A strong Antivirus is a vital to securing any network. By installing a high quality Antivirus you are protecting yourself against almost all malware that will come your way. As such, it should be one of the very first things you implement.",
                     "causes-end": true,
                 },
             },
@@ -421,7 +421,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Network Monitoring (Plant) - It can be a powerful tool for defending your network, however it's not much use if there are too many attacks that your analysts get overwhelmed. So, it is worth implementing this later down the line.",
+                        "Network Monitoring (Plant) - This can be a powerful tool for defending your network, however it's not much use if there are so many attacks that your analysts get overwhelmed. Whilst valuable, it is worth implementing this later on, after more critical holes have been patched.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -448,7 +448,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Network Monitoring (Plant) - It can be a powerful tool for defending your network, however it's not much use if there are too many attacks that your analysts get overwhelmed. So, it is worth implementing this later down the line.",
+                    "Network Monitoring (Plant) - This can be a powerful tool for defending your network, however it's not much use if there are so many attacks that your analysts get overwhelmed. Whilst valuable, it is worth implementing this later on, after more critical holes have been patched.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -503,7 +503,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Network Monitoring (Plant) - While it is not often well implemented in the real world, by ensuring that that good network monitoring is implemented on your plant network can be really important for the safety of your process.",
+                        "Network Monitoring (Plant) - While it is not often well implemented in the real world, ensuring that that good network monitoring is implemented on your plant network can be really important for the safety of your process.",
                     "causes-end": true,
                 },
                 notinstalled: {
@@ -518,7 +518,7 @@ defences_JSON = {
                         "NotPetya (2017) - A ransomware that spread through password harvesting and the same vulnerability as WannaCry, what stands out about this ransomware is that even if you paid the ransom, the files were not encrypted. This has led people to believe that it was Russia trying to cause as much damage possible to Ukrainian networks.",
                     "example-source": "https://www.itpro.co.uk/malware/34381/what-is-notpetya",
                     improvement:
-                        "Network Monitoring (Plant) - While it is not often well implemented in the real world, by ensuring that that good network monitoring is implemented on your plant network can be really important for the safety of your process.",
+                        "Network Monitoring (Plant) - While it is not often well implemented in the real world, ensuring that that good network monitoring is implemented on your plant network can be really important for the safety of your process.",
                     "causes-end": true,
                 },
             },
@@ -551,7 +551,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "CCTV (Plant) - CCTV is good for ensuring that people can't interfere with the process physically, but you will find that there are many more attacks originating from the internet than through physical breaches. So, focusing on cybersecurity tools was probably more important.",
+                        "CCTV (Plant) - CCTV is good for ensuring that people can't interfere with the process physically, but you will find that there are many more attacks originating from the internet than through physical breaches. So, focusing on cybersecurity tools early on was probably more important.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -607,7 +607,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "CCTV (Plant) - The physical process is very sensitive and if someone was able to get access to the plant then that could lead to some dire consequences, so it is important to implement it quite early.",
+                        "CCTV (Plant) - The physical process is very sensitive, and if someone was able to gain access to the plant, there may be dire consequences. It is important to implement Plant CCTV quite early.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -634,7 +634,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "CCTV (Plant) - The physical process is very sensitive and if someone was able to get access to the plant then that could lead to some dire consequences, so it is important to implement it quite early.",
+                        "CCTV (Plant) - The physical process is very sensitive and, if someone was able to get access to the plant, there may be dire consequences. It is important to implement Plant CCTV quite early.",
                     "causes-end": true,
                 },
                 notinstalled: {
@@ -649,7 +649,7 @@ defences_JSON = {
                     "example-source":
                         "https://www.csoonline.com/article/3218104/what-is-stuxnet-who-created-it-and-how-does-it-work.html",
                     improvement:
-                        "CCTV (Plant) - The physical process is very sensitive and if someone was able to get access to the plant then that could lead to some dire consequences, so it is important to implement it quite early.",
+                        "CCTV (Plant) - The physical process is very sensitive and, if someone was able to get access to the plant, there could be dire consequences. It is important to implement Plant CCTV quite early.",
                     "causes-end": true,
                 },
             },
@@ -740,7 +740,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Firewall (Plant) - A firewall is one of the most simple and powerful tools for securing your network, and so should be one of the first things that you implement.",
+                        "Firewall (Plant) - A Firewall is one of the most simple and powerful tools for securing your network, and so should be one of the first things that you implement.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -754,7 +754,7 @@ defences_JSON = {
                         "Saudi Aramco (2012) - The attack stared during Ramadan, when most employees were on holiday, when malware called Shamoon that collected sensitive data and then deleted everything. This meant that the company had to use typewriters, send oil without payment and bought the world's supply of hard drives.",
                     "example-source": "https://money.cnn.com/2015/08/05/technology/aramco-hack/index.html",
                     improvement:
-                        "Firewall (Plant) - A firewall is one of the most simple and powerful tools for securing your network, and so should be one of the first things that you implement.",
+                        "Firewall (Plant) - A Firewall is one of the most simple and powerful tools for securing your network, and so should be one of the first things that you implement.",
                     "causes-end": true,
                 },
             },
@@ -813,7 +813,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "CCTV (Office) - Ensuring that your office is has CCTV can be good but ensuring that your network is secure and your plant network is protected is a bigger priorities.",
+                        "CCTV (Office) - Ensuring that your office  has CCTV is good, but ensuring that your network is secure and that your plant network is protected are bigger priorities.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -840,7 +840,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "CCTV (Office) - Ensuring that your office is has CCTV can be good but ensuring that your network is secure and your plant network is protected is a bigger priorities.",
+                        "CCTV (Office) - Ensuring that your office has CCTV is good, but ensuring that your network is secure and your plant network is protected are bigger priorities.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -867,7 +867,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "CCTV (Office) - Ensuring that your office is has CCTV can be good but ensuring that your network is secure and your plant network is protected is a bigger priorities.",
+                        "CCTV (Office) - Ensuring that your office has CCTV is good, but ensuring that your network is secure and your plant network is protected are bigger priorities.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -967,7 +967,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Firewall (Office) - A firewall is one of the most simple and powerful tools for securing your network, and so should be one of the first things that you implement.",
+                        "Firewall (Office) - A Firewall is one of the most simple and powerful tools for securing your network, and so should be one of the first things that you implement.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -997,7 +997,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Firewall (Office) - A firewall is one of the most simple and powerful tools for securing your network, and so should be one of the first things that you implement.",
+                        "Firewall (Office) - A Firewall is one of the most simple and powerful tools for securing your network, and so should be one of the first things that you implement.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1013,7 +1013,7 @@ defences_JSON = {
                     "example-source":
                         "https://www.theguardian.com/news/2021/jul/18/what-is-pegasus-spyware-and-how-does-it-hack-phones",
                     improvement:
-                        "Firewall (Office) - A firewall is one of the most simple and powerful tools for securing your network, and so should be one of the first things that you implement.",
+                        "Firewall (Office) - A Firewall is one of the most simple and powerful tools for securing your network, and so should be one of the first things that you implement.",
                     "causes-end": true,
                 },
             },
@@ -1073,7 +1073,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Network Monitoring (Office) - Making sure that your office network is well monitored is not a real priority for an organisation such as yours. There are better tools or more important loactions that it should be implemented.",
+                        "Network Monitoring (Office) - Making sure that your office network is well monitored is not a real priority for an organisation such as yours. There are more important loactions where Network Monitoring cculd be implemented.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1100,7 +1100,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Network Monitoring (Office) - Making sure that your office network is well monitored is not a real priority for an organisation such as yours. There are better tools or more important loactions that it should be implemented.",
+                        "Network Monitoring (Office) - Making sure that your office network is well monitored is not a real priority for an organisation such as yours. There are more important loactions where Network Monitoring could be implemented.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1127,7 +1127,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Network Monitoring (Office) - Making sure that your office network is well monitored is not a real priority for an organisation such as yours. There are better tools or more important loactions that it should be implemented.",
+                        "Network Monitoring (Office) - Making sure that your office network is well monitored is not a real priority for an organisation such as yours. There are more important loactions where Network Monitoring could be implemented.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1168,7 +1168,7 @@ defences_JSON = {
                     "example-source":
                         "https://www.tofinosecurity.com/sites/default/files/CP-102-Case_Profile-Maroochy_Shire-rev1.pdf",
                     improvement:
-                        "Network Monitoring (Office) - By making sure that your office is monitored not only protects your sensitive information but can also hinder attackers from pivoting to the plant network.",
+                        "Network Monitoring (Office) - Making sure that your office network is monitored not only protects your sensitive information, but can also hinder attackers from pivoting into the plant network.",
                     "causes-end": true,
                 },
             },
@@ -1202,7 +1202,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Database Encryption - It is important to ensure that attackers don't get access to sensitive data but there are tools and stratergies that are better for ensuring wider protection of the network.",
+                        "Database Encryption - Whilst it is important to ensure that attackers don't get access to sensitive data, there are tools and strategies that are better for ensuring wider protection of the network.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1229,7 +1229,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Database Encryption - It is important to ensure that attackers don't get access to sensitive data but there are tools and stratergies that are better for ensuring wider protection of the network.",
+                        "Database Encryption - Whilst it is important to ensure that attackers don't get access to sensitive data, there are tools and strategies that are better for ensuring wider protection of the network.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1284,7 +1284,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Database Encryption - By implmenting encryption on your most sensitive data, you are protecting against a large amount of reputational damage and possible fines so should've been played earlier.",
+                        "Database Encryption - By encrypting your most sensitive data, you are protecting against a large amount of reputational damage and possible fines, even if an attack is successful.",
                     "causes-end": true,
                 },
                 notinstalled: {
@@ -1298,7 +1298,7 @@ defences_JSON = {
                         "General Electric (2017) - An employee at GE Aviation was approached by the Chinese government to send them some confidential design documents, suspected to have been worth $100 million. Fortunately, he was arrested before a transaction was able to take place.",
                     "example-source": "https://www.theregister.com/2021/03/01/china_mosfet_theft/",
                     improvement:
-                        "Database Encryption - By implmenting encryption on your most sensitive data, you are protecting against a large amount of reputational damage and possible fines so should've been played earlier.",
+                        "Database Encryption - By encrypting your most sensitive data, you are protecting against a large amount of reputational damage and possible fines, even if an attack is successful.",
                     "causes-end": true,
                 },
             },
@@ -1331,7 +1331,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "PC Upgrade - It is good to ensure that there are not any known vulnerabilities on your PCs but if you can prevent attackers getting on your network in ther first place, that is a better move.",
+                        "PC Upgrade - It is good to ensure that there are not any known vulnerabilities on your PCs, but it's more important to prevent attackers accessing your network in ther first place.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1358,7 +1358,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "PC Upgrade - It is good to ensure that there are not any known vulnerabilities on your PCs but if you can prevent attackers getting on your network in ther first place, that is a better move.",
+                        "PC Upgrade - It is good to ensure that there are not any known vulnerabilities on your PCs, but it's more important to prevent attackers accessing your network in ther first place.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1385,7 +1385,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "PC Upgrade - It is good to ensure that there are not any known vulnerabilities on your PCs but if you can prevent attackers getting on your network in ther first place, that is a better move.",
+                        "PC Upgrade - It is good to ensure that there are not any known vulnerabilities on your PCs, but it's more important to prevent attackers accessing your network in ther first place.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1426,7 +1426,7 @@ defences_JSON = {
                     "example-source":
                         "https://www.theguardian.com/business/2009/jul/17/boeing-space-technology-industrial-espionage",
                     improvement:
-                        "PC Upgrade - Ensuring that your PCs don't have vulnerabilties can help prevent attackers from being able to move your network so easily.",
+                        "PC Upgrade - Ensuring that your PCs don't have vulnerabilties can help prevent attackers from being able to move your network so easily. Ensuring systems are patched is a critical part of cyber security.",
                     "causes-end": true,
                 },
             },
@@ -1459,7 +1459,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "PC Encryption - Ensuring that data is encrypted is easy and however it does not have much ensuring the security of your network as most of your sensitive information will be on your databases.",
+                        "PC Encryption - Ensuring that data is encrypted is easy and secure, however, it should be a low priority. Most of your sensitive information will be stored on your databases.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1486,7 +1486,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "PC Encryption - Ensuring that data is encrypted is easy and however it does not have much ensuring the security of your network as most of your sensitive information will be on your databases.",
+                    "PC Encryption - Ensuring that data is encrypted is easy and secure, however, it should be a low priority. Most of your sensitive information will be stored on your databases.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1513,7 +1513,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "PC Encryption - Ensuring that data is encrypted is easy and however it does not have much ensuring the security of your network as most of your sensitive information will be on your databases.",
+                    "PC Encryption - Ensuring that data is encrypted is easy and secure, however, it should be a low priority. Most of your sensitive information will be stored on your databases.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1540,7 +1540,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "PC Encryption - Ensuring that data is encrypted is easy and however it does not have much ensuring the security of your network as most of your sensitive information will be on your databases.",
+                    "PC Encryption - Ensuring that data is encrypted is easy and secure, however, it should be a low priority. Most of your sensitive information will be stored on your databases.",
                     "causes-end": true,
                 },
                 notinstalled: {
@@ -1567,7 +1567,7 @@ defences_JSON = {
         cost: 30000,
         shortdesc: "Software patches and an update to the firmware of the SCADA controller.",
         longdesc:
-            "Upgrading the SCADA controller’s firmware may offer benefits to an organisation in many areas, including their cybersecurity. As the SCADA system is what controls all PLCs, it’s vital that this system functions well and is secure. These types of systems are closely observed and researched, as they form a part of critical national infrastructure. It has been shown that, over time, the controllers degrade, and vulnerabilities are found. In newer controllers, these vulnerabilities have been secured, there is more support available for issues and the overall cybersecurity is generally more effective.",
+            "Upgrading the SCADA controller’s firmware may offer benefits to an organisation in many areas, including their cybersecurity. As the SCADA system controls all the plant equipment, it’s vital that it functions well and is secure. These types of systems are closely observed and researched, as they form a part of critical national infrastructure. It has been shown that, over time, the controllers degrade and  vulnerabilities are found. In newer controllers, these vulnerabilities are secured, there is more support available for issues, and the overall cybersecurity is more effective.",
         outlink: "",
         prerequisite: 1,
         "onplay-scoredelta": [10, 25, 50, 75],
@@ -1585,7 +1585,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Controller Upgrade - Your controller is central to your plant network and so ensuring its security is important but upgrading it does not have much effect on security and so you should really focus on the other defences first.",
+                        "Controller Upgrade - Your controller is central to your plant network and so ensuring its security is important. However, upgrading it does not have much effect on security and so you should really focus on the other defences first.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1612,7 +1612,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Controller Upgrade - Your controller is central to your plant network and so ensuring its security is important but upgrading it does not have much effect on security and so you should really focus on the other defences first.",
+                        "Controller Upgrade - Your controller is central to your plant network and so ensuring its security is important. However, upgrading it does not have much effect on security and so you should really focus on the other defences first.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1639,7 +1639,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Controller Upgrade - Your controller is central to your plant network and so ensuring its security is important but upgrading it does not have much effect on security and so you should really focus on the other defences first.",
+                        "Controller Upgrade - Your controller is central to your plant network and so ensuring its security is important. However, upgrading it does not have much effect on security and so you should really focus on the other defences first.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1666,7 +1666,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Controller Upgrade - Your controller is central to your plant network and so ensuring its security is important but upgrading it does not have much effect on security and so you should really focus on the other defences first.",
+                        "Controller Upgrade - Your controller is central to your plant network and so ensuring its security is important. However, upgrading it does not have much effect on security and so you should really focus on the other defences first.",
                     "causes-end": true,
                 },
                 notinstalled: {
@@ -1711,7 +1711,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Server Upgrade - Patching your servers is important, however there are some methods that should be implemented beforehand to provide better protection to the network.",
+                        "Server Upgrade - Patching your servers is important, but there are more important defences which should be implemented first to better secure the network.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1738,7 +1738,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Server Upgrade - Patching your servers is important, however there are some methods that should be implemented beforehand to provide better protection to the network.",
+                    "Server Upgrade - Patching your servers is important, but there are more important defences which should be implemented first to better secure the network.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1791,8 +1791,7 @@ defences_JSON = {
                     "stat-source": "",
                     example: "",
                     "example-source": "",
-                    improvement:
-                        "Server Upgrade - Your servers are one of the easiest ways into your network, so it is important to ensure that you ensure that they are patched against the latest vulnerabilties.",
+                    improvement: "",
                     "causes-end": true,
                 },
                 notinstalled: {
@@ -1840,7 +1839,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Threat Assessment - Understanding who might want to attack is important, however you should start by getting a baseline of security first.",
+                        "Threat Assessment - Understanding who might want to attack you is important, but you should start by implementing the basics - like a Firewall and Antivirus - first.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1923,7 +1922,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Threat Assessment - One of the best ways to optimise your security startergy is to understand who wants to attack you and so should be implmented fairly early in the process.",
+                        "Threat Assessment - One of the best ways to optimise your security strategy is to understand who wants to attack you. Understanding the Threat Landscape is critical to ensuring your network security.",
                     "causes-end": true,
                 },
                 notinstalled: {
@@ -1936,7 +1935,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Threat Assessment - One of the best ways to optimise your security startergy is to understand who wants to attack you and so should be implmented fairly early in the process.",
+                    "Threat Assessment - One of the best ways to optimise your security strategy is to understand who wants to attack you. Understanding the Threat Landscape is critical to ensuring your network security.",
                     "causes-end": true,
                 },
             },
@@ -1970,7 +1969,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Network Segmentation - Segmenting your network into various sections can be effective at slowing down or even stopping attackers from moving around your network, but you should first ensure that it is difficult to get into your network.",
+                        "Network Segmentation - Segmenting your network into various sections can be effective at slowing down or even stopping attackers from moving around your network, but you should first ensure that it is difficult to access your network in the first place.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -2050,7 +2049,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                        "Network Segmentation - Network segmentation can be one of the most effective ways in protecting your most important assets, such as those on your plant network or your SIS.",
+                        "Network Segmentation - Network Segmentation can be one of the most effective ways to protect your most important assets, such as those on your plant network or your safety systems.",
                     "causes-end": true,
                 },
                 notinstalled: {
@@ -2065,7 +2064,7 @@ defences_JSON = {
                     "example-source":
                         "https://www.zdnet.com/article/cybersecurity-the-key-lessons-of-the-triton-malware-cyberattack-you-need-to-learn/",
                     improvement:
-                        "Network Segmentation - Network segmentation can be one of the most effective ways in protecting your most important assets, such as those on your plant network or your SIS.",
+                        "Network Segmentation - Network Segmentation can be one of the most effective ways to protect your most important assets, such as those on your plant network or your safety systems.",
                     "causes-end": true,
                 },
             },
