@@ -11,7 +11,7 @@ Access the live demo at [https://www.intrusions.samandpel.uk/](https://www.intru
    * `git clone https://github.com/SamAndPel/decisions-disruptions-clone.git`
    * `git clone git@github.com:SamAndPel/decisions-disruptions-clone.git`
    * Click https://github.com/SamAndPel/decisions-disruptions-clone/archive/master.zip
-1. Open `/app/index.html` in a modern web browser (Chrome/Firefox/Edge recommended)
+1. Open `/index.html` in a modern web browser (Chrome/Firefox/Edge recommended)
 
 ## Adapting the game to suit your needs
 ### Application structure
