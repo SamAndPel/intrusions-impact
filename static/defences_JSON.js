@@ -1568,7 +1568,7 @@ defences_JSON = {
         shortdesc: "Software patches and an update to the firmware of the SCADA controller.",
         longdesc:
             "Upgrading the SCADA controller’s firmware may offer benefits to an organisation in many areas, including their cybersecurity. As the SCADA system controls all the plant equipment, it’s vital that it functions well and is secure. These types of systems are closely observed and researched, as they form a part of critical national infrastructure. It has been shown that, over time, the controllers degrade and  vulnerabilities are found. In newer controllers, these vulnerabilities are secured, there is more support available for issues, and the overall cybersecurity is more effective.",
-        outlink: "",
+        outlink: "https://processsolutions.com/four-reasons-why-you-should-upgrade-your-scada-system/",
         prerequisite: 1,
         "onplay-scoredelta": [10, 25, 50, 75],
         "neverplayed-scoredelta": 100,
