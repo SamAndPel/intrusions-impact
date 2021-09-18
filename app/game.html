@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intrusions and Impact</title>
+        <link rel="icon" href="static/images/cybersteve.png" type="image/png">
+        <link rel="stylesheet" href="static/styles/root.css" type="text/css">
+        <link rel="stylesheet" href="static/styles/header.css" type="text/css">
+        <link rel="stylesheet" href="static/styles/footer.css" type="text/css">
+        <link rel="stylesheet" href="static/styles/playspace.css" type="text/css">
+        <link rel="stylesheet" href="static/styles/card.css" type="text/css">
+        <link rel="stylesheet" href="static/styles/modal.css" type="text/css">
+        <link rel="stylesheet" href="static/styles/dragdrop.css" type="text/css">
+        <link rel="stylesheet" href="static/styles/infoarea.css" type="text/css">
+        <link rel="stylesheet" href="static/styles/graphics.css" type="text/css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+
+            <!-- HEADER BAR -->
+            <header>
+                <div id="headerleft">
+                    <img id="headerimg" src="static/images/cybersteve.png" alt="Image of Cyber Steve">
+                    <a id="headertitle" href="index.html">Intrusions and Impact</a>
+                </div>
+                <div id="headerright">
+                    <a class="headerlink" href="game.html">Play</a>
+                    <a class="headerlink" href="howtoplay.html">How to play</a>
+                    <a class="headerlink" href="about.html">Why should you care?</a>
+                </div>
+            </header>
+
+            <!-- MAIN CONTENT -->
+            <main>
+                <div id="playspace">
+                    <div id="leftcol" class="column">
+                        <p class="colhead">Defences available:</p>
+                        <div id="unstageddeck" class="carddeck scroll-y">
+                        </div>
+                        <div id="leftdrag" class="dragspace droppable" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <span class="dragspacetext">Drag cards here</span>
+                        </div>
+                    </div>
+                    <div id="midcol" class="column">
+                        <div id="graphicsboard">
+                            <img src="static/images/board/baseplate.png" alt="Base image of AquaVolt Power Plant" class="baseplateimage">
+                            <div id="overlays">
+                            </div>
+                            <img src="static/images/board/hammersteve.png" alt="Image of Cyber Steve holding a hammer" id="workersteve" class="workerimage">
+                        </div>
+                        <p class="colhead">Defences to play:</p>
+                        <div id="staging">
+                            <div id="stageddeck" class="carddeck scroll-x">
+                            </div>
+                            <div id="stagedrag" class="dragspace droppable" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <span class="dragspacetext">Drag cards here</span>
+                            </div>
+                            <div id="infoarea">
+                                <p id="scoredisplay" class="infotext good">0 Points</p>
+                                <p id="turndisplay" class="infotext">Year 1</p>
+                                <p class="infotext">Funds remaining:</p>
+                                <p id="budget" class="infotext">£100,000</p>
+                                <button id="playbutton" onclick="doturn()">
+                                    <p id="playbuttontext">Play</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="rightcol" class="column">
+                        <p class="colhead">Defences Played:</p>
+                        <div id="playeddeck" class="carddeck scroll-y">
+                        </div>
+                    </div>
+                </div>
+                <div id="cardmodals">
+                </div>
+                <div id="welcomemodal" class="modal infomodal">
+                    <div class="infomodalcontent">
+                        <div class="modalheader">
+                            <p class="info-header-text">Intrusions and Impact</p>
+                        </div>
+                        <div class="modalbody">
+                            <p class="stinger">Congratulations on your new job as Head of Cyber Security at AquaVolt Power!</p>
+                            <p class="info-body-text">You'll be on-site at our hydro-electric power plant for four years, and you'll get a budget of £100,000 per year to install and upgrade our Cyber Security systems. Remember - your decisions are the only things between our power plant and all the viruses, hackers, and organised criminals out there. Think strategically!</p>
+                            <p class="stinger">Four Years<br>£100,000 Pounds<br>Can you keep the plant safe?</p>
+                            <div class="modallinkspace">
+                                <a href="howtoplay.html" class="modallink">Help!</a>
+                                <p class="modallink" onclick="initialise()">Let's Play!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="conseqmodal" class="modal infomodal">
+                    <div class="infomodalcontent">
+                        <div class="modalheader">
+                            <p class="info-header-text">Consequences</p>
+                        </div>
+                        <div id="conseqmodalroot" class="modalbody">
+                        </div>
+                    </div>
+                </div>
+                <div id="endgamemodal" class="modal infomodal">
+                    <div class="infomodalcontent">
+                        <div class="modalheader">
+                            <p class="info-header-text">You have reached the end</p>
+                        </div>
+                        <div id="conclusionmodalroot" class="modalbody">
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- PADDING (to push the footer down if necessary) -->
+            <div id="pad">
+            </div>
+
+            <!-- FOOTER -->
+            <footer>
+                <p>Inspired by <i><a class="understatedlink" href="https://www.decisions-disruptions.org">Decisions and Disruptions</a></i> (Lancaster University), built by Sam, Shevani, Adam and Hanna - Copyright August 2021</p>
+            </footer>
+
+        </div>
+
+        <!-- Load in JSON data -->
+        <script src="static/defences_JSON.js"></script>
+        <script src="static/threatass_JSON.js"></script>
+        <script src="static/conclusions_JSON.js"></script>
+
+        <!-- Load in application scripts-->
+        <script src="static/scripts/onload.js"></script>
+        <script src="static/scripts/modalcontrol.js"></script>
+        <script src="static/scripts/dragcontrol.js"></script>
+        <script src="static/scripts/cardmover.js"></script>
+        <script src="static/scripts/gamemanager.js"></script>
+        <script src="static/scripts/actionturn.js"></script>
+        <script src="static/scripts/gameutils.js"></script>
+        <script src="static/scripts/preprocess.js"></script>
+
+    </body>
+</html>
