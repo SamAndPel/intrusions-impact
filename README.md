@@ -3,36 +3,31 @@ A Cyber Security discussion game based on Decisions and Disruptions
 
 This is a web-port of the card/tabletop/lego game [Decisions and Disruptions](https://www.decisions-disruptions.org/), originally designed by Lancaster University. It was built by four placement students in 4 weeks during our 2021 summer placement with Atkins.
 
-## Running the game server
+## View the game online
+Access the live demo at [https://www.intrusions.samandpel.uk/](https://www.intrusions.samandpel.uk/)
+
+## Running the game locally
 1. Clone or download
    * `git clone https://github.com/SamAndPel/decisions-disruptions-clone.git`
    * `git clone git@github.com:SamAndPel/decisions-disruptions-clone.git`
    * Click https://github.com/SamAndPel/decisions-disruptions-clone/archive/master.zip
-1. Install Node.js from the [Node.js website](https://nodejs.org/en/)
-1. Open command line in the root directory
-1. Run `npm install` to install required dependancies
-1. Run `node index.js` to start the server
-1. Navigate to [localhost:3000](localhost:3000)
+1. Open `/app/index.html` in a modern web browser (Chrome/Firefox/Edge recommended)
 
 ## Adapting the game to suit your needs
 ### Application structure
-This is a pretty standard Node.js project, with a file structure inspired by Flask.
-- `index.js` initialises the application and should be used as the entry point.
-- `/app/app.js` is the only server-side script, using Express and Nunjucks to serve files to clients.
-- `/app/templates/` contains all the Nunjucks templates (and hence HTML) for the application. Template inheritence is used, with all templates inheriting from the `/app/templates/base.html.njk` file.
-- `/app/static/` contains all front-facing files. **Anything placed in this folder WILL be publicly accessible when the application is launched**. This folder is mapped to the web root by Express when the server is initialised.
-  - `/app/static/defences.json` is the master datafile for defining defences and their associated consequences. See the section on editing defences.json for more.
-  - `/app/static/conclusions.json` contains conclusion data for the final endgame conclusion.
-  - `/app/static/threat_assessment.json` contains data for computing advice to be given when the Threat Assessment card is played.
-  - `/app/static/audio/` contains audio assets (only one file - `workaudio.mp3` - which is played whilst defence installation animations are being played).
-  - `/app/static/images/` contains all image assets for the project.
-  - `/app/static/scripts/` contains all scripts for the project (game logic and visuals).
-  - `/app/static/styles/` contains all CSS for the project.
+This is a pretty standard Web Project, written in raw HTML, CSS and JS
+- `/app/static/defences_JSON.js` is the master datafile for defining defences and their associated consequences. See the section on editing defences_JSON.js for more. The file is a JSON object stored in a JS variable to prevent CORS issues.
+- `/app/static/conclusions_JSON.js` contains conclusion data for the final endgame conclusion.
+- `/app/static/threatass_JSON.js` contains data for computing advice to be given when the Threat Assessment card is played.
+- `/app/static/audio/` contains audio assets (only one file - `workaudio.mp3` - which is played whilst defence installation animations are being played).
+- `/app/static/images/` contains all image assets for the project.
+- `/app/static/scripts/` contains all scripts for the project (game logic and visuals).
+- `/app/static/styles/` contains all CSS for the project.
 
 I've endeavoured to comment my code clearly and exhaustively, normally down to codeblock-level. I haven't used JSDoc annotations (@param etc) but the code structure should be clear enough.
 
-### Editing defences.json
-Defences.json is the master data file for all defences and consequences. It is a JSON object associating an integer ID with a defence object. Each defence object contains the following keys:
+### Editing defences_JSON.js
+Defences_JSON.js is the master data file for all defences and consequences. It contains a JSON object associating an integer ID with a defence object. Each defence object contains the following keys:
 
 - `id` - Integer ID of defence. Should align with the defence's key in defences.json.
 - `name` - Display name of the defence.
@@ -66,7 +61,7 @@ Game logic is contained mostly in `/app/static/scripts/gamemanager.js` and `/app
 Not much should need to change in the game logic if adapting the game to your environment, the only element of the game which is hardcoded in is the 'Threat Assessment' card, which is in lines 69-75 of file `/app/static/scripts/actionturn.js` and the entirety of the `/app/static/threat_assessment.json` file.
 
 ### Cards and Consequences
-If score values are changed, it may be wise to revisit the endgame score thresholding values (`/app/static/scripts/gamemanager.js`, lines 71-87).
+If score values are changed, it may be wise to revisit the endgame score thresholding values (`/app/static/scripts/gamemanager.js`, lines 36-52).
 
 ### Graphical elements
 The graphics work using PNG transparency. All defences are visualised as 'overlays', files of the same dimension as the baseplate image with areas of transparency surrounding the upgraded component. All assets sit on top of the gameboard baseplate image using absolute positioning, and are defined at page request when Nunjucks preprocesses the page. When a defence is played, it's associated overlay if located and has its opacity faded from 0 to 1 over two seconds. Whilst this occurs, the 'cyber steve' overlay `/app/static/images/board/hammersteve/.png` (again, transparent background) is animated using CSS keyframes in `/app/static/styles/playspace.css`.
