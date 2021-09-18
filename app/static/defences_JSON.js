@@ -448,7 +448,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                    "Network Monitoring (Plant) - This can be a powerful tool for defending your network, however it's not much use if there are so many attacks that your analysts get overwhelmed. Whilst valuable, it is worth implementing this later on, after more critical holes have been patched.",
+                        "Network Monitoring (Plant) - This can be a powerful tool for defending your network, however it's not much use if there are so many attacks that your analysts get overwhelmed. Whilst valuable, it is worth implementing this later on, after more critical holes have been patched.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1486,7 +1486,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                    "PC Encryption - Ensuring that data is encrypted is easy and secure, however, it should be a low priority. Most of your sensitive information will be stored on your databases.",
+                        "PC Encryption - Ensuring that data is encrypted is easy and secure, however, it should be a low priority. Most of your sensitive information will be stored on your databases.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1513,7 +1513,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                    "PC Encryption - Ensuring that data is encrypted is easy and secure, however, it should be a low priority. Most of your sensitive information will be stored on your databases.",
+                        "PC Encryption - Ensuring that data is encrypted is easy and secure, however, it should be a low priority. Most of your sensitive information will be stored on your databases.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1540,7 +1540,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                    "PC Encryption - Ensuring that data is encrypted is easy and secure, however, it should be a low priority. Most of your sensitive information will be stored on your databases.",
+                        "PC Encryption - Ensuring that data is encrypted is easy and secure, however, it should be a low priority. Most of your sensitive information will be stored on your databases.",
                     "causes-end": true,
                 },
                 notinstalled: {
@@ -1738,7 +1738,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                    "Server Upgrade - Patching your servers is important, but there are more important defences which should be implemented first to better secure the network.",
+                        "Server Upgrade - Patching your servers is important, but there are more important defences which should be implemented first to better secure the network.",
                     "causes-end": false,
                 },
                 notinstalled: {
@@ -1935,7 +1935,7 @@ defences_JSON = {
                     example: "",
                     "example-source": "",
                     improvement:
-                    "Threat Assessment - One of the best ways to optimise your security strategy is to understand who wants to attack you. Understanding the Threat Landscape is critical to ensuring your network security.",
+                        "Threat Assessment - One of the best ways to optimise your security strategy is to understand who wants to attack you. Understanding the Threat Landscape is critical to ensuring your network security.",
                     "causes-end": true,
                 },
             },
